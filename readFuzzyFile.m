@@ -1,0 +1,5 @@
+%fuzzyVelocityEstimatorStrongAcc = readfis('fuzzyVelocityEstimatorStrongAcc')
+%fuzzyVelocityEstimatorAcc = readfis('fuzzyVelocityEstimatorAcc')
+fuzzyVelocityEstimatorConstant = readfis('fuzzyVelocityEstimatorConstant')
+%fuzzyVelocityEstimatorBraking = readfis('fuzzyVelocityEstimatorBraking')
+%fuzzyVelocityEstimatorStrongBraking = readfis('fuzzyVelocityEstimatorStrongBraking')

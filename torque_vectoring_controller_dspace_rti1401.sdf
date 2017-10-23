@@ -1,0 +1,16 @@
+[System]
+Version=2.2
+SystemType=SingleProcessorSystem
+DAQService=DsDAQ
+DsDAQBackground=1
+DAQService=HostService
+Status=Start
+RTP=Master
+
+[Master]
+Type=DS1401
+State=Enabled
+ServiceID=1
+BoardName=unknown
+File=torque_vectoring_controller_dspace_rti1401.ppc
+ID=85308CA4-4A1E-477E-8051-D08EE18607BD

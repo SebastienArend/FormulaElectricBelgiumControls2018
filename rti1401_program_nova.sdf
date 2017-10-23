@@ -1,0 +1,16 @@
+[System]
+Version=2.2
+SystemType=SingleProcessorSystem
+DAQService=DsDAQ
+DsDAQBackground=1
+DAQService=HostService
+Status=Start
+RTP=Master
+
+[Master]
+Type=DS1401
+State=Enabled
+ServiceID=1
+BoardName=unknown
+File=rti1401_program_nova.ppc
+ID=A2E33F1C-6D8B-4133-A1B0-6C3719AAE34C

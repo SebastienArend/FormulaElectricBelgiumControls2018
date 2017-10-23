@@ -1,0 +1,109 @@
+[System]
+Name='fuzzyVelocityEstimatorStrongBraking'
+Type='mamdani'
+Version=2.0
+NumInputs=5
+NumOutputs=5
+NumRules=7
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='deltaVFL'
+Range=[-10 10]
+NumMFs=4
+MF1='big':'trapmf',[-16 -10.67 -7.5 -6.25]
+MF2='medium':'trapmf',[-7.5 -6.25 -5 -3.75]
+MF3='small':'trapmf',[-5 -3.75 -1.25 0]
+MF4='error':'trapmf',[-1.25 0 10.66 16]
+
+[Input2]
+Name='deltaVFR'
+Range=[-10 10]
+NumMFs=4
+MF1='big':'trapmf',[-16 -10.67 -7.5 -6.25]
+MF2='medium':'trapmf',[-7.5 -6.25 -5 -3.75]
+MF3='small':'trapmf',[-5 -3.75 -1.25 0]
+MF4='error':'trapmf',[-1.25 0 10.66 16]
+
+[Input3]
+Name='deltaVRL'
+Range=[-10 10]
+NumMFs=4
+MF1='big':'trapmf',[-16 -10.67 -7.5 -6.25]
+MF2='medium':'trapmf',[-7.5 -6.25 -5 -3.75]
+MF3='small':'trapmf',[-5 -3.75 -1.25 0]
+MF4='error':'trapmf',[-1.25 0 10.66 16]
+
+[Input4]
+Name='deltaVRR'
+Range=[-10 10]
+NumMFs=4
+MF1='big':'trapmf',[-16 -10.67 -7.5 -6.25]
+MF2='medium':'trapmf',[-7.5 -6.25 -5 -3.75]
+MF3='small':'trapmf',[-5 -3.75 -1.25 0]
+MF4='error':'trapmf',[-1.25 0 10.66 16]
+
+[Input5]
+Name='maxDeltaV'
+Range=[0 1]
+NumMFs=2
+MF1='small':'trapmf',[-0.3 -0.125 0.125 0.3]
+MF2='big':'trapmf',[0.125 0.32 1.1 1.9]
+
+[Output1]
+Name='k1'
+Range=[0 1]
+NumMFs=4
+MF1='small':'trimf',[-0.4 0 0.4]
+MF2='middle':'trimf',[0.1 0.5 0.9]
+MF3='big':'trimf',[0.6 1 1.4]
+MF4='zero':'trimf',[0 0 0]
+
+[Output2]
+Name='k2'
+Range=[0 1]
+NumMFs=4
+MF1='small':'trimf',[-0.4 0 0.4]
+MF2='middle':'trimf',[0.1 0.5 0.9]
+MF3='big':'trimf',[0.6 1 1.4]
+MF4='zero':'trimf',[0 0 0]
+
+[Output3]
+Name='k3'
+Range=[0 1]
+NumMFs=4
+MF1='small':'trimf',[-0.4 0 0.4]
+MF2='middle':'trimf',[0.1 0.5 0.9]
+MF3='big':'trimf',[0.6 1 1.4]
+MF4='zero':'trimf',[0 0 0]
+
+[Output4]
+Name='k4'
+Range=[0 1]
+NumMFs=4
+MF1='small':'trimf',[-0.4 0 0.4]
+MF2='middle':'trimf',[0.1 0.5 0.9]
+MF3='big':'trimf',[0.6 1 1.4]
+MF4='zero':'trimf',[0 0 0]
+
+[Output5]
+Name='k5'
+Range=[0 1]
+NumMFs=4
+MF1='small':'trimf',[-0.4 0 0.4]
+MF2='middle':'trimf',[0.1 0.5 0.9]
+MF3='big':'trimf',[0.6 1 1.4]
+MF4='zero':'trimf',[0 0 0]
+
+[Rules]
+0 0 0 0 1, 1 1 1 1 3 (1) : 1
+0 0 2 2 2, 4 4 2 2 3 (1) : 1
+0 0 -2 2 2, 4 4 4 3 3 (1) : 1
+0 0 2 -2 2, 4 4 3 4 3 (1) : 1
+1 1 3 3 2, 4 4 1 1 3 (1) : 1
+3 0 -3 -2 2, 1 4 4 4 3 (1) : 1
+0 3 -3 -2 2, 4 1 4 4 3 (1) : 1
