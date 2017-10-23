@@ -1,0 +1,538 @@
+
+
+-- Type definitions for structures
+
+struct Torque_Vectoring_Controller_dSpace_RTI1401_settingBus
+{
+  array-incr: -1
+}
+    velocityEstimation 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    torqueMode 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    YRC 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    YRCMode 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    distributorMode 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    Fsens 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    Fxsens 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    TC 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    unlimitedFx 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    TV_bypass 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    effEstimation 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+endstruct
+
+struct Torque_Vectoring_Controller_dSpace_RTI1401_variableBus
+{
+  array-incr: -1
+}
+    TD_percentage 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+endstruct
+
+typedef Torque_Vectoring_Controller_dSpace_RTI1401_aeroBus_lever_FD_2 flt(64,IEEE)[2]
+
+struct Torque_Vectoring_Controller_dSpace_RTI1401_aeroBus
+{
+  array-incr: -1
+}
+    FD 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    FL 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    lever_FD 
+    {
+      type:    Torque_Vectoring_Controller_dSpace_RTI1401_aeroBus_lever_FD_2
+      offs:    -1
+    }
+    lever_FL 
+    {
+      type:    Torque_Vectoring_Controller_dSpace_RTI1401_aeroBus_lever_FD_2
+      offs:    -1
+    }
+endstruct
+
+typedef Torque_Vectoring_Controller_dSpace_RTI1401_estimParBus_Fzi_1 flt(64,IEEE)[4]
+
+struct Torque_Vectoring_Controller_dSpace_RTI1401_estimParBus
+{
+  array-incr: -1
+}
+    v 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    Fzi 
+    {
+      type:    Torque_Vectoring_Controller_dSpace_RTI1401_estimParBus_Fzi_1
+      offs:    -1
+    }
+    Fxi 
+    {
+      type:    Torque_Vectoring_Controller_dSpace_RTI1401_estimParBus_Fzi_1
+      offs:    -1
+    }
+    Fyi 
+    {
+      type:    Torque_Vectoring_Controller_dSpace_RTI1401_estimParBus_Fzi_1
+      offs:    -1
+    }
+    rref 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    mu 
+    {
+      type:    Torque_Vectoring_Controller_dSpace_RTI1401_estimParBus_Fzi_1
+      offs:    -1
+    }
+    slip 
+    {
+      type:    Torque_Vectoring_Controller_dSpace_RTI1401_estimParBus_Fzi_1
+      offs:    -1
+    }
+    eff 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+endstruct
+
+struct Torque_Vectoring_Controller_dSpace_RTI1401_sensorBus
+{
+  array-incr: -1
+}
+    ax 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    ay 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    wheelspeed 
+    {
+      type:    Torque_Vectoring_Controller_dSpace_RTI1401_estimParBus_Fzi_1
+      offs:    -1
+    }
+    yawRate 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    steerAngle 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    wheelAngles 
+    {
+      type:    Torque_Vectoring_Controller_dSpace_RTI1401_estimParBus_Fzi_1
+      offs:    -1
+    }
+    throttle 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    brake 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    torque 
+    {
+      type:    Torque_Vectoring_Controller_dSpace_RTI1401_estimParBus_Fzi_1
+      offs:    -1
+    }
+    ax_error 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    ay_error 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    yawRate_error 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    knob1 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    knob2 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    P_elec 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+endstruct
+
+struct Torque_Vectoring_Controller_dSpace_RTI1401_struct_5c66W48nDdAJoq2yy1HutG
+{
+  array-incr: -1
+}
+    minV 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    Kp 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    Ki 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    Kd 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    Ks 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    intLimit 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    changeVelocity 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    slope 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    maxValue 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    Kr 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+endstruct
+
+struct Torque_Vectoring_Controller_dSpace_RTI1401_struct_cWG5y6wKg8Ai7O0hv2EfQD
+{
+  array-incr: -1
+}
+    Tmax 
+    {
+      type:    Torque_Vectoring_Controller_dSpace_RTI1401_estimParBus_Fzi_1
+      offs:    -1
+    }
+    Inertia 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    rpmMax 
+    {
+      type:    Torque_Vectoring_Controller_dSpace_RTI1401_estimParBus_Fzi_1
+      offs:    -1
+    }
+endstruct
+
+struct Torque_Vectoring_Controller_dSpace_RTI1401_struct_mZYSMNnYSHxP9gu8lDob5D
+{
+  array-incr: -1
+}
+    slipSetAcc 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    slipSetBrake 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+endstruct
+
+struct Torque_Vectoring_Controller_dSpace_RTI1401_struct_a6ICb3nu3ulcoTWeQ38NBH
+{
+  array-incr: -1
+}
+    safetyMargin 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    Kp 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    Ki 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    maxEff 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    minEff 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+endstruct
+
+struct Torque_Vectoring_Controller_dSpace_RTI1401_struct_NZF8CyDbFf22HYyIBv7HBG
+{
+  array-incr: -1
+}
+    g 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    rhoAir 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    Pmax 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    Pmin 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    riderMass 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    vehicleMass 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    mass 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    h 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    tw 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    wb 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    lr 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    lf 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    yawInertia 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    gearRatio 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    mu 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    tireRadius 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    tireMass 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    tireInertia 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    tireResist 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    Cl 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    Cd 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    AFront 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    fECU 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    dt 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    YRC 
+    {
+      type:    struct Torque_Vectoring_Controller_dSpace_RTI1401_struct_5c66W48nDdAJoq2yy1HutG
+      offs:    -1
+    }
+    motor 
+    {
+      type:    struct Torque_Vectoring_Controller_dSpace_RTI1401_struct_cWG5y6wKg8Ai7O0hv2EfQD
+      offs:    -1
+    }
+    MzMax 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    TC 
+    {
+      type:    struct Torque_Vectoring_Controller_dSpace_RTI1401_struct_mZYSMNnYSHxP9gu8lDob5D
+      offs:    -1
+    }
+    TC_mu 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    Pmax_bypass 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    PC 
+    {
+      type:    struct Torque_Vectoring_Controller_dSpace_RTI1401_struct_a6ICb3nu3ulcoTWeQ38NBH
+      offs:    -1
+    }
+endstruct
+
+struct Torque_Vectoring_Controller_dSpace_RTI1401_struct_87V4bcTafp6scUX7wj9nvD
+{
+  array-incr: -1
+}
+    scaleFactorFy 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+endstruct
+
+
+-- Type definitions for arrays
+typedef Torque_Vectoring_Controller_dSpace_RTI1401_ArrayDT0_505 flt(64,IEEE)[505]
+typedef Torque_Vectoring_Controller_dSpace_RTI1401_ArrayDT0_101 flt(64,IEEE)[101]
+typedef Torque_Vectoring_Controller_dSpace_RTI1401_ArrayDT0_5 flt(64,IEEE)[5]
+typedef Torque_Vectoring_Controller_dSpace_RTI1401_ArrayDT0_8 flt(64,IEEE)[8]
+typedef Torque_Vectoring_Controller_dSpace_RTI1401_ArrayDT0_6_4_Col col flt(64,IEEE)[6][4]
+
+

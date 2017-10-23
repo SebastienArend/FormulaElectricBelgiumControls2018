@@ -1,0 +1,899 @@
+%implements s119_b0_794tf_Functions "C"
+
+%function Torque_Vectoring_Controller_dSpace_sum_Fcn0(block) void
+%assign fcnBuff = ""
+%openfile fcnBuff
+%assign cfgTxt = ""
+%openfile cfgTxt
+return ((x[0] + x[1]) + x[2]) + x[3];
+%closefile cfgTxt
+%<cfgTxt>
+%closefile fcnBuff
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static real_T Torque_Vectoring_Controller_dSpace_sum(\
+%assign comma = ""
+%<comma>const real_T x[4]\
+%assign comma = ", "
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(3, 0, fcnProtoType)>
+%return fcnBuff
+%endfunction
+
+%function Torque_Vectoring_Controller_dSpace_mldivide_Fcn1(block) void
+%assign fcnBuff = ""
+%openfile fcnBuff
+%assign cfgTxt = ""
+%openfile cfgTxt
+real_T temp;
+real_T b_A[16];
+int8_T ipiv[4];
+int32_T j;
+int32_T ix;
+real_T s;
+int32_T k;
+int32_T iy;
+int32_T c_ix;
+int32_T d;
+int32_T ijA;
+int32_T b_kAcol;
+memcpy(&b_A[0], &A[0], sizeof(real_T) << 4U);
+ipiv[0] = 1;
+ipiv[1] = 2;
+ipiv[2] = 3;
+for (j = 0; j < 3; j++) {
+    b_kAcol = j * 5;
+    iy = 0;
+    ix = b_kAcol;
+    temp = fabs(b_A[b_kAcol]);
+    for (k = 2; k <= 4 - j; k++) {
+        ix++;
+        s = fabs(b_A[ix]);
+        if (s > temp) {
+            iy = k - 1;
+            temp = s;
+        }
+    }
+    if (b_A[b_kAcol + iy] != 0.0) {
+        if (iy != 0) {
+            ipiv[j] = (int8_T)((j + iy) + 1);
+            iy += j;
+            temp = b_A[j];
+            b_A[j] = b_A[iy];
+            b_A[iy] = temp;
+            ix = j + 4;
+            iy += 4;
+            temp = b_A[ix];
+            b_A[ix] = b_A[iy];
+            b_A[iy] = temp;
+            ix += 4;
+            iy += 4;
+            temp = b_A[ix];
+            b_A[ix] = b_A[iy];
+            b_A[iy] = temp;
+            ix += 4;
+            iy += 4;
+            temp = b_A[ix];
+            b_A[ix] = b_A[iy];
+            b_A[iy] = temp;
+        }
+        iy = (b_kAcol - j) + 4;
+        for (ix = b_kAcol + 1; ix + 1 <= iy; ix++) {
+            b_A[ix] /= b_A[b_kAcol];
+        }
+    }
+    iy = b_kAcol + 5;
+    ix = b_kAcol + 4;
+    for (k = 1; k <= 3 - j; k++) {
+        temp = b_A[ix];
+        if (b_A[ix] != 0.0) {
+            c_ix = b_kAcol + 1;
+            d = (iy - j) + 3;
+            for (ijA = iy; ijA + 1 <= d; ijA++) {
+                b_A[ijA] += b_A[c_ix] * -temp;
+                c_ix++;
+            }
+        }
+        ix += 4;
+        iy += 4;
+    }
+}
+if (ipiv[0] != 1) {
+    temp = B[0];
+    B[0] = B[ipiv[0] - 1];
+    B[ipiv[0] - 1] = temp;
+}
+if (ipiv[1] != 2) {
+    temp = B[1];
+    B[1] = B[ipiv[1] - 1];
+    B[ipiv[1] - 1] = temp;
+}
+if (ipiv[2] != 3) {
+    temp = B[2];
+    B[2] = B[ipiv[2] - 1];
+    B[ipiv[2] - 1] = temp;
+}
+if (B[0] != 0.0) {
+    for (iy = 1; iy + 1 < 5; iy++) {
+        B[iy] -= B[0] * b_A[iy];
+    }
+}
+if (B[1] != 0.0) {
+    for (iy = 2; iy + 1 < 5; iy++) {
+        B[iy] -= b_A[iy + 4] * B[1];
+    }
+}
+if (B[2] != 0.0) {
+    for (iy = 3; iy + 1 < 5; iy++) {
+        B[iy] -= b_A[iy + 8] * B[2];
+    }
+}
+if (B[3] != 0.0) {
+    B[3] /= b_A[15];
+    for (iy = 0; iy + 1 < 4; iy++) {
+        B[iy] -= b_A[iy + 12] * B[3];
+    }
+}
+if (B[2] != 0.0) {
+    B[2] /= b_A[10];
+    for (iy = 0; iy + 1 < 3; iy++) {
+        B[iy] -= b_A[iy + 8] * B[2];
+    }
+}
+if (B[1] != 0.0) {
+    B[1] /= b_A[5];
+    for (iy = 0; iy + 1 < 2; iy++) {
+        B[iy] -= b_A[iy + 4] * B[1];
+    }
+}
+if (B[0] != 0.0) {
+    B[0] /= b_A[0];
+}
+%closefile cfgTxt
+%<cfgTxt>
+%closefile fcnBuff
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Torque_Vectoring_Controller_dSpace_mldivide(\
+%assign comma = ""
+%<comma>const real_T A[16]\
+%assign comma = ", "
+%<comma>real_T B[4]\
+%assign comma = ", "
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(3, 1, fcnProtoType)>
+%return fcnBuff
+%endfunction
+
+%function Torque_Vectoring_Controller_dSpace_Distributor_Fcn2(block) void
+%assign fcnBuff = ""
+%openfile fcnBuff
+%assign cfgTxt = ""
+%openfile cfgTxt
+real_T A2[4];
+int32_T Fxcheckmax1;
+int32_T Fxcheckmin1;
+real_T diffAray[4];
+real_T moment;
+real_T DiffsumFxFdes;
+real_T fracDiff;
+real_T distrRLRR;
+boolean_T x[4];
+int32_T c_ixstart;
+int32_T e_ix;
+boolean_T exitg5;
+boolean_T guard1;
+real_T b_car_0[4];
+real_T tmp[16];
+real_T tmp_0[16];
+int8_T maxsurpass_data[4];
+int8_T ii_data[4];
+%assign _modelSS = ""
+
+/* VERSION: testDistributor_170118 */
+/* DISTRIBUTOR Solves the KKT conditions */
+/*    Based on sensitivity paramterers, KKT conditions */
+/*    are worked out to find an optimal balance between */
+/*    the desired Fx and the desired Mz */
+/*    Mz = desired yaw moment [1x1] */
+/*    Fdes = desired traction force [1x1] */
+/*    Fxmax = available grip per wheel [4x1] */
+/*    Fxmin = available neg grip per wheel [4x1] */
+/*    TODO: variables or settings? */
+/* TO DO */
+/* Rekening houden met situaties waarbij 3 waarden de maxima overstijgen */
+/* dit gebeurt enkel indien 3 van de maxima extreem laag zijn. */
+/* Ervoor zorgen dat indien op het einde van de berekeningen het moment */
+/* groter is dan het gewenste moment dat er een veiligheid in werking treed */
+/* om dit tegen te gaan. */
+/* value between 0 and 100 */
+/*  100 --> Fdes is really important */
+/*  0 --> Mdes is really important */
+/* value between 0 and 100 */
+/* Avoid dividing by 0 */
+DiffsumFxFdes = Fxmin[0];
+fracDiff = Fxmax[0];
+if (Fxmax[0] == 0.0) {
+    fracDiff = 1.0;
+}
+if (Fxmin[0] == 0.0) {
+    DiffsumFxFdes = -1.0;
+}
+Fxmax[0] = fracDiff;
+Fxmin[0] = DiffsumFxFdes;
+DiffsumFxFdes = Fxmin[1];
+fracDiff = Fxmax[1];
+if (Fxmax[1] == 0.0) {
+    fracDiff = 1.0;
+}
+if (Fxmin[1] == 0.0) {
+    DiffsumFxFdes = -1.0;
+}
+Fxmax[1] = fracDiff;
+Fxmin[1] = DiffsumFxFdes;
+DiffsumFxFdes = Fxmin[2];
+fracDiff = Fxmax[2];
+if (Fxmax[2] == 0.0) {
+    fracDiff = 1.0;
+}
+if (Fxmin[2] == 0.0) {
+    DiffsumFxFdes = -1.0;
+}
+Fxmax[2] = fracDiff;
+Fxmin[2] = DiffsumFxFdes;
+DiffsumFxFdes = Fxmin[3];
+fracDiff = Fxmax[3];
+if (Fxmax[3] == 0.0) {
+    fracDiff = 1.0;
+}
+if (Fxmin[3] == 0.0) {
+    DiffsumFxFdes = -1.0;
+}
+Fxmax[3] = fracDiff;
+Fxmin[3] = DiffsumFxFdes;
+%if SLibCG_FcnCallArgAccessed(3,2,0,0)
+%<SLibCG_AccessArg(3 ,2, 5)>
+%endif
+
+if (Fdes > %<(SLibCGCallSubFcn("Torque_Vectoring_Controller_dSpace_sum", ["Fxmax"], 3, 2, 0))>) {
+%if SLibCG_FcnCallArgAccessed(3,2,2,0)
+%<SLibCG_AccessArg(3 ,2, 5)>
+%endif
+
+    Fdes = %<(SLibCGCallSubFcn("Torque_Vectoring_Controller_dSpace_sum", ["Fxmax"], 3, 2, 2))>;
+} else {
+%if SLibCG_FcnCallArgAccessed(3,2,1,0)
+%<SLibCG_AccessArg(3 ,2, 6)>
+%endif
+
+    if (Fdes < %<(SLibCGCallSubFcn("Torque_Vectoring_Controller_dSpace_sum", ["Fxmin"], 3, 2, 1))>) {
+%if SLibCG_FcnCallArgAccessed(3,2,3,0)
+%<SLibCG_AccessArg(3 ,2, 6)>
+%endif
+
+        Fdes = %<(SLibCGCallSubFcn("Torque_Vectoring_Controller_dSpace_sum", ["Fxmin"], 3, 2, 3))>;
+    }
+}
+A2[0] = -b_car->tw / 2.0;
+A2[1] = b_car->tw / 2.0;
+A2[2] = -b_car->tw / 2.0;
+A2[3] = b_car->tw / 2.0;
+moment = settings_Fxsens / 100.0;
+tmp_0[0] = 1.0 / Fxmax[0];
+tmp_0[4] = 0.0;
+tmp_0[8] = 0.0;
+tmp_0[12] = 0.0;
+tmp_0[1] = 0.0;
+tmp_0[5] = 1.0 / Fxmax[1];
+tmp_0[9] = 0.0;
+tmp_0[13] = 0.0;
+tmp_0[2] = 0.0;
+tmp_0[6] = 0.0;
+tmp_0[10] = 1.0 / Fxmax[2];
+tmp_0[14] = 0.0;
+tmp_0[3] = 0.0;
+tmp_0[7] = 0.0;
+tmp_0[11] = 0.0;
+tmp_0[15] = 1.0 / fracDiff;
+for (c_ixstart = 0; c_ixstart < 4; c_ixstart++) {
+    Fx[c_ixstart] = A2[c_ixstart] * Mz + Fdes;
+    tmp[c_ixstart] = (A2[c_ixstart] * A2[0] + 1.0) + tmp_0[c_ixstart] * moment;
+    tmp[c_ixstart + 4] = (A2[c_ixstart] * A2[1] + 1.0) + tmp_0[c_ixstart + 4] * moment;
+    tmp[c_ixstart + 8] = (A2[c_ixstart] * A2[2] + 1.0) + tmp_0[c_ixstart + 8] * moment;
+    tmp[c_ixstart + 12] = (A2[c_ixstart] * A2[3] + 1.0) + tmp_0[c_ixstart + 12] * moment;
+}
+%if SLibCG_FcnCallArgAccessed(3,2,6,1)
+%<SLibCG_AccessArg(3 ,2, 7)>
+%endif
+
+%<(SLibCGCallSubFcn("Torque_Vectoring_Controller_dSpace_mldivide", ["tmp", "Fx"], 3, 2, 6))>;
+Fxcheckmax1 = 0;
+Fxcheckmin1 = 0;
+if (Fx[0] > Fxmax[0]) {
+    Fxcheckmax1 = 1;
+} else {
+    if (Fx[0] < Fxmin[0]) {
+        Fxcheckmin1 = 1;
+    }
+}
+if (Fx[1] > Fxmax[1]) {
+    Fxcheckmax1 = 1;
+} else {
+    if (Fx[1] < Fxmin[1]) {
+        Fxcheckmin1 = 1;
+    }
+}
+if (Fx[2] > Fxmax[2]) {
+    Fxcheckmax1 = 1;
+} else {
+    if (Fx[2] < Fxmin[2]) {
+        Fxcheckmin1 = 1;
+    }
+}
+if (Fx[3] > fracDiff) {
+    Fxcheckmax1 = 1;
+} else {
+    if (Fx[3] < DiffsumFxFdes) {
+        Fxcheckmin1 = 1;
+    }
+}
+if ((Fxcheckmax1 == 1) || (Fxcheckmin1 == 1)) {
+    /* Check if one value of Former Fx surpasses the maximum value */
+    /* Mdes = Mz*(Msens/MsensMax); */
+    if (Fxcheckmax1 == 1) {
+        /* positive value if Fx > Fxmax */
+        moment = Fx[0] - Fxmax[0];
+        moment *= (real_T)(moment > 0.0);
+        diffAray[0] = moment;
+        moment = Fx[1] - Fxmax[1];
+        moment *= (real_T)(moment > 0.0);
+        diffAray[1] = moment;
+        moment = Fx[2] - Fxmax[2];
+        moment *= (real_T)(moment > 0.0);
+        diffAray[2] = moment;
+        moment = Fx[3] - fracDiff;
+        moment *= (real_T)(moment > 0.0);
+        diffAray[3] = moment;
+        /* Filter values bigger than Fxmax */
+        Fxcheckmin1 = 1;
+        moment = diffAray[0];
+        Fxcheckmax1 = -5;
+        if (rtIsNaN(diffAray[0])) {
+            c_ixstart = 1;
+            exitg5 = false;
+            while ((!exitg5) && (c_ixstart + 1 < 5)) {
+                Fxcheckmin1 = c_ixstart + 1;
+                if (!rtIsNaN(diffAray[c_ixstart])) {
+                    moment = diffAray[c_ixstart];
+                    Fxcheckmax1 = c_ixstart - 5;
+                    exitg5 = true;
+                } else {
+                    c_ixstart++;
+                }
+            }
+        }
+        if (Fxcheckmin1 < 4) {
+            while (Fxcheckmin1 + 1 < 5) {
+                if (diffAray[Fxcheckmin1] > moment) {
+                    moment = diffAray[Fxcheckmin1];
+                    Fxcheckmax1 = Fxcheckmin1 - 5;
+                }
+                Fxcheckmin1++;
+            }
+        }
+        Fxcheckmin1 = 1;
+        moment = diffAray[0];
+        if (rtIsNaN(diffAray[0])) {
+            c_ixstart = 2;
+            exitg5 = false;
+            while ((!exitg5) && (c_ixstart < 5)) {
+                Fxcheckmin1 = c_ixstart;
+                if (!rtIsNaN(diffAray[c_ixstart - 1])) {
+                    moment = diffAray[c_ixstart - 1];
+                    exitg5 = true;
+                } else {
+                    c_ixstart++;
+                }
+            }
+        }
+        if (Fxcheckmin1 < 4) {
+            while (Fxcheckmin1 + 1 < 5) {
+                if (diffAray[Fxcheckmin1] > moment) {
+                    moment = diffAray[Fxcheckmin1];
+                }
+                Fxcheckmin1++;
+            }
+        }
+        distrRLRR = Fx[0] - moment;
+        x[0] = (distrRLRR < Fxmin[0]);
+        Fx[0] = distrRLRR;
+        distrRLRR = Fx[1] - moment;
+        x[1] = (distrRLRR < Fxmin[1]);
+        Fx[1] = distrRLRR;
+        distrRLRR = Fx[2] - moment;
+        x[2] = (distrRLRR < Fxmin[2]);
+        Fx[2] = distrRLRR;
+        distrRLRR = Fx[3] - moment;
+        x[3] = (distrRLRR < DiffsumFxFdes);
+        Fx[3] = distrRLRR;
+        Fxcheckmin1 = 0;
+        c_ixstart = 1;
+        exitg5 = false;
+        while ((!exitg5) && (c_ixstart < 5)) {
+            guard1 = false;
+            if (x[c_ixstart - 1]) {
+                Fxcheckmin1++;
+                ii_data[Fxcheckmin1 - 1] = (int8_T)c_ixstart;
+                if (Fxcheckmin1 >= 4) {
+                    exitg5 = true;
+                } else {
+                    guard1 = true;
+                }
+            } else {
+                guard1 = true;
+            }
+            if (guard1) {
+                c_ixstart++;
+            }
+        }
+        if (1 > Fxcheckmin1) {
+            Fxcheckmin1 = 0;
+        }
+        for (c_ixstart = 0; c_ixstart < Fxcheckmin1; c_ixstart++) {
+            maxsurpass_data[c_ixstart] = ii_data[c_ixstart];
+        }
+        for (c_ixstart = 0; c_ixstart < Fxcheckmin1; c_ixstart++) {
+            Fx[maxsurpass_data[c_ixstart] - 1] = Fxmin[maxsurpass_data[c_ixstart] - 1];
+        }
+        diffAray[0] = Fxmax[0] - Fx[0];
+        diffAray[1] = Fxmax[1] - Fx[1];
+        diffAray[2] = Fxmax[2] - Fx[2];
+        diffAray[3] = fracDiff - Fx[3];
+        /* moment = sum([-car.tw/2; car.tw/2; -car.tw/2; car.tw/2].*Fx); */
+        if ((Fxcheckmax1 + 6 == 3) || (Fxcheckmax1 + 6 == 4)) {
+            Fxcheckmin1 = 1;
+            moment = diffAray[0];
+            c_ixstart = -5;
+            if (rtIsNaN(diffAray[0])) {
+                e_ix = 2;
+                exitg5 = false;
+                while ((!exitg5) && (e_ix < 3)) {
+                    Fxcheckmin1 = 2;
+                    if (!rtIsNaN(diffAray[1])) {
+                        moment = diffAray[1];
+                        c_ixstart = -4;
+                        exitg5 = true;
+                    } else {
+                        e_ix = 3;
+                    }
+                }
+            }
+            if ((Fxcheckmin1 < 2) && (diffAray[1] < moment)) {
+                moment = diffAray[1];
+                c_ixstart = -4;
+            }
+            Fxcheckmin1 = c_ixstart;
+            Fx[0] += moment;
+            Fx[1] += moment;
+        } else {
+            c_ixstart = 1;
+            moment = diffAray[2];
+            Fxcheckmin1 = -3;
+            if (rtIsNaN(diffAray[2])) {
+                e_ix = 2;
+                exitg5 = false;
+                while ((!exitg5) && (e_ix < 3)) {
+                    c_ixstart = 2;
+                    if (!rtIsNaN(diffAray[3])) {
+                        moment = diffAray[3];
+                        Fxcheckmin1 = -2;
+                        exitg5 = true;
+                    } else {
+                        e_ix = 3;
+                    }
+                }
+            }
+            if ((c_ixstart < 2) && (diffAray[3] < moment)) {
+                moment = diffAray[3];
+                Fxcheckmin1 = -2;
+            }
+            Fx[2] += moment;
+            Fx[3] += moment;
+        }
+        diffAray[0] = Fxmax[0] - Fx[0];
+        b_car_0[0] = -b_car->tw / 2.0 * Fx[0];
+        diffAray[1] = Fxmax[1] - Fx[1];
+        b_car_0[1] = b_car->tw / 2.0 * Fx[1];
+        diffAray[2] = Fxmax[2] - Fx[2];
+        b_car_0[2] = -b_car->tw / 2.0 * Fx[2];
+        diffAray[3] = fracDiff - Fx[3];
+        b_car_0[3] = b_car->tw / 2.0 * Fx[3];
+        moment = %<(SLibCGCallSubFcn("Torque_Vectoring_Controller_dSpace_sum", ["b_car_0"], 3, 2, 4))>;
+%if SLibCG_FcnCallArgAccessed(3,2,5,0)
+%<SLibCG_AccessArg(3 ,2, 7)>
+%endif
+
+        DiffsumFxFdes = Fdes - %<(SLibCGCallSubFcn("Torque_Vectoring_Controller_dSpace_sum", ["Fx"], 3, 2, 5))>;
+        if (Fxcheckmax1 + 6 > 2) {
+            if (diffAray[-Fxcheckmax1] == 0.0) {
+                diffAray[-Fxcheckmax1] = 0.1;
+            }
+            fracDiff = diffAray[-4 - Fxcheckmin1] / diffAray[-Fxcheckmax1];
+            distrRLRR = -moment / (A2[-4 - Fxcheckmin1] * fracDiff + A2[-Fxcheckmax1]);
+            moment = (-moment - distrRLRR * A2[-Fxcheckmax1]) / A2[-4 - Fxcheckmin1];
+            if (distrRLRR + moment > 0.0) {
+                if (moment + distrRLRR > DiffsumFxFdes) {
+                    moment = DiffsumFxFdes / (1.0 + fracDiff);
+                    distrRLRR = moment * fracDiff;
+                }
+                Fx[-4 - Fxcheckmin1] += settings_Fsens / 100.0 * moment;
+                Fx[-Fxcheckmax1] += settings_Fsens / 100.0 * distrRLRR;
+            }
+        } else {
+            if (diffAray[-Fxcheckmin1] == 0.0) {
+                diffAray[-Fxcheckmin1] = 0.1;
+            }
+            fracDiff = diffAray[-4 - Fxcheckmax1] / diffAray[-Fxcheckmin1];
+            distrRLRR = -moment / (A2[-4 - Fxcheckmax1] * fracDiff + A2[-Fxcheckmin1]);
+            moment = (-moment - distrRLRR * A2[-Fxcheckmin1]) / A2[-4 - Fxcheckmax1];
+            if (distrRLRR + moment > 0.0) {
+                if (moment + distrRLRR > DiffsumFxFdes) {
+                    moment = DiffsumFxFdes / (1.0 + fracDiff);
+                    distrRLRR = moment * fracDiff;
+                }
+                Fx[-Fxcheckmin1] += settings_Fsens / 100.0 * moment;
+                Fx[-4 - Fxcheckmax1] += settings_Fsens / 100.0 * distrRLRR;
+            }
+        }
+        /* ------------------------------------------------------------------------- */
+    } else {
+        /* negative value if Fx < Fxmin */
+        moment = Fx[0] - Fxmin[0];
+        moment *= (real_T)(moment < 0.0);
+        diffAray[0] = moment;
+        moment = Fx[1] - Fxmin[1];
+        moment *= (real_T)(moment < 0.0);
+        diffAray[1] = moment;
+        moment = Fx[2] - Fxmin[2];
+        moment *= (real_T)(moment < 0.0);
+        diffAray[2] = moment;
+        moment = Fx[3] - DiffsumFxFdes;
+        moment *= (real_T)(moment < 0.0);
+        diffAray[3] = moment;
+        /* Filter values smaller than Fxmin */
+        Fxcheckmin1 = 1;
+        moment = diffAray[0];
+        Fxcheckmax1 = -5;
+        if (rtIsNaN(diffAray[0])) {
+            c_ixstart = 1;
+            exitg5 = false;
+            while ((!exitg5) && (c_ixstart + 1 < 5)) {
+                Fxcheckmin1 = c_ixstart + 1;
+                if (!rtIsNaN(diffAray[c_ixstart])) {
+                    moment = diffAray[c_ixstart];
+                    Fxcheckmax1 = c_ixstart - 5;
+                    exitg5 = true;
+                } else {
+                    c_ixstart++;
+                }
+            }
+        }
+        if (Fxcheckmin1 < 4) {
+            while (Fxcheckmin1 + 1 < 5) {
+                if (diffAray[Fxcheckmin1] < moment) {
+                    moment = diffAray[Fxcheckmin1];
+                    Fxcheckmax1 = Fxcheckmin1 - 5;
+                }
+                Fxcheckmin1++;
+            }
+        }
+        /* [diffValue2,pos2]= max(diffAray.*(diffAray<max(diffAray))); */
+        /* nonZero=length(find(diffAray)); */
+        Fxcheckmin1 = 1;
+        moment = diffAray[0];
+        if (rtIsNaN(diffAray[0])) {
+            c_ixstart = 2;
+            exitg5 = false;
+            while ((!exitg5) && (c_ixstart < 5)) {
+                Fxcheckmin1 = c_ixstart;
+                if (!rtIsNaN(diffAray[c_ixstart - 1])) {
+                    moment = diffAray[c_ixstart - 1];
+                    exitg5 = true;
+                } else {
+                    c_ixstart++;
+                }
+            }
+        }
+        if (Fxcheckmin1 < 4) {
+            while (Fxcheckmin1 + 1 < 5) {
+                if (diffAray[Fxcheckmin1] < moment) {
+                    moment = diffAray[Fxcheckmin1];
+                }
+                Fxcheckmin1++;
+            }
+        }
+        distrRLRR = Fx[0] - moment;
+        x[0] = (distrRLRR > Fxmax[0]);
+        Fx[0] = distrRLRR;
+        distrRLRR = Fx[1] - moment;
+        x[1] = (distrRLRR > Fxmax[1]);
+        Fx[1] = distrRLRR;
+        distrRLRR = Fx[2] - moment;
+        x[2] = (distrRLRR > Fxmax[2]);
+        Fx[2] = distrRLRR;
+        distrRLRR = Fx[3] - moment;
+        x[3] = (distrRLRR > fracDiff);
+        Fx[3] = distrRLRR;
+        Fxcheckmin1 = 0;
+        c_ixstart = 1;
+        exitg5 = false;
+        while ((!exitg5) && (c_ixstart < 5)) {
+            guard1 = false;
+            if (x[c_ixstart - 1]) {
+                Fxcheckmin1++;
+                ii_data[Fxcheckmin1 - 1] = (int8_T)c_ixstart;
+                if (Fxcheckmin1 >= 4) {
+                    exitg5 = true;
+                } else {
+                    guard1 = true;
+                }
+            } else {
+                guard1 = true;
+            }
+            if (guard1) {
+                c_ixstart++;
+            }
+        }
+        if (1 > Fxcheckmin1) {
+            Fxcheckmin1 = 0;
+        }
+        for (c_ixstart = 0; c_ixstart < Fxcheckmin1; c_ixstart++) {
+            maxsurpass_data[c_ixstart] = ii_data[c_ixstart];
+        }
+        for (c_ixstart = 0; c_ixstart < Fxcheckmin1; c_ixstart++) {
+            Fx[maxsurpass_data[c_ixstart] - 1] = Fxmax[maxsurpass_data[c_ixstart] - 1];
+        }
+        diffAray[0] = Fxmin[0] - Fx[0];
+        diffAray[1] = Fxmin[1] - Fx[1];
+        diffAray[2] = Fxmin[2] - Fx[2];
+        diffAray[3] = DiffsumFxFdes - Fx[3];
+        if ((Fxcheckmax1 + 6 == 3) || (Fxcheckmax1 + 6 == 4)) {
+            Fxcheckmin1 = 1;
+            moment = diffAray[0];
+            c_ixstart = -5;
+            if (rtIsNaN(diffAray[0])) {
+                e_ix = 2;
+                exitg5 = false;
+                while ((!exitg5) && (e_ix < 3)) {
+                    Fxcheckmin1 = 2;
+                    if (!rtIsNaN(diffAray[1])) {
+                        moment = diffAray[1];
+                        c_ixstart = -4;
+                        exitg5 = true;
+                    } else {
+                        e_ix = 3;
+                    }
+                }
+            }
+            if ((Fxcheckmin1 < 2) && (diffAray[1] > moment)) {
+                moment = diffAray[1];
+                c_ixstart = -4;
+            }
+            Fxcheckmin1 = c_ixstart;
+            Fx[0] += moment;
+            Fx[1] += moment;
+        } else {
+            c_ixstart = 1;
+            moment = diffAray[2];
+            Fxcheckmin1 = -3;
+            if (rtIsNaN(diffAray[2])) {
+                e_ix = 2;
+                exitg5 = false;
+                while ((!exitg5) && (e_ix < 3)) {
+                    c_ixstart = 2;
+                    if (!rtIsNaN(diffAray[3])) {
+                        moment = diffAray[3];
+                        Fxcheckmin1 = -2;
+                        exitg5 = true;
+                    } else {
+                        e_ix = 3;
+                    }
+                }
+            }
+            if ((c_ixstart < 2) && (diffAray[3] > moment)) {
+                moment = diffAray[3];
+                Fxcheckmin1 = -2;
+            }
+            Fx[2] += moment;
+            Fx[3] += moment;
+        }
+        diffAray[0] = Fxmin[0] - Fx[0];
+        diffAray[1] = Fxmin[1] - Fx[1];
+        diffAray[2] = Fxmin[2] - Fx[2];
+        diffAray[3] = DiffsumFxFdes - Fx[3];
+        moment = ((-b_car->tw / 2.0 * Fx[0] + b_car->tw / 2.0 * Fx[1]) + -b_car->tw / 2.0 * Fx[2]) + b_car->tw / 2.0 * Fx[3];
+        DiffsumFxFdes = Fdes - (((Fx[0] + Fx[1]) + Fx[2]) + Fx[3]);
+        if (Fxcheckmax1 + 6 > 2) {
+            /*          diffFLFR = Fx(posMinDiff)-Fx(3-posMinDiff) */
+            /*          diffRLRR = Fx(pos1)-Fx(7-pos1) */
+            /*          Fx(3-posMinDiff)=Fx(3-posMinDiff)+diffFLFR*(Fsens/FsensMax); */
+            /*          Fx(7-pos1)=Fx(7-pos1)+diffRLRR*(Fsens/FsensMax); */
+            if (diffAray[-Fxcheckmax1] == 0.0) {
+                diffAray[-Fxcheckmax1] = -0.1;
+            }
+            fracDiff = diffAray[-4 - Fxcheckmin1] / diffAray[-Fxcheckmax1];
+            distrRLRR = -moment / (A2[-4 - Fxcheckmin1] * fracDiff + A2[-Fxcheckmax1]);
+            moment = (-moment - distrRLRR * A2[-Fxcheckmax1]) / A2[-4 - Fxcheckmin1];
+            if (distrRLRR + moment < 0.0) {
+                if (moment + distrRLRR < DiffsumFxFdes) {
+                    moment = DiffsumFxFdes / (1.0 + fracDiff);
+                    distrRLRR = moment * fracDiff;
+                }
+                Fx[-4 - Fxcheckmin1] += settings_Fsens / 100.0 * moment;
+                Fx[-Fxcheckmax1] += settings_Fsens / 100.0 * distrRLRR;
+            }
+        } else {
+            if (diffAray[-Fxcheckmin1] == 0.0) {
+                diffAray[-Fxcheckmin1] = -0.1;
+            }
+            fracDiff = diffAray[-4 - Fxcheckmax1] / diffAray[-Fxcheckmin1];
+            distrRLRR = -moment / (A2[-4 - Fxcheckmax1] * fracDiff + A2[-Fxcheckmin1]);
+            moment = (-moment - distrRLRR * A2[-Fxcheckmin1]) / A2[-4 - Fxcheckmax1];
+            if (distrRLRR + moment < 0.0) {
+                if (moment + distrRLRR < DiffsumFxFdes) {
+                    moment = DiffsumFxFdes / (1.0 + fracDiff);
+                    distrRLRR = moment * fracDiff;
+                }
+                Fx[-Fxcheckmin1] += settings_Fsens / 100.0 * moment;
+                Fx[-4 - Fxcheckmax1] += settings_Fsens / 100.0 * distrRLRR;
+            }
+        }
+    }
+}
+Fx[0] /= b_car->gearRatio;
+Fx[1] /= b_car->gearRatio;
+Fx[2] /= b_car->gearRatio;
+Fx[3] /= b_car->gearRatio;
+/*  tolerance = 1; */
+/*   */
+/*  maxvaluecheck =  Fxmin - tolerance <Fx & Fx<Fxmax + tolerance; */
+/*  A = find(maxvaluecheck==0); */
+/*  FxminA=0; */
+/*   */
+/*  if isempty(A) == 0 */
+/*      A1=A(1); */
+/*      if Fdes > 0 */
+/*          if Fx(A1) > Fxmax(A1) */
+/*              diff=Fx(A1)-Fxmax(A1); */
+/*              Fx(A1)=Fxmax(A1); */
+/*              if A1 == 3 || A1 == 4 */
+/*                  if (Fxmax(A1-2) - Fx(A1-2))>=diff; */
+/*                      Fx(A1-2)=Fx(A1-2)+diff; */
+/*                  else */
+/*                      diff2=Fxmax(A1-2)-Fx(A1-2); */
+/*                      Fx(A1-2)=Fxmax(A1-2); */
+/*                      Fx(7-A1)=Fx(7-A1)-(diff-diff2); */
+/*                      %<"\%Fx(7-A1)=Fx(7-A1)-(diff-diff2)/2;"> */
+/*                      %<"\%Fx(5-A1)=Fx(5-A1)-(diff-diff2)/2;"> */
+/*                  end */
+/*              else */
+/*                  if (Fxmax(A1+2) - Fx(A1+2))>=diff */
+/*                      Fx(A1+2)=Fx(A1+2)+diff; */
+/*                  else */
+/*                      diff2=Fxmax(A1+2)-Fx(A1+2); */
+/*                      Fx(A1+2)=Fxmax(A1+2); */
+/*                      Fx(3-A1)=Fx(3-A1)-(diff-diff2); */
+/*                      %<"\%Fx(3-A1)=Fx(3-A1)-(diff-diff2)/2;"> */
+/*                      %<"\%Fx(5-A1)=Fx(5-A1)-(diff-diff2)/2;"> */
+/*                  end */
+/*              end */
+/*          else %<"\%Fx(A1) < Fxmin(A1)"> */
+/*              diff=Fxmin(A1)-Fx(A1); %<"\%positive value"> */
+/*              Fx(A1)=FxminA(A1); */
+/*              if A1 == 1 || A1 == 2 */
+/*                  if Fx(A1+2) < 0 */
+/*                      diff2=Fx(A1+2)-Fxmin(A1+2); %<"\%positive value"> */
+/*                      if diff2>diff */
+/*                          Fx(A1+2)=Fx(A1+2)-diff; */
+/*                      else */
+/*                          Fx(A1+2)=Fxmin(A1+2); */
+/*                      end */
+/*                  else %<"\%Fx(A1+2) > 0"> */
+/*                      Fx(A1+2) = Fx(A1+2)-diff; */
+/*                  end */
+/*              else */
+/*                  if Fx(A1-2) < 0 */
+/*                      diff2=Fx(A1-2)-Fxmin(A1-2); %<"\%positive value"> */
+/*                      if diff2>diff */
+/*                          Fx(A1-2)=Fx(A1-2)-diff; */
+/*                      else */
+/*                          Fx(A1-2)=Fxmin(A1-2); */
+/*                      end */
+/*                  else %<"\%Fx(A1-2) > 0"> */
+/*                      Fx(A1-2) = Fx(A1-2)-diff; */
+/*                  end */
+/*              end */
+/*          end */
+/*           */
+/*      else %<"\%if Fdes <= 0"> */
+/*          if Fx(A1) < Fxmin(A1) */
+/*              diff=Fxmin(A1)-Fx(A1); %<"\%postive value"> */
+/*              Fx(A1)=Fxmin(A1); */
+/*              if A1 == 3 || A1 == 4 */
+/*                  if (Fx(A1-2) - Fxmin(A1-2))>=diff */
+/*                      Fx(A1-2)=Fx(A1-2)-diff; */
+/*                  else */
+/*                      diff2=Fx(A1-2)-Fxmin(A1-2); */
+/*                      Fx(A1-2)=Fxmin(A1-2); */
+/*                      Fx(7-A1)=Fx(7-A1)+(diff-diff2); */
+/*                      %<"\%Fx(7-A1)=Fx(7-A1)+(diff-diff2)/2;"> */
+/*                      %<"\%Fx(5-A1)=Fx(5-A1)+(diff-diff2)/2;"> */
+/*                  end */
+/*              else %<"\%A1 == 1 | A1 == 2"> */
+/*                  if (Fx(A1+2)-Fxmin(A1+2))>=diff */
+/*                      Fx(A1+2)=Fx(A1+2)-diff; */
+/*                  else */
+/*                      diff2=Fx(A1+2)-Fxmin(A1+2); */
+/*                      Fx(A1+2)=Fxmin(A1+2); */
+/*                      Fx(3-A1)=Fx(3-A1)+(diff-diff2); */
+/*                      %<"\%Fx(3-A1)=Fx(3-A1)+(diff-diff2)/2;"> */
+/*                      %<"\%Fx(5-A1)=Fx(5-A1)+(diff-diff2)/2;"> */
+/*                  end */
+/*              end */
+/*          else %<"\%Fx(A1) > Fxmax(A1)"> */
+/*              diff=Fx(A1)-Fxmax(A1); %<"\%positive value"> */
+/*              Fx(A1)=Fxmax(A1); */
+/*              if A1 == 1 || A1 == 2 */
+/*                  if Fx(A1+2) > 0 */
+/*                      diff2=Fxmax(A1+2)-Fx(A1+2); %<"\%positive value"> */
+/*                      if diff2>diff */
+/*                          Fx(A1+2)=Fx(A1+2)+diff; */
+/*                      else */
+/*                          Fx(A1+2)=Fxmax(A1+2); */
+/*                      end */
+/*                  else %<"\%Fx(A1+2) < 0"> */
+/*                      Fx(A1+2) = Fx(A1+2)+diff; */
+/*                  end */
+/*              else %<"\%A1 == 3 | A1 == 4"> */
+/*                  if Fx(A1-2) > 0 */
+/*                      diff2=Fxmax(A1-2)-Fx(A1-2); %<"\%positive value"> */
+/*                      if diff2>diff */
+/*                          Fx(A1-2)=Fx(A1-2)-diff; */
+/*                      else */
+/*                          Fx(A1-2)=Fxmax(A1-2); */
+/*                      end */
+/*                  else %<"\%Fx(A1-2) > 0"> */
+/*                      Fx(A1-2) = Fx(A1-2)+diff; */
+/*                  end */
+/*              end */
+/*          end */
+/*      end  */
+/*  end */
+%closefile cfgTxt
+%<cfgTxt>
+%closefile fcnBuff
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Torque_Vectoring_Controller_dSpace_Distributor(\
+%assign comma = ""
+%<comma>real_T settings_Fsens\
+%assign comma = ", "
+%<comma>real_T settings_Fxsens\
+%assign comma = ", "
+%<comma>const struct_2N3GuiAxuv5A0027YXDrPF *b_car\
+%assign comma = ", "
+%<comma>real_T Mz\
+%assign comma = ", "
+%<comma>real_T Fdes\
+%assign comma = ", "
+%<comma>real_T Fxmax[4]\
+%assign comma = ", "
+%<comma>real_T Fxmin[4]\
+%assign comma = ", "
+%<comma>real_T Fx[4]\
+%assign comma = ", "
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(3, 2, fcnProtoType)>
+%return fcnBuff
+%endfunction
+

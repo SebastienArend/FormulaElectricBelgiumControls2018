@@ -1,0 +1,95 @@
+%implements s119_b0_794tf_Start "C"
+
+%function Start(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%assign tlcStartFcnOfS73B0 = OpaqueTLCBlockFcn("Start", 73, 0, 3, 3)
+%assign tlcStartFcnOfS73B1 = OpaqueTLCBlockFcn("Start", 73, 1, 3, 3)
+%assign tlcStartFcnOfS73B2 = OpaqueTLCBlockFcn("Start", 73, 2, 3, 3)
+%assign tlcStartFcnOfS73B3 = OpaqueTLCBlockFcn("Start", 73, 3, 3, 3)
+%assign tlcStartFcnOfS73B4 = OpaqueTLCBlockFcn("Start", 73, 4, 3, 3)
+%assign tlcStartFcnOfS73B5 = OpaqueTLCBlockFcn("Start", 73, 5, 3, 3)
+%assign tlcStartFcnOfS73B6 = OpaqueTLCBlockFcn("Start", 73, 6, 3, 3)
+%assign tlcStartFcnOfS73B7 = OpaqueTLCBlockFcn("Start", 73, 7, 3, 3)
+%assign tlcStartFcnOfS73B8 = OpaqueTLCBlockFcn("Start", 73, 8, 3, 3)
+%assign tlcStartFcnOfS73B9 = OpaqueTLCBlockFcn("Start", 73, 9, 3, 3)
+%assign tlcStartFcnOfS73B10 = OpaqueTLCBlockFcn("Start", 73, 10, 3, 3)
+%assign tlcStartFcnOfS73B11 = OpaqueTLCBlockFcn("Start", 73, 11, 3, 3)
+%assign tlcStartFcnOfS73B12 = OpaqueTLCBlockFcn("Start", 73, 12, 3, 3)
+%assign tlcStartFcnOfS73B13 = OpaqueTLCBlockFcn("Start", 73, 13, 3, 3)
+%assign tlcStartFcnOfS73B14 = OpaqueTLCBlockFcn("Start", 73, 14, 3, 3)
+%assign tlcStartFcnOfS73B15 = OpaqueTLCBlockFcn("Start", 73, 15, 3, 3)
+%assign tlcStartFcnOfS73B16 = OpaqueTLCBlockFcn("Start", 73, 16, 3, 3)
+%assign tlcStartFcnOfS73B17 = OpaqueTLCBlockFcn("Start", 73, 17, 3, 3)
+%assign tlcStartFcnOfS73B18 = OpaqueTLCBlockFcn("Start", 73, 18, 3, 3)
+%assign tlcStartFcnOfS73B19 = OpaqueTLCBlockFcn("Start", 73, 19, 3, 3)
+%assign tlcStartFcnOfS73B20 = OpaqueTLCBlockFcn("Start", 73, 20, 3, 3)
+%assign tlcStartFcnOfS73B202 = OpaqueTLCBlockFcn("Start", 73, 202, 3, 3)
+%assign tlcStartFcnOfS73B203 = OpaqueTLCBlockFcn("Start", 73, 203, 3, 3)
+%assign tlcStartFcnOfS73B204 = OpaqueTLCBlockFcn("Start", 73, 204, 3, 3)
+%assign tlcStartFcnOfS73B206 = OpaqueTLCBlockFcn("Start", 73, 206, 3, 3)
+%assign tlcStartFcnOfS73B207 = OpaqueTLCBlockFcn("Start", 73, 207, 3, 3)
+%assign tlcStartFcnOfS73B208 = OpaqueTLCBlockFcn("Start", 73, 208, 3, 3)
+%assign tlcStartFcnOfS73B209 = OpaqueTLCBlockFcn("Start", 73, 209, 3, 3)
+%assign tlcStartFcnOfS73B210 = OpaqueTLCBlockFcn("Start", 73, 210, 3, 3)
+%assign tlcStartFcnOfS73B211 = OpaqueTLCBlockFcn("Start", 73, 211, 3, 3)
+%assign tlcStartFcnOfS73B216 = OpaqueTLCBlockFcn("Start", 73, 216, 3, 3)
+%assign tlcStartFcnOfS73B217 = OpaqueTLCBlockFcn("Start", 73, 217, 3, 3)
+%assign tlcStartFcnOfS73B218 = OpaqueTLCBlockFcn("Start", 73, 218, 3, 3)
+%assign tlcStartFcnOfS73B219 = OpaqueTLCBlockFcn("Start", 73, 219, 3, 3)
+%assign tlcStartFcnOfS73B220 = OpaqueTLCBlockFcn("Start", 73, 220, 3, 3)
+%assign tlcStartFcnOfS73B222 = OpaqueTLCBlockFcn("Start", 73, 222, 3, 3)
+%assign tlcStartFcnOfS73B223 = OpaqueTLCBlockFcn("Start", 73, 223, 3, 3)
+%assign tlcStartFcnOfS73B224 = OpaqueTLCBlockFcn("Start", 73, 224, 3, 3)
+%assign tlcStartFcnOfS73B225 = OpaqueTLCBlockFcn("Start", 73, 225, 3, 3)
+%assign tlcStartFcnOfS73B226 = OpaqueTLCBlockFcn("Start", 73, 226, 3, 3)
+%<tlcStartFcnOfS73B0>\
+%<tlcStartFcnOfS73B1>\
+%<tlcStartFcnOfS73B2>\
+%<tlcStartFcnOfS73B3>\
+%<tlcStartFcnOfS73B4>\
+%<tlcStartFcnOfS73B5>\
+%<tlcStartFcnOfS73B6>\
+%<tlcStartFcnOfS73B7>\
+%<tlcStartFcnOfS73B8>\
+%<tlcStartFcnOfS73B9>\
+%<tlcStartFcnOfS73B10>\
+%<tlcStartFcnOfS73B11>\
+%<tlcStartFcnOfS73B12>\
+%<tlcStartFcnOfS73B13>\
+%<tlcStartFcnOfS73B14>\
+%<tlcStartFcnOfS73B15>\
+%<tlcStartFcnOfS73B16>\
+%<tlcStartFcnOfS73B17>\
+%<tlcStartFcnOfS73B18>\
+%<tlcStartFcnOfS73B19>\
+%<tlcStartFcnOfS73B20>\
+%<tlcStartFcnOfS73B202>\
+%<tlcStartFcnOfS73B203>\
+%<tlcStartFcnOfS73B204>\
+%<tlcStartFcnOfS73B206>\
+%<tlcStartFcnOfS73B207>\
+%<tlcStartFcnOfS73B208>\
+%<tlcStartFcnOfS73B209>\
+%<tlcStartFcnOfS73B210>\
+%<tlcStartFcnOfS73B211>\
+%<tlcStartFcnOfS73B216>\
+%<tlcStartFcnOfS73B217>\
+%<tlcStartFcnOfS73B218>\
+%<tlcStartFcnOfS73B219>\
+%<tlcStartFcnOfS73B220>\
+%<tlcStartFcnOfS73B222>\
+%<tlcStartFcnOfS73B223>\
+%<tlcStartFcnOfS73B224>\
+%<tlcStartFcnOfS73B225>\
+%<tlcStartFcnOfS73B226>\
+%closefile cfgTxt
+%<cfgTxt>
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Start(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(3, 3, fcnProtoType)>
+%endfunction

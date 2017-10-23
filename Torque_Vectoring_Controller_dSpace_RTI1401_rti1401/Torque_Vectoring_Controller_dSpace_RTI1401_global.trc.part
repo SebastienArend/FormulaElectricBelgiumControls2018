@@ -1,0 +1,37 @@
+-- ******** Tunable Parameters ************************************************
+
+group "Tunable Parameters"
+
+	p_1_Torque_Vectoring_Controller_dSpace_RTI1401_struct_NZF8CyDbFf22HYyIBv7HBG_0[0]
+	{
+	 type:    struct Torque_Vectoring_Controller_dSpace_RTI1401_struct_NZF8CyDbFf22HYyIBv7HBG*
+	 alias:   "car"
+	 flags:   PARAM
+	}
+	p_1_Torque_Vectoring_Controller_dSpace_RTI1401_struct_87V4bcTafp6scUX7wj9nvD_1[0]
+	{
+	 type:    struct Torque_Vectoring_Controller_dSpace_RTI1401_struct_87V4bcTafp6scUX7wj9nvD*
+	 alias:   "optPar"
+	 flags:   PARAM
+	}
+
+endgroup
+
+-- ******** State Machine Data ************************************************
+
+group "State Machine Data"
+
+
+endgroup
+
+
+-- ******** Labels ************************************************************
+
+-- Generation of labels turned off with TRCGenerateLabels option.
+
+-- ******** RTT Dynamic Variables *********************************************
+
+group "RTT Dynamic Variables"
+
+endgroup
+

@@ -1,0 +1,80 @@
+%implements s119_b0_794tf_SystemInitialize "C"
+
+%function SystemInitialize(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%openfile localVarDecl
+int32_T i;
+%closefile localVarDecl
+%<SLibInsertAsyncTaskInitializeCode(system)>
+%<SLibWriteMachineInitialize()>
+/* InitializeConditions for Memory: '<S32>/Memory1' */
+Torque_Vectoring_Controller_dSpace_DW.Memory1_PreviousInput = Torque_Vectoring_Controller_dSpace_P.Memory1_X0;
+/* InitializeConditions for Memory: '<S9>/Memory3' */
+Torque_Vectoring_Controller_dSpace_DW.Memory3_PreviousInput = Torque_Vectoring_Controller_dSpace_P.Memory3_X0;
+/* InitializeConditions for Memory: '<S9>/Memory2' */
+Torque_Vectoring_Controller_dSpace_DW.Memory2_PreviousInput = Torque_Vectoring_Controller_dSpace_P.Memory2_X0;
+/* InitializeConditions for Memory: '<S9>/Memory4' */
+Torque_Vectoring_Controller_dSpace_DW.Memory4_PreviousInput = Torque_Vectoring_Controller_dSpace_P.Memory4_X0;
+/* SystemInitialize for MATLAB Function: '<S32>/FuzzyVelicityGenerator' */
+Torque_Vectoring_Controller_dSpace_DW.vFuzzyPrev = 0.0;
+/* SystemInitialize for MATLAB Function: '<S9>/Fx Estimator ' */
+Torque_Vectoring_Controller_dSpace_DW.inertia_not_empty = false;
+Torque_Vectoring_Controller_dSpace_DW.wheelspeedPrev[0] = 0.0;
+Torque_Vectoring_Controller_dSpace_DW.wheelspeedPrev[1] = 0.0;
+Torque_Vectoring_Controller_dSpace_DW.wheelspeedPrev[2] = 0.0;
+Torque_Vectoring_Controller_dSpace_DW.wheelspeedPrev[3] = 0.0;
+/* SystemInitialize for MATLAB Function: '<S9>/Fy Estimator ' */
+Torque_Vectoring_Controller_dSpace_DW.yawRatePrev_not_empty = false;
+Torque_Vectoring_Controller_dSpace_DW.FzRatioFront_not_empty = false;
+Torque_Vectoring_Controller_dSpace_DW.FzRatioRear_not_empty = false;
+/* SystemInitialize for MATLAB Function: '<S6>/Yaw Rate Control' */
+Torque_Vectoring_Controller_dSpace_DW.Mz_memory = 0.0;
+Torque_Vectoring_Controller_dSpace_DW.integral = 0.0;
+Torque_Vectoring_Controller_dSpace_DW.prevError = 0.0;
+/* SystemInitialize for MATLAB Function: '<S6>/Traction Control' */
+for (i = 0; i < 24; i++) {
+    Torque_Vectoring_Controller_dSpace_DW.slipVector[i] = 0.0;
+    Torque_Vectoring_Controller_dSpace_DW.FxVector[i] = 0.0;
+}
+Torque_Vectoring_Controller_dSpace_DW.errorInt[0] = 0.0;
+Torque_Vectoring_Controller_dSpace_DW.errorD[0] = 0.0;
+Torque_Vectoring_Controller_dSpace_DW.errorPrev[0] = 0.0;
+Torque_Vectoring_Controller_dSpace_DW.TiPrev[0] = 0.0;
+Torque_Vectoring_Controller_dSpace_DW.errorInt2[0] = 0.0;
+Torque_Vectoring_Controller_dSpace_DW.Ti[0] = 0.0;
+Torque_Vectoring_Controller_dSpace_DW.Ti2[0] = 0.0;
+Torque_Vectoring_Controller_dSpace_DW.errorInt[1] = 0.0;
+Torque_Vectoring_Controller_dSpace_DW.errorD[1] = 0.0;
+Torque_Vectoring_Controller_dSpace_DW.errorPrev[1] = 0.0;
+Torque_Vectoring_Controller_dSpace_DW.TiPrev[1] = 0.0;
+Torque_Vectoring_Controller_dSpace_DW.errorInt2[1] = 0.0;
+Torque_Vectoring_Controller_dSpace_DW.Ti[1] = 0.0;
+Torque_Vectoring_Controller_dSpace_DW.Ti2[1] = 0.0;
+Torque_Vectoring_Controller_dSpace_DW.errorInt[2] = 0.0;
+Torque_Vectoring_Controller_dSpace_DW.errorD[2] = 0.0;
+Torque_Vectoring_Controller_dSpace_DW.errorPrev[2] = 0.0;
+Torque_Vectoring_Controller_dSpace_DW.TiPrev[2] = 0.0;
+Torque_Vectoring_Controller_dSpace_DW.errorInt2[2] = 0.0;
+Torque_Vectoring_Controller_dSpace_DW.Ti[2] = 0.0;
+Torque_Vectoring_Controller_dSpace_DW.Ti2[2] = 0.0;
+Torque_Vectoring_Controller_dSpace_DW.errorInt[3] = 0.0;
+Torque_Vectoring_Controller_dSpace_DW.errorD[3] = 0.0;
+Torque_Vectoring_Controller_dSpace_DW.errorPrev[3] = 0.0;
+Torque_Vectoring_Controller_dSpace_DW.TiPrev[3] = 0.0;
+Torque_Vectoring_Controller_dSpace_DW.errorInt2[3] = 0.0;
+Torque_Vectoring_Controller_dSpace_DW.Ti[3] = 0.0;
+Torque_Vectoring_Controller_dSpace_DW.Ti2[3] = 0.0;
+/* End of SystemInitialize for MATLAB Function: '<S6>/Traction Control' */
+%<SLibInsertInitPeriodicCStatesFcn(system)>
+%closefile cfgTxt
+%<cfgTxt>
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void SystemInitialize(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(3, 4, fcnProtoType)>
+%<LibSetSystemField(system, "CachedSystemInitializeLocalVars", localVarDecl)>
+%endfunction

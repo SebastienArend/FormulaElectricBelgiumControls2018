@@ -1,0 +1,2054 @@
+%implements s119_b0_794tf_TLCInterface "C"
+
+%function getOutputAddr_73_0_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_B.DataInportSFcn"
+%endfunction
+
+%function getOutput_73_0_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_B.DataInportSFcn"
+%endfunction
+
+%function getOutputAddr_73_1_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_p"
+%endfunction
+
+%function getOutput_73_1_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_p"
+%endfunction
+
+%function getOutputAddr_73_2_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_c"
+%endfunction
+
+%function getOutput_73_2_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_c"
+%endfunction
+
+%function getOutputAddr_73_3_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_b"
+%endfunction
+
+%function getOutput_73_3_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_b"
+%endfunction
+
+%function getOutputAddr_73_4_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_e"
+%endfunction
+
+%function getOutput_73_4_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_e"
+%endfunction
+
+%function getOutputAddr_73_5_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_d"
+%endfunction
+
+%function getOutput_73_5_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_d"
+%endfunction
+
+%function getOutputAddr_73_6_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_l"
+%endfunction
+
+%function getOutput_73_6_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_l"
+%endfunction
+
+%function getOutputAddr_73_7_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_bb"
+%endfunction
+
+%function getOutput_73_7_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_bb"
+%endfunction
+
+%function getOutputAddr_73_8_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_er"
+%endfunction
+
+%function getOutput_73_8_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_er"
+%endfunction
+
+%function getOutputAddr_73_9_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_f"
+%endfunction
+
+%function getOutput_73_9_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_f"
+%endfunction
+
+%function getOutputAddr_73_10_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_o"
+%endfunction
+
+%function getOutput_73_10_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_o"
+%endfunction
+
+%function getOutputAddr_73_11_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_pg"
+%endfunction
+
+%function getOutput_73_11_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_pg"
+%endfunction
+
+%function getOutputAddr_73_12_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_n"
+%endfunction
+
+%function getOutput_73_12_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_n"
+%endfunction
+
+%function getOutputAddr_73_13_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_o3"
+%endfunction
+
+%function getOutput_73_13_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_o3"
+%endfunction
+
+%function getOutputAddr_73_14_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_h"
+%endfunction
+
+%function getOutput_73_14_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_h"
+%endfunction
+
+%function getOutputAddr_73_15_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_k"
+%endfunction
+
+%function getOutput_73_15_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_k"
+%endfunction
+
+%function getOutputAddr_73_16_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_o2"
+%endfunction
+
+%function getOutput_73_16_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_o2"
+%endfunction
+
+%function getOutputAddr_73_17_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_a"
+%endfunction
+
+%function getOutput_73_17_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_a"
+%endfunction
+
+%function getOutputAddr_73_18_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_g"
+%endfunction
+
+%function getOutput_73_18_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_g"
+%endfunction
+
+%function getOutputAddr_73_19_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_e5"
+%endfunction
+
+%function getOutput_73_19_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_e5"
+%endfunction
+
+%function getOutputAddr_73_20_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_ag"
+%endfunction
+
+%function getOutput_73_20_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_ag"
+%endfunction
+
+%function getInputAddr_73_202_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(86, 0)> %% rtb_Mz
+
+%return "&rtb_Mz"
+%endfunction
+
+%function getInput_73_202_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(86, 0)> %% rtb_Mz
+
+%return "rtb_Mz"
+%endfunction
+
+%function getInputAddr_73_202_3_3_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(89, 0)> %% rtb_rref_e
+
+%return "&rtb_rref_e"
+%endfunction
+
+%function getInput_73_202_3_3_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(89, 0)> %% rtb_rref_e
+
+%return "rtb_rref_e"
+%endfunction
+
+%function getDWorkAddr_73_202_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_DW.Scope_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_73_202_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_DW.Scope_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_73_203_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(88, 0)> %% rtb_actions
+
+%return "&rtb_actions" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_73_203_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(88, 0)> %% rtb_actions
+
+%return "rtb_actions" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_73_203_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_DW.Scope1_PWORK"
+%endfunction
+
+%function getDWork_73_203_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_DW.Scope1_PWORK"
+%endfunction
+
+%function getInputAddr_73_204_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(90, 0)> %% rtb_Torques
+
+%return "&rtb_Torques" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_73_204_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(90, 0)> %% rtb_Torques
+
+%return "rtb_Torques" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_73_204_3_3_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(91, 0)> %% rtb_TiTi2
+
+%return "&rtb_TiTi2" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_73_204_3_3_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(91, 0)> %% rtb_TiTi2
+
+%return "rtb_TiTi2" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_73_204_3_3_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(91, 0)> %% rtb_TiTi2
+
+%return "&rtb_TiTi2" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_73_204_3_3_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(91, 0)> %% rtb_TiTi2
+
+%return "rtb_TiTi2" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_73_204_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_DW.Scope2_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_73_204_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_DW.Scope2_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_73_206_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(182, 0)> %% rtb_wheelAngles
+
+%return "&rtb_wheelAngles" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_73_206_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(182, 0)> %% rtb_wheelAngles
+
+%return "rtb_wheelAngles" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_73_206_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_DW.Torquesscope_PWORK"
+%endfunction
+
+%function getDWork_73_206_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_DW.Torquesscope_PWORK"
+%endfunction
+
+%function getInputAddr_73_207_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(87, 0)> %% rtb_error
+
+%return "&rtb_error"
+%endfunction
+
+%function getInput_73_207_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(87, 0)> %% rtb_error
+
+%return "rtb_error"
+%endfunction
+
+%function getDWorkAddr_73_207_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_DW.error_PWORK"
+%endfunction
+
+%function getDWork_73_207_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_DW.error_PWORK"
+%endfunction
+
+%function getInputAddr_73_208_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(92, 0)> %% rtb_error_p
+
+%return "&rtb_error_p" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_73_208_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(92, 0)> %% rtb_error_p
+
+%return "rtb_error_p" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_73_208_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_DW.errorslip_PWORK"
+%endfunction
+
+%function getDWork_73_208_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_DW.errorslip_PWORK"
+%endfunction
+
+%function getInputAddr_73_209_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(98, 0)> %% rtb_Fdes_l
+
+%return "&rtb_Fdes_l"
+%endfunction
+
+%function getInput_73_209_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(98, 0)> %% rtb_Fdes_l
+
+%return "rtb_Fdes_l"
+%endfunction
+
+%function getInputAddr_73_209_3_3_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(99, 0)> %% rtb_sumFx
+
+%return "&rtb_sumFx"
+%endfunction
+
+%function getInput_73_209_3_3_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(99, 0)> %% rtb_sumFx
+
+%return "rtb_sumFx"
+%endfunction
+
+%function getInputAddr_73_209_3_3_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(100, 0)> %% rtb_Fxmax
+
+%return "&rtb_Fxmax" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_73_209_3_3_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(100, 0)> %% rtb_Fxmax
+
+%return "rtb_Fxmax" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_73_209_3_3_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(101, 0)> %% rtb_Fxmaxsum
+
+%return "&rtb_Fxmaxsum"
+%endfunction
+
+%function getInput_73_209_3_3_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(101, 0)> %% rtb_Fxmaxsum
+
+%return "rtb_Fxmaxsum"
+%endfunction
+
+%function getDWorkAddr_73_209_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_DW.MdesFdesFxmaxFx_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_73_209_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_DW.MdesFdesFxmaxFx_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_73_210_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(63, 0)> %% rtb_rref
+
+%return "&rtb_rref"
+%endfunction
+
+%function getInput_73_210_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(63, 0)> %% rtb_rref
+
+%return "rtb_rref"
+%endfunction
+
+%function getDWorkAddr_73_210_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_DW.Scope_PWORK_d"
+%endfunction
+
+%function getDWork_73_210_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_DW.Scope_PWORK_d"
+%endfunction
+
+%function getInputAddr_73_211_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(80, 0)> %% rtb_slip
+
+%return "&rtb_slip" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_73_211_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(80, 0)> %% rtb_slip
+
+%return "rtb_slip" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_73_211_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_DW.Scope1_PWORK_l"
+%endfunction
+
+%function getDWork_73_211_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_DW.Scope1_PWORK_l"
+%endfunction
+
+%function getInputAddr_73_216_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(83, 0)> %% rtb_Fxi
+
+%return "&rtb_Fxi" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_73_216_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(83, 0)> %% rtb_Fxi
+
+%return "rtb_Fxi" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_73_216_3_3_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(82, 0)> %% rtb_Fyi
+
+%return "&rtb_Fyi" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_73_216_3_3_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(82, 0)> %% rtb_Fyi
+
+%return "rtb_Fyi" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_73_216_3_3_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(81, 0)> %% rtb_Fzi
+
+%return "&rtb_Fzi" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_73_216_3_3_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(81, 0)> %% rtb_Fzi
+
+%return "rtb_Fzi" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_73_216_3_3_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(186, 0)> %% rtb_ax
+
+%return "&rtb_ax"
+%endfunction
+
+%function getInput_73_216_3_3_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(186, 0)> %% rtb_ax
+
+%return "rtb_ax"
+%endfunction
+
+%function getInputAddr_73_216_3_3_4_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(184, 0)> %% rtb_ay
+
+%return "&rtb_ay"
+%endfunction
+
+%function getInput_73_216_3_3_4_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(184, 0)> %% rtb_ay
+
+%return "rtb_ay"
+%endfunction
+
+%function getInputAddr_73_216_3_3_5_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_P.Constant_Value"
+%endfunction
+
+%function getInput_73_216_3_3_5_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_P.Constant_Value"
+%endfunction
+
+%function getInputAddr_73_216_3_3_5_1(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_P.Constant1_Value"
+%endfunction
+
+%function getInput_73_216_3_3_5_1(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_P.Constant1_Value"
+%endfunction
+
+%function getInputAddr_73_216_3_3_5_2(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_P.Constant2_Value"
+%endfunction
+
+%function getInput_73_216_3_3_5_2(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_P.Constant2_Value"
+%endfunction
+
+%function getInputAddr_73_216_3_3_5_3(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_P.Constant3_Value"
+%endfunction
+
+%function getInput_73_216_3_3_5_3(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_P.Constant3_Value"
+%endfunction
+
+%function getDWorkAddr_73_216_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_DW.Fva_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_73_216_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_DW.Fva_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_73_217_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(83, 0)> %% rtb_Fxi
+
+%return "&rtb_Fxi" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_73_217_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(83, 0)> %% rtb_Fxi
+
+%return "rtb_Fxi" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_73_217_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_DW.Fx_estimator_PWORK"
+%endfunction
+
+%function getDWork_73_217_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_DW.Fx_estimator_PWORK"
+%endfunction
+
+%function getInputAddr_73_218_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(82, 0)> %% rtb_Fyi
+
+%return "&rtb_Fyi" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_73_218_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(82, 0)> %% rtb_Fyi
+
+%return "rtb_Fyi" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_73_218_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_DW.Fy_estimator_PWORK"
+%endfunction
+
+%function getDWork_73_218_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_DW.Fy_estimator_PWORK"
+%endfunction
+
+%function getInputAddr_73_219_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(81, 0)> %% rtb_Fzi
+
+%return "&rtb_Fzi" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_73_219_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(81, 0)> %% rtb_Fzi
+
+%return "rtb_Fzi" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_73_219_3_3_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(186, 0)> %% rtb_ax
+
+%return "&rtb_ax"
+%endfunction
+
+%function getInput_73_219_3_3_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(186, 0)> %% rtb_ax
+
+%return "rtb_ax"
+%endfunction
+
+%function getInputAddr_73_219_3_3_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(184, 0)> %% rtb_ay
+
+%return "&rtb_ay"
+%endfunction
+
+%function getInput_73_219_3_3_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(184, 0)> %% rtb_ay
+
+%return "rtb_ay"
+%endfunction
+
+%function getDWorkAddr_73_219_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_DW.Fz_estimator_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_73_219_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_DW.Fz_estimator_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_73_220_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(183, 0)> %% rtb_yawRate
+
+%return "&rtb_yawRate"
+%endfunction
+
+%function getInput_73_220_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(183, 0)> %% rtb_yawRate
+
+%return "rtb_yawRate"
+%endfunction
+
+%function getInputAddr_73_220_3_3_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(182, 0)> %% rtb_wheelAngles
+
+%return "&rtb_wheelAngles" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_73_220_3_3_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(182, 0)> %% rtb_wheelAngles
+
+%return "rtb_wheelAngles" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_73_220_3_3_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(185, 0)> %% rtb_wheelspeed
+
+%return "&rtb_wheelspeed" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_73_220_3_3_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(185, 0)> %% rtb_wheelspeed
+
+%return "rtb_wheelspeed" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_73_220_3_3_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(83, 0)> %% rtb_Fxi
+
+%return "&rtb_Fxi" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_73_220_3_3_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(83, 0)> %% rtb_Fxi
+
+%return "rtb_Fxi" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_73_220_3_3_4_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(85, 0)> %% rtb_alpha
+
+%return "&rtb_alpha" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_73_220_3_3_4_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(85, 0)> %% rtb_alpha
+
+%return "rtb_alpha" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_73_220_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_DW.Scope2_PWORK_p" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_73_220_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_DW.Scope2_PWORK_p" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_73_222_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_P.Constant_Value"
+%endfunction
+
+%function getInput_73_222_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_P.Constant_Value"
+%endfunction
+
+%function getInputAddr_73_222_3_3_0_1(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_P.Constant1_Value"
+%endfunction
+
+%function getInput_73_222_3_3_0_1(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_P.Constant1_Value"
+%endfunction
+
+%function getInputAddr_73_222_3_3_0_2(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_P.Constant2_Value"
+%endfunction
+
+%function getInput_73_222_3_3_0_2(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_P.Constant2_Value"
+%endfunction
+
+%function getInputAddr_73_222_3_3_0_3(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_P.Constant3_Value"
+%endfunction
+
+%function getInput_73_222_3_3_0_3(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_P.Constant3_Value"
+%endfunction
+
+%function getInputAddr_73_222_3_3_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(185, 0)> %% rtb_wheelspeed
+
+%return "&rtb_wheelspeed" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_73_222_3_3_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(185, 0)> %% rtb_wheelspeed
+
+%return "rtb_wheelspeed" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_73_222_3_3_1_1(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_P.Constant_Value"
+%endfunction
+
+%function getInput_73_222_3_3_1_1(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_P.Constant_Value"
+%endfunction
+
+%function getInputAddr_73_222_3_3_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(186, 0)> %% rtb_ax
+
+%return "&rtb_ax"
+%endfunction
+
+%function getInput_73_222_3_3_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(186, 0)> %% rtb_ax
+
+%return "rtb_ax"
+%endfunction
+
+%function getInputAddr_73_222_3_3_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(184, 0)> %% rtb_ay
+
+%return "&rtb_ay"
+%endfunction
+
+%function getInput_73_222_3_3_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(184, 0)> %% rtb_ay
+
+%return "rtb_ay"
+%endfunction
+
+%function getDWorkAddr_73_222_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_DW.VelocityandAcceleration_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_73_222_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_DW.VelocityandAcceleration_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_73_223_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(185, 0)> %% rtb_wheelspeed
+
+%return "&rtb_wheelspeed" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_73_223_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(185, 0)> %% rtb_wheelspeed
+
+%return "rtb_wheelspeed" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_73_223_3_3_0_1(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_P.Constant_Value"
+%endfunction
+
+%function getInput_73_223_3_3_0_1(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_P.Constant_Value"
+%endfunction
+
+%function getDWorkAddr_73_223_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_DW.omegaRvelocity_PWORK"
+%endfunction
+
+%function getDWork_73_223_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_DW.omegaRvelocity_PWORK"
+%endfunction
+
+%function getInputAddr_73_224_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(84, 0)> %% rtb_inertiaOut
+
+%return "&rtb_inertiaOut"
+%endfunction
+
+%function getInput_73_224_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(84, 0)> %% rtb_inertiaOut
+
+%return "rtb_inertiaOut"
+%endfunction
+
+%function getDWorkAddr_73_224_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_DW.intertiaWheel_PWORK"
+%endfunction
+
+%function getDWork_73_224_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_DW.intertiaWheel_PWORK"
+%endfunction
+
+%function getInputAddr_73_225_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(185, 0)> %% rtb_wheelspeed
+
+%return "&rtb_wheelspeed" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_73_225_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(185, 0)> %% rtb_wheelspeed
+
+%return "rtb_wheelspeed" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_73_225_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_DW.Scope_PWORK_l"
+%endfunction
+
+%function getDWork_73_225_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_DW.Scope_PWORK_l"
+%endfunction
+
+%function getInputAddr_73_226_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(186, 0)> %% rtb_ax
+
+%return "&rtb_ax"
+%endfunction
+
+%function getInput_73_226_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(186, 0)> %% rtb_ax
+
+%return "rtb_ax"
+%endfunction
+
+%function getInputAddr_73_226_3_3_0_1(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(184, 0)> %% rtb_ay
+
+%return "&rtb_ay"
+%endfunction
+
+%function getInput_73_226_3_3_0_1(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(184, 0)> %% rtb_ay
+
+%return "rtb_ay"
+%endfunction
+
+%function getInputAddr_73_226_3_3_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(185, 0)> %% rtb_wheelspeed
+
+%return "&rtb_wheelspeed" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_73_226_3_3_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(185, 0)> %% rtb_wheelspeed
+
+%return "rtb_wheelspeed" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_73_226_3_3_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(183, 0)> %% rtb_yawRate
+
+%return "&rtb_yawRate"
+%endfunction
+
+%function getInput_73_226_3_3_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(183, 0)> %% rtb_yawRate
+
+%return "rtb_yawRate"
+%endfunction
+
+%function getInputAddr_73_226_3_3_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(182, 0)> %% rtb_wheelAngles
+
+%return "&rtb_wheelAngles" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_73_226_3_3_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(182, 0)> %% rtb_wheelAngles
+
+%return "rtb_wheelAngles" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_73_226_3_3_4_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(181, 0)> %% rtb_throttle
+
+%return "&rtb_throttle"
+%endfunction
+
+%function getInput_73_226_3_3_4_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(181, 0)> %% rtb_throttle
+
+%return "rtb_throttle"
+%endfunction
+
+%function getInputAddr_73_226_3_3_5_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(180, 0)> %% rtb_brake
+
+%return "&rtb_brake"
+%endfunction
+
+%function getInput_73_226_3_3_5_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(180, 0)> %% rtb_brake
+
+%return "rtb_brake"
+%endfunction
+
+%function getDWorkAddr_73_226_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_DW.SensorScope_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_73_226_3_3_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_DW.SensorScope_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutputAddr_73_0_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_B.DataInportSFcn"
+%endfunction
+
+%function getOutput_73_0_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_B.DataInportSFcn"
+%endfunction
+
+%function getOutputAddr_73_1_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_p"
+%endfunction
+
+%function getOutput_73_1_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_p"
+%endfunction
+
+%function getOutputAddr_73_2_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_c"
+%endfunction
+
+%function getOutput_73_2_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_c"
+%endfunction
+
+%function getOutputAddr_73_3_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_b"
+%endfunction
+
+%function getOutput_73_3_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_b"
+%endfunction
+
+%function getOutputAddr_73_4_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_e"
+%endfunction
+
+%function getOutput_73_4_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_e"
+%endfunction
+
+%function getOutputAddr_73_5_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_d"
+%endfunction
+
+%function getOutput_73_5_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_d"
+%endfunction
+
+%function getOutputAddr_73_6_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_l"
+%endfunction
+
+%function getOutput_73_6_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_l"
+%endfunction
+
+%function getOutputAddr_73_7_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_bb"
+%endfunction
+
+%function getOutput_73_7_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_bb"
+%endfunction
+
+%function getOutputAddr_73_8_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_er"
+%endfunction
+
+%function getOutput_73_8_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_er"
+%endfunction
+
+%function getOutputAddr_73_9_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_f"
+%endfunction
+
+%function getOutput_73_9_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_f"
+%endfunction
+
+%function getOutputAddr_73_10_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_o"
+%endfunction
+
+%function getOutput_73_10_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_o"
+%endfunction
+
+%function getOutputAddr_73_11_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_pg"
+%endfunction
+
+%function getOutput_73_11_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_pg"
+%endfunction
+
+%function getOutputAddr_73_12_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_n"
+%endfunction
+
+%function getOutput_73_12_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_n"
+%endfunction
+
+%function getOutputAddr_73_13_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_o3"
+%endfunction
+
+%function getOutput_73_13_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_o3"
+%endfunction
+
+%function getOutputAddr_73_14_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_h"
+%endfunction
+
+%function getOutput_73_14_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_h"
+%endfunction
+
+%function getOutputAddr_73_15_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_k"
+%endfunction
+
+%function getOutput_73_15_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_k"
+%endfunction
+
+%function getOutputAddr_73_16_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_o2"
+%endfunction
+
+%function getOutput_73_16_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_o2"
+%endfunction
+
+%function getOutputAddr_73_17_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_a"
+%endfunction
+
+%function getOutput_73_17_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_a"
+%endfunction
+
+%function getOutputAddr_73_18_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_g"
+%endfunction
+
+%function getOutput_73_18_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_g"
+%endfunction
+
+%function getOutputAddr_73_19_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_e5"
+%endfunction
+
+%function getOutput_73_19_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_e5"
+%endfunction
+
+%function getOutputAddr_73_20_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_ag"
+%endfunction
+
+%function getOutput_73_20_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_B.DataInportSFcn_ag"
+%endfunction
+
+%function getInputAddr_73_200_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_B.torques" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_73_200_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_B.torques" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_73_201_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_B.rpmRef" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_73_201_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_B.rpmRef" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_73_202_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(86, 0)> %% rtb_Mz
+
+%return "&rtb_Mz"
+%endfunction
+
+%function getInput_73_202_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(86, 0)> %% rtb_Mz
+
+%return "rtb_Mz"
+%endfunction
+
+%function getInputAddr_73_202_3_5_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(89, 0)> %% rtb_rref_e
+
+%return "&rtb_rref_e"
+%endfunction
+
+%function getInput_73_202_3_5_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(89, 0)> %% rtb_rref_e
+
+%return "rtb_rref_e"
+%endfunction
+
+%function getDWorkAddr_73_202_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_DW.Scope_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_73_202_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_DW.Scope_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_73_203_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(88, 0)> %% rtb_actions
+
+%return "&rtb_actions" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_73_203_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(88, 0)> %% rtb_actions
+
+%return "rtb_actions" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_73_203_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_DW.Scope1_PWORK"
+%endfunction
+
+%function getDWork_73_203_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_DW.Scope1_PWORK"
+%endfunction
+
+%function getInputAddr_73_204_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(90, 0)> %% rtb_Torques
+
+%return "&rtb_Torques" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_73_204_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(90, 0)> %% rtb_Torques
+
+%return "rtb_Torques" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_73_204_3_5_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(91, 0)> %% rtb_TiTi2
+
+%return "&rtb_TiTi2" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_73_204_3_5_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(91, 0)> %% rtb_TiTi2
+
+%return "rtb_TiTi2" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_73_204_3_5_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(91, 0)> %% rtb_TiTi2
+
+%return "&rtb_TiTi2" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_73_204_3_5_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(91, 0)> %% rtb_TiTi2
+
+%return "rtb_TiTi2" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_73_204_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_DW.Scope2_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_73_204_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_DW.Scope2_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_73_206_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(182, 0)> %% rtb_wheelAngles
+
+%return "&rtb_wheelAngles" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_73_206_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(182, 0)> %% rtb_wheelAngles
+
+%return "rtb_wheelAngles" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_73_206_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_DW.Torquesscope_PWORK"
+%endfunction
+
+%function getDWork_73_206_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_DW.Torquesscope_PWORK"
+%endfunction
+
+%function getInputAddr_73_207_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(87, 0)> %% rtb_error
+
+%return "&rtb_error"
+%endfunction
+
+%function getInput_73_207_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(87, 0)> %% rtb_error
+
+%return "rtb_error"
+%endfunction
+
+%function getDWorkAddr_73_207_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_DW.error_PWORK"
+%endfunction
+
+%function getDWork_73_207_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_DW.error_PWORK"
+%endfunction
+
+%function getInputAddr_73_208_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(92, 0)> %% rtb_error_p
+
+%return "&rtb_error_p" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_73_208_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(92, 0)> %% rtb_error_p
+
+%return "rtb_error_p" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_73_208_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_DW.errorslip_PWORK"
+%endfunction
+
+%function getDWork_73_208_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_DW.errorslip_PWORK"
+%endfunction
+
+%function getInputAddr_73_209_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(98, 0)> %% rtb_Fdes_l
+
+%return "&rtb_Fdes_l"
+%endfunction
+
+%function getInput_73_209_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(98, 0)> %% rtb_Fdes_l
+
+%return "rtb_Fdes_l"
+%endfunction
+
+%function getInputAddr_73_209_3_5_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(99, 0)> %% rtb_sumFx
+
+%return "&rtb_sumFx"
+%endfunction
+
+%function getInput_73_209_3_5_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(99, 0)> %% rtb_sumFx
+
+%return "rtb_sumFx"
+%endfunction
+
+%function getInputAddr_73_209_3_5_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(100, 0)> %% rtb_Fxmax
+
+%return "&rtb_Fxmax" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_73_209_3_5_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(100, 0)> %% rtb_Fxmax
+
+%return "rtb_Fxmax" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_73_209_3_5_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(101, 0)> %% rtb_Fxmaxsum
+
+%return "&rtb_Fxmaxsum"
+%endfunction
+
+%function getInput_73_209_3_5_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(101, 0)> %% rtb_Fxmaxsum
+
+%return "rtb_Fxmaxsum"
+%endfunction
+
+%function getDWorkAddr_73_209_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_DW.MdesFdesFxmaxFx_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_73_209_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_DW.MdesFdesFxmaxFx_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_73_210_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(63, 0)> %% rtb_rref
+
+%return "&rtb_rref"
+%endfunction
+
+%function getInput_73_210_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(63, 0)> %% rtb_rref
+
+%return "rtb_rref"
+%endfunction
+
+%function getDWorkAddr_73_210_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_DW.Scope_PWORK_d"
+%endfunction
+
+%function getDWork_73_210_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_DW.Scope_PWORK_d"
+%endfunction
+
+%function getInputAddr_73_211_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(80, 0)> %% rtb_slip
+
+%return "&rtb_slip" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_73_211_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(80, 0)> %% rtb_slip
+
+%return "rtb_slip" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_73_211_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_DW.Scope1_PWORK_l"
+%endfunction
+
+%function getDWork_73_211_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_DW.Scope1_PWORK_l"
+%endfunction
+
+%function getInputAddr_73_216_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(83, 0)> %% rtb_Fxi
+
+%return "&rtb_Fxi" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_73_216_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(83, 0)> %% rtb_Fxi
+
+%return "rtb_Fxi" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_73_216_3_5_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(82, 0)> %% rtb_Fyi
+
+%return "&rtb_Fyi" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_73_216_3_5_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(82, 0)> %% rtb_Fyi
+
+%return "rtb_Fyi" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_73_216_3_5_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(81, 0)> %% rtb_Fzi
+
+%return "&rtb_Fzi" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_73_216_3_5_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(81, 0)> %% rtb_Fzi
+
+%return "rtb_Fzi" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_73_216_3_5_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(186, 0)> %% rtb_ax
+
+%return "&rtb_ax"
+%endfunction
+
+%function getInput_73_216_3_5_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(186, 0)> %% rtb_ax
+
+%return "rtb_ax"
+%endfunction
+
+%function getInputAddr_73_216_3_5_4_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(184, 0)> %% rtb_ay
+
+%return "&rtb_ay"
+%endfunction
+
+%function getInput_73_216_3_5_4_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(184, 0)> %% rtb_ay
+
+%return "rtb_ay"
+%endfunction
+
+%function getInputAddr_73_216_3_5_5_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_P.Constant_Value"
+%endfunction
+
+%function getInput_73_216_3_5_5_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_P.Constant_Value"
+%endfunction
+
+%function getInputAddr_73_216_3_5_5_1(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_P.Constant1_Value"
+%endfunction
+
+%function getInput_73_216_3_5_5_1(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_P.Constant1_Value"
+%endfunction
+
+%function getInputAddr_73_216_3_5_5_2(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_P.Constant2_Value"
+%endfunction
+
+%function getInput_73_216_3_5_5_2(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_P.Constant2_Value"
+%endfunction
+
+%function getInputAddr_73_216_3_5_5_3(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_P.Constant3_Value"
+%endfunction
+
+%function getInput_73_216_3_5_5_3(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_P.Constant3_Value"
+%endfunction
+
+%function getDWorkAddr_73_216_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_DW.Fva_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_73_216_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_DW.Fva_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_73_217_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(83, 0)> %% rtb_Fxi
+
+%return "&rtb_Fxi" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_73_217_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(83, 0)> %% rtb_Fxi
+
+%return "rtb_Fxi" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_73_217_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_DW.Fx_estimator_PWORK"
+%endfunction
+
+%function getDWork_73_217_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_DW.Fx_estimator_PWORK"
+%endfunction
+
+%function getInputAddr_73_218_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(82, 0)> %% rtb_Fyi
+
+%return "&rtb_Fyi" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_73_218_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(82, 0)> %% rtb_Fyi
+
+%return "rtb_Fyi" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_73_218_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_DW.Fy_estimator_PWORK"
+%endfunction
+
+%function getDWork_73_218_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_DW.Fy_estimator_PWORK"
+%endfunction
+
+%function getInputAddr_73_219_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(81, 0)> %% rtb_Fzi
+
+%return "&rtb_Fzi" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_73_219_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(81, 0)> %% rtb_Fzi
+
+%return "rtb_Fzi" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_73_219_3_5_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(186, 0)> %% rtb_ax
+
+%return "&rtb_ax"
+%endfunction
+
+%function getInput_73_219_3_5_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(186, 0)> %% rtb_ax
+
+%return "rtb_ax"
+%endfunction
+
+%function getInputAddr_73_219_3_5_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(184, 0)> %% rtb_ay
+
+%return "&rtb_ay"
+%endfunction
+
+%function getInput_73_219_3_5_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(184, 0)> %% rtb_ay
+
+%return "rtb_ay"
+%endfunction
+
+%function getDWorkAddr_73_219_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_DW.Fz_estimator_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_73_219_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_DW.Fz_estimator_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_73_220_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(183, 0)> %% rtb_yawRate
+
+%return "&rtb_yawRate"
+%endfunction
+
+%function getInput_73_220_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(183, 0)> %% rtb_yawRate
+
+%return "rtb_yawRate"
+%endfunction
+
+%function getInputAddr_73_220_3_5_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(182, 0)> %% rtb_wheelAngles
+
+%return "&rtb_wheelAngles" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_73_220_3_5_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(182, 0)> %% rtb_wheelAngles
+
+%return "rtb_wheelAngles" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_73_220_3_5_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(185, 0)> %% rtb_wheelspeed
+
+%return "&rtb_wheelspeed" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_73_220_3_5_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(185, 0)> %% rtb_wheelspeed
+
+%return "rtb_wheelspeed" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_73_220_3_5_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(83, 0)> %% rtb_Fxi
+
+%return "&rtb_Fxi" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_73_220_3_5_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(83, 0)> %% rtb_Fxi
+
+%return "rtb_Fxi" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_73_220_3_5_4_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(85, 0)> %% rtb_alpha
+
+%return "&rtb_alpha" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_73_220_3_5_4_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(85, 0)> %% rtb_alpha
+
+%return "rtb_alpha" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_73_220_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_DW.Scope2_PWORK_p" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_73_220_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_DW.Scope2_PWORK_p" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_73_222_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_P.Constant_Value"
+%endfunction
+
+%function getInput_73_222_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_P.Constant_Value"
+%endfunction
+
+%function getInputAddr_73_222_3_5_0_1(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_P.Constant1_Value"
+%endfunction
+
+%function getInput_73_222_3_5_0_1(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_P.Constant1_Value"
+%endfunction
+
+%function getInputAddr_73_222_3_5_0_2(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_P.Constant2_Value"
+%endfunction
+
+%function getInput_73_222_3_5_0_2(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_P.Constant2_Value"
+%endfunction
+
+%function getInputAddr_73_222_3_5_0_3(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_P.Constant3_Value"
+%endfunction
+
+%function getInput_73_222_3_5_0_3(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_P.Constant3_Value"
+%endfunction
+
+%function getInputAddr_73_222_3_5_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(185, 0)> %% rtb_wheelspeed
+
+%return "&rtb_wheelspeed" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_73_222_3_5_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(185, 0)> %% rtb_wheelspeed
+
+%return "rtb_wheelspeed" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_73_222_3_5_1_1(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_P.Constant_Value"
+%endfunction
+
+%function getInput_73_222_3_5_1_1(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_P.Constant_Value"
+%endfunction
+
+%function getInputAddr_73_222_3_5_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(186, 0)> %% rtb_ax
+
+%return "&rtb_ax"
+%endfunction
+
+%function getInput_73_222_3_5_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(186, 0)> %% rtb_ax
+
+%return "rtb_ax"
+%endfunction
+
+%function getInputAddr_73_222_3_5_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(184, 0)> %% rtb_ay
+
+%return "&rtb_ay"
+%endfunction
+
+%function getInput_73_222_3_5_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(184, 0)> %% rtb_ay
+
+%return "rtb_ay"
+%endfunction
+
+%function getDWorkAddr_73_222_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_DW.VelocityandAcceleration_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_73_222_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_DW.VelocityandAcceleration_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_73_223_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(185, 0)> %% rtb_wheelspeed
+
+%return "&rtb_wheelspeed" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_73_223_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(185, 0)> %% rtb_wheelspeed
+
+%return "rtb_wheelspeed" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_73_223_3_5_0_1(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_P.Constant_Value"
+%endfunction
+
+%function getInput_73_223_3_5_0_1(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_P.Constant_Value"
+%endfunction
+
+%function getDWorkAddr_73_223_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_DW.omegaRvelocity_PWORK"
+%endfunction
+
+%function getDWork_73_223_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_DW.omegaRvelocity_PWORK"
+%endfunction
+
+%function getInputAddr_73_224_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(84, 0)> %% rtb_inertiaOut
+
+%return "&rtb_inertiaOut"
+%endfunction
+
+%function getInput_73_224_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(84, 0)> %% rtb_inertiaOut
+
+%return "rtb_inertiaOut"
+%endfunction
+
+%function getDWorkAddr_73_224_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_DW.intertiaWheel_PWORK"
+%endfunction
+
+%function getDWork_73_224_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_DW.intertiaWheel_PWORK"
+%endfunction
+
+%function getInputAddr_73_225_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(185, 0)> %% rtb_wheelspeed
+
+%return "&rtb_wheelspeed" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_73_225_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(185, 0)> %% rtb_wheelspeed
+
+%return "rtb_wheelspeed" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_73_225_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_DW.Scope_PWORK_l"
+%endfunction
+
+%function getDWork_73_225_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_DW.Scope_PWORK_l"
+%endfunction
+
+%function getInputAddr_73_226_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(186, 0)> %% rtb_ax
+
+%return "&rtb_ax"
+%endfunction
+
+%function getInput_73_226_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(186, 0)> %% rtb_ax
+
+%return "rtb_ax"
+%endfunction
+
+%function getInputAddr_73_226_3_5_0_1(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(184, 0)> %% rtb_ay
+
+%return "&rtb_ay"
+%endfunction
+
+%function getInput_73_226_3_5_0_1(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(184, 0)> %% rtb_ay
+
+%return "rtb_ay"
+%endfunction
+
+%function getInputAddr_73_226_3_5_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(185, 0)> %% rtb_wheelspeed
+
+%return "&rtb_wheelspeed" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_73_226_3_5_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(185, 0)> %% rtb_wheelspeed
+
+%return "rtb_wheelspeed" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_73_226_3_5_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(183, 0)> %% rtb_yawRate
+
+%return "&rtb_yawRate"
+%endfunction
+
+%function getInput_73_226_3_5_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(183, 0)> %% rtb_yawRate
+
+%return "rtb_yawRate"
+%endfunction
+
+%function getInputAddr_73_226_3_5_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(182, 0)> %% rtb_wheelAngles
+
+%return "&rtb_wheelAngles" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_73_226_3_5_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(182, 0)> %% rtb_wheelAngles
+
+%return "rtb_wheelAngles" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_73_226_3_5_4_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(181, 0)> %% rtb_throttle
+
+%return "&rtb_throttle"
+%endfunction
+
+%function getInput_73_226_3_5_4_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(181, 0)> %% rtb_throttle
+
+%return "rtb_throttle"
+%endfunction
+
+%function getInputAddr_73_226_3_5_5_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(180, 0)> %% rtb_brake
+
+%return "&rtb_brake"
+%endfunction
+
+%function getInput_73_226_3_5_5_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(180, 0)> %% rtb_brake
+
+%return "rtb_brake"
+%endfunction
+
+%function getDWorkAddr_73_226_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&Torque_Vectoring_Controller_dSpace_DW.SensorScope_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_73_226_3_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "Torque_Vectoring_Controller_dSpace_DW.SensorScope_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+

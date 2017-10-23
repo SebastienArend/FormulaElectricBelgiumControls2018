@@ -1,0 +1,45 @@
+%implements s119_b0_794tf_2_Outputs "C"
+
+%function Outputs(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+/* Product: '<S116>/Product cd (trimf)' incorporates:
+ *  Constant: '<S116>/c'
+ *  Constant: '<S116>/d'
+ *  Sum: '<S116>/Sum2'
+ *  Sum: '<S116>/Sum3'
+ */
+*rty_Out1 = 1.0 / (rtp_d - rtp_c) * (rtp_d - rtu_x);
+%closefile cfgTxt
+%<cfgTxt>
+%assign rtmArgSys = ::CompiledModel.System[::CompiledModel.System[::CompiledModel.RTWCGModules.RTWCGModule[2].CGSystemIdx].NonInlinedParentSystemIdx]
+%if SysFcnArgNeeded("Output", rtmArgSys.Interface.RTMArgDef, rtmArgSys.CurrentTID, SLibSystemFcnPeriodicRateGrouping(rtmArgSys, "Output"))
+%<SLibCG_AccessArg(2, 0, 0)>
+%endif
+%if SLibCG_ArgAccessed(2, 0, 0)
+%<SLibAccessArg(rtmArgSys.Interface.RTMArgDef, "Output", rtmArgSys.CurrentTID, SLibSystemFcnPeriodicRateGrouping(rtmArgSys, "Output"))>
+%endif
+%if (IsModelReferenceBaseSys(rtmArgSys) && (IsModelRefScalableBuild() || GenerateClassInterface))
+%<SLibCG_UndoAccessArg(2, 0, 0)>
+%endif
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void Torque_Vectoring_Controller_dSpace_IfActionSubsystem3(\
+%assign comma = ""
+%if SLibCG_ArgAccessed(2, 0, 0)
+%<comma>%<tSimStructType> * const %<tSimStruct>\
+%assign comma = ", "
+%endif
+%<comma>real_T rtu_x\
+%assign comma = ", "
+%<comma>real_T *rty_Out1\
+%assign comma = ", "
+%<comma>real_T rtp_c\
+%assign comma = ", "
+%<comma>real_T rtp_d\
+%assign comma = ", "
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(2, 0, fcnProtoType)>
+%<LibSetSystemField(system, "CachedOutputLocalVars", localVarDecl)>
+%endfunction
