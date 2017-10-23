@@ -1,0 +1,36 @@
+--
+--  Used options:
+--    TRCGenerateVirtualBlocks      = 1
+--    TRCGenerateLabels             = 1
+--    TRCGenerateStates             = 1
+--    TRCGenerateDerivatives        = 1
+--    TRCGenerateParamValues        = 1
+--    TRCGenerateApplicationKeyword = 0
+--    TRCOnlyGlobals                = 0
+--    TRCIsOmitVdOn                 = 1
+--
+--  Trace file format: 3
+
+-- ******** Keywords **********************************************************
+-- _application "rti1401_program_nova.map"
+
+_genname     "RTI"
+_genversion  "7.7"
+_gendate     "07/12/2017 12:30:59"
+_description ""
+_author      "RTI1401 7.7 (02-Nov-2016)"
+_model       "rti1401_program_nova"
+
+-- Default data type formats
+_floating_point_type(64,IEEE)
+_integer_type(32)
+
+-- No Data Capture blocks within model: use base sample time as sampling period
+sampling_period[0]
+{
+  value:       0.001
+  alias:       "HostService"
+  increment:   0.001
+  unit:        "s"
+}
+

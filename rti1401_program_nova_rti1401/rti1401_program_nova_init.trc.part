@@ -1,0 +1,1544 @@
+
+
+-- Type definitions for structures
+
+struct rti1401_program_nova_settingBus
+{
+  array-incr: -1
+}
+    Fxsens 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    torqueMode 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    Fsens 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    TC 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    Power 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    Regen 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    unlimitedFx 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    effEstimation 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    YRC 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+endstruct
+
+typedef rti1401_program_nova_sensorBus_wheelspeed_4 flt(64,IEEE)[4]
+
+typedef rti1401_program_nova_sensorBus_errors_20 flt(64,IEEE)[9]
+
+typedef rti1401_program_nova_sensorBus_TCRE_21 flt(64,IEEE)[7]
+
+struct rti1401_program_nova_sensorBus
+{
+  array-incr: -1
+}
+    ax 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    ax_error 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    ay 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    ay_error 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    wheelspeed 
+    {
+      type:    rti1401_program_nova_sensorBus_wheelspeed_4
+      offs:    -1
+    }
+    wheelspeed_error 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    yawRate 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    yawRate_error 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    steerAngle 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    steerAngle_error 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    wheelAngles 
+    {
+      type:    rti1401_program_nova_sensorBus_wheelspeed_4
+      offs:    -1
+    }
+    wheelAngle_error 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    throttle 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    throttle_error 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    brake 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    brake_error 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    torque 
+    {
+      type:    rti1401_program_nova_sensorBus_wheelspeed_4
+      offs:    -1
+    }
+    torque_error 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    P_elec 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    P_elec_error 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    errors 
+    {
+      type:    rti1401_program_nova_sensorBus_errors_20
+      offs:    -1
+    }
+    TCRE 
+    {
+      type:    rti1401_program_nova_sensorBus_TCRE_21
+      offs:    -1
+    }
+endstruct
+
+typedef rti1401_program_nova_aeroBus_lever_FD_2 flt(64,IEEE)[2]
+
+struct rti1401_program_nova_aeroBus
+{
+  array-incr: -1
+}
+    FD 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    FL 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    lever_FD 
+    {
+      type:    rti1401_program_nova_aeroBus_lever_FD_2
+      offs:    -1
+    }
+    lever_FL 
+    {
+      type:    rti1401_program_nova_aeroBus_lever_FD_2
+      offs:    -1
+    }
+endstruct
+
+struct rti1401_program_nova_estimParBus
+{
+  array-incr: -1
+}
+    v 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    Fzi 
+    {
+      type:    rti1401_program_nova_sensorBus_wheelspeed_4
+      offs:    -1
+    }
+    Fxi 
+    {
+      type:    rti1401_program_nova_sensorBus_wheelspeed_4
+      offs:    -1
+    }
+    Fyi 
+    {
+      type:    rti1401_program_nova_sensorBus_wheelspeed_4
+      offs:    -1
+    }
+    rref 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    mu 
+    {
+      type:    rti1401_program_nova_sensorBus_wheelspeed_4
+      offs:    -1
+    }
+    slip 
+    {
+      type:    rti1401_program_nova_sensorBus_wheelspeed_4
+      offs:    -1
+    }
+    eff 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+endstruct
+
+struct rti1401_program_nova_struct_cWG5y6wKg8Ai7O0hv2EfQD
+{
+  array-incr: -1
+}
+    Tmax 
+    {
+      type:    rti1401_program_nova_sensorBus_wheelspeed_4
+      offs:    -1
+    }
+    Inertia 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    rpmMax 
+    {
+      type:    rti1401_program_nova_sensorBus_wheelspeed_4
+      offs:    -1
+    }
+endstruct
+
+struct rti1401_program_nova_struct_VDI4iCaGkFynzpbJuxu6oE
+{
+  array-incr: -1
+}
+    minV 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    Kp 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    Ki 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    Kd 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    Ks 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    Kr 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    intLimit 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    changeVelocity 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    slope 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    maxValue 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    vList 
+    {
+      type:    rti1401_program_nova_sensorBus_wheelspeed_4
+      offs:    -1
+    }
+    Ku 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    Kui 
+    {
+      type:    rti1401_program_nova_sensorBus_wheelspeed_4
+      offs:    -1
+    }
+    P 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    I 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    D 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+endstruct
+
+struct rti1401_program_nova_struct_1mNmyPxApEPKar9B9GpuYB
+{
+  array-incr: -1
+}
+    slipSetAcc 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    slipSetBrake 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    slipSet 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+endstruct
+
+struct rti1401_program_nova_struct_a6ICb3nu3ulcoTWeQ38NBH
+{
+  array-incr: -1
+}
+    safetyMargin 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    Kp 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    Ki 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    maxEff 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    minEff 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+endstruct
+
+struct rti1401_program_nova_struct_JgINXG0XcS3KfFZeZeK5YC
+{
+  array-incr: -1
+}
+    Kp 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+endstruct
+
+struct rti1401_program_nova_struct_1W0LGBe84ZNIV8KeQDP3g
+{
+  array-incr: -1
+}
+    balanceAcc 
+    {
+      type:    rti1401_program_nova_sensorBus_wheelspeed_4
+      offs:    -1
+    }
+    balanceReg 
+    {
+      type:    rti1401_program_nova_sensorBus_wheelspeed_4
+      offs:    -1
+    }
+    percentage 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    FdSens 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    Mzsens 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    mu 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+endstruct
+
+struct rti1401_program_nova_struct_Q0qhb5nhlfy52OFt31XWmG
+{
+  array-incr: -1
+}
+    K_Fx 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    K_Slip 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    muEstimate 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    vth 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+endstruct
+
+struct rti1401_program_nova_struct_wHLdo7RBrhWXSgNX6UtNXH
+{
+  array-incr: -1
+}
+    slipSet 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    integralLimit 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    Kp 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    Ki 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+endstruct
+
+struct rti1401_program_nova_struct_1puVahtGX8U6y4um6OI3OF
+{
+  array-incr: -1
+}
+    Mode 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    Gain 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    Lag 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    MaxDiff 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+endstruct
+
+struct rti1401_program_nova_struct_xYTLf9xRBpYnquzooZvpnD
+{
+  array-incr: -1
+}
+    Kp 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    Ki 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+endstruct
+
+struct rti1401_program_nova_struct_sTyJ5Gb9CkQBvhNUTl4uyC
+{
+  array-incr: -1
+}
+    Ilimit 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    maxValue 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+endstruct
+
+struct rti1401_program_nova_struct_24R1jejgyvFukCjYBMMvPF
+{
+  array-incr: -1
+}
+    vList 
+    {
+      type:    rti1401_program_nova_sensorBus_wheelspeed_4
+      offs:    -1
+    }
+    P 
+    {
+      type:    rti1401_program_nova_sensorBus_wheelspeed_4
+      offs:    -1
+    }
+    I 
+    {
+      type:    rti1401_program_nova_sensorBus_wheelspeed_4
+      offs:    -1
+    }
+    D 
+    {
+      type:    rti1401_program_nova_sensorBus_wheelspeed_4
+      offs:    -1
+    }
+    Ks 
+    {
+      type:    rti1401_program_nova_sensorBus_wheelspeed_4
+      offs:    -1
+    }
+    Kr 
+    {
+      type:    rti1401_program_nova_sensorBus_wheelspeed_4
+      offs:    -1
+    }
+    Ilimit 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    maxValue 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+endstruct
+
+struct rti1401_program_nova_struct_MSWlQJoBxU97Cyr0HPNeKD
+{
+  array-incr: -1
+}
+    Ilimit 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    maxValue 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    breakVelocity 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    slope 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+endstruct
+
+struct rti1401_program_nova_struct_HwKKZqtYuXbiuOWZjzVA5C
+{
+  array-incr: -1
+}
+    P 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    P2 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    I 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    maxEff 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    minEff 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    margin 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    rule1 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    rule2 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    Pmax 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    cellMin1 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    cellMin2 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    cellMax 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    cell_Kp1 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    cell_Kp2 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    cell_Ki2 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    internalResistance 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    maxV_FF 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    maxV_FB 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    maxVolt_Kp 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    maxVolt_Ki 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+endstruct
+
+struct rti1401_program_nova_struct_IqLT16InCsnFsZ7WeSFcnG
+{
+  array-incr: -1
+}
+    maxIntRes 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    minIntRes 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    filterT 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    filterSamples 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    intResV0 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    intResV1 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    intResV2 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    fCell 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+endstruct
+
+struct rti1401_program_nova_struct_yIdb7W7u4xOhWS0HVNUez
+{
+  array-incr: -1
+}
+    throttleThreshold 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    ax 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    startSlip 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    endVel 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    Kp 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    Ki 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+endstruct
+
+typedef rti1401_program_nova_struct_7Wpk6uswVbgkyII8bRQTzC_R_2 col flt(64,IEEE)[2][2]
+
+struct rti1401_program_nova_struct_7Wpk6uswVbgkyII8bRQTzC
+{
+  array-incr: -1
+}
+    Ts 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    Q 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    R 
+    {
+      type:    rti1401_program_nova_struct_7Wpk6uswVbgkyII8bRQTzC_R_2
+      offs:    -1
+    }
+    accTreshold 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    velTreshold 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+endstruct
+
+typedef rti1401_program_nova_struct_iySv5mPC6bSTFE3i2972ZB_currentDataDUT14_11 flt(64,IEEE)[52]
+
+typedef rti1401_program_nova_struct_iySv5mPC6bSTFE3i2972ZB_currentDataDUT13_13 flt(64,IEEE)[12]
+
+typedef rti1401_program_nova_struct_iySv5mPC6bSTFE3i2972ZB_currentData_15 flt(64,IEEE)[11]
+
+struct rti1401_program_nova_struct_iySv5mPC6bSTFE3i2972ZB
+{
+  array-incr: -1
+}
+    Tmax 
+    {
+      type:    rti1401_program_nova_sensorBus_wheelspeed_4
+      offs:    -1
+    }
+    Pmax 
+    {
+      type:    rti1401_program_nova_sensorBus_wheelspeed_4
+      offs:    -1
+    }
+    rpmMax 
+    {
+      type:    rti1401_program_nova_sensorBus_wheelspeed_4
+      offs:    -1
+    }
+    omegaMax 
+    {
+      type:    rti1401_program_nova_sensorBus_wheelspeed_4
+      offs:    -1
+    }
+    P 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    I 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    D 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    N 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    Tnom 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    maxCurrent 
+    {
+      type:    rti1401_program_nova_sensorBus_wheelspeed_4
+      offs:    -1
+    }
+    voltReserve 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    currentDataDUT14 
+    {
+      type:    rti1401_program_nova_struct_iySv5mPC6bSTFE3i2972ZB_currentDataDUT14_11
+      offs:    -1
+    }
+    torqueDataDUT14 
+    {
+      type:    rti1401_program_nova_struct_iySv5mPC6bSTFE3i2972ZB_currentDataDUT14_11
+      offs:    -1
+    }
+    currentDataDUT13 
+    {
+      type:    rti1401_program_nova_struct_iySv5mPC6bSTFE3i2972ZB_currentDataDUT13_13
+      offs:    -1
+    }
+    torqueDataDUT13 
+    {
+      type:    rti1401_program_nova_struct_iySv5mPC6bSTFE3i2972ZB_currentDataDUT13_13
+      offs:    -1
+    }
+    currentData 
+    {
+      type:    rti1401_program_nova_struct_iySv5mPC6bSTFE3i2972ZB_currentData_15
+      offs:    -1
+    }
+    torqueData 
+    {
+      type:    rti1401_program_nova_struct_iySv5mPC6bSTFE3i2972ZB_currentData_15
+      offs:    -1
+    }
+endstruct
+
+struct rti1401_program_nova_struct_xjP4AqjDexWpQfKkqSU2uB
+{
+  array-incr: -1
+}
+    accfrontx 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    accrearx 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    frontAngle 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    brakeRegen 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+endstruct
+
+struct rti1401_program_nova_struct_XkGuildV5bUvZPNb1issIE
+{
+  array-incr: -1
+}
+    vt 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    ayt 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    sl 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+endstruct
+
+struct rti1401_program_nova_struct_dfYn0qdjgwtMXzndJchVcH
+{
+  array-incr: -1
+}
+    slope 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    breakVel 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    B 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+endstruct
+
+struct rti1401_program_nova_struct_gLvux6sO2cKxpII7571ck
+{
+  array-incr: -1
+}
+    Pmax 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+endstruct
+
+struct rti1401_program_nova_struct_du2KXPiRv0QID7v8ubQdHG
+{
+  array-incr: -1
+}
+    gears 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+endstruct
+
+struct rti1401_program_nova_struct_AvVMk63fJe4OGQBCiX9pXB
+{
+  array-incr: -1
+}
+    g 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    rhoAir 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    Pmax 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    Pmin 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    driverMass 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    vehicleMass 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    mass 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    h 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    tw 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    wb 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    lr 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    lf 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    yawInertia 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    gearRatio 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    Cl 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    Cd 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    AFront 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    motor 
+    {
+      type:    struct rti1401_program_nova_struct_cWG5y6wKg8Ai7O0hv2EfQD
+      offs:    -1
+    }
+    Pmax_bypass 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    mu 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    tireRadius 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    tireMass 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    tireInertia 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    tireResist 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    fECU 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    dt 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    distECUx 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    distECUy 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    distECUz 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    YRC 
+    {
+      type:    struct rti1401_program_nova_struct_VDI4iCaGkFynzpbJuxu6oE
+      offs:    -1
+    }
+    MzMax 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    TC 
+    {
+      type:    struct rti1401_program_nova_struct_1mNmyPxApEPKar9B9GpuYB
+      offs:    -1
+    }
+    TC_mu 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    PC 
+    {
+      type:    struct rti1401_program_nova_struct_a6ICb3nu3ulcoTWeQ38NBH
+      offs:    -1
+    }
+    version 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    m 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    wheelRadius 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    wheelInertia 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    yin 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    muns 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    inertia 
+    {
+      type:    struct rti1401_program_nova_struct_JgINXG0XcS3KfFZeZeK5YC
+      offs:    -1
+    }
+    w 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    s 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    armDownforce 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    CoP 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    Xcg 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    steer2wheel 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    distWheelCoG 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    angleWheelCoG 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    ECU_delay 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    fMC 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    ClA 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    CdA 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    usl 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    ks 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    kaf 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    kar 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    cblh 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    cbl 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    cbh 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    crlh 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    crl 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    crh 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    pc 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    rcf 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    rcr 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    torque 
+    {
+      type:    struct rti1401_program_nova_struct_1W0LGBe84ZNIV8KeQDP3g
+      offs:    -1
+    }
+    fTC 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    TC_delay 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    slipSet 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    TC2 
+    {
+      type:    struct rti1401_program_nova_struct_Q0qhb5nhlfy52OFt31XWmG
+      offs:    -1
+    }
+    TC3 
+    {
+      type:    struct rti1401_program_nova_struct_wHLdo7RBrhWXSgNX6UtNXH
+      offs:    -1
+    }
+    TC4 
+    {
+      type:    struct rti1401_program_nova_struct_1puVahtGX8U6y4um6OI3OF
+      offs:    -1
+    }
+    TC5_Kp 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    TC5_Ki 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    TC5_Kd 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    TC5_Kv 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    TC5_mu 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    TC5_maxDiff 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    TC6 
+    {
+      type:    struct rti1401_program_nova_struct_xYTLf9xRBpYnquzooZvpnD
+      offs:    -1
+    }
+    YRC1 
+    {
+      type:    struct rti1401_program_nova_struct_sTyJ5Gb9CkQBvhNUTl4uyC
+      offs:    -1
+    }
+    YRC2 
+    {
+      type:    struct rti1401_program_nova_struct_sTyJ5Gb9CkQBvhNUTl4uyC
+      offs:    -1
+    }
+    YRC3 
+    {
+      type:    struct rti1401_program_nova_struct_24R1jejgyvFukCjYBMMvPF
+      offs:    -1
+    }
+    YRC4 
+    {
+      type:    struct rti1401_program_nova_struct_MSWlQJoBxU97Cyr0HPNeKD
+      offs:    -1
+    }
+    slipStabKp 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    powerLimiter 
+    {
+      type:    struct rti1401_program_nova_struct_HwKKZqtYuXbiuOWZjzVA5C
+      offs:    -1
+    }
+    cell 
+    {
+      type:    struct rti1401_program_nova_struct_IqLT16InCsnFsZ7WeSFcnG
+      offs:    -1
+    }
+    launch 
+    {
+      type:    struct rti1401_program_nova_struct_yIdb7W7u4xOhWS0HVNUez
+      offs:    -1
+    }
+    launchThresholdSpeed 
+    {
+      type:    flt(64,IEEE)
+      offs:    -1
+    }
+    speed 
+    {
+      type:    struct rti1401_program_nova_struct_7Wpk6uswVbgkyII8bRQTzC
+      offs:    -1
+    }
+    motors 
+    {
+      type:    struct rti1401_program_nova_struct_iySv5mPC6bSTFE3i2972ZB
+      offs:    -1
+    }
+    sensor 
+    {
+      type:    struct rti1401_program_nova_struct_xjP4AqjDexWpQfKkqSU2uB
+      offs:    -1
+    }
+    DRS 
+    {
+      type:    struct rti1401_program_nova_struct_XkGuildV5bUvZPNb1issIE
+      offs:    -1
+    }
+    endu 
+    {
+      type:    struct rti1401_program_nova_struct_dfYn0qdjgwtMXzndJchVcH
+      offs:    -1
+    }
+    bypass 
+    {
+      type:    struct rti1401_program_nova_struct_gLvux6sO2cKxpII7571ck
+      offs:    -1
+    }
+    combustion 
+    {
+      type:    struct rti1401_program_nova_struct_du2KXPiRv0QID7v8ubQdHG
+      offs:    -1
+    }
+endstruct
+
+
+-- Type definitions for arrays
+typedef rti1401_program_nova_ArrayDT0_505 flt(64,IEEE)[505]
+typedef rti1401_program_nova_ArrayDT0_101 flt(64,IEEE)[101]
+typedef rti1401_program_nova_ArrayDT0_5 flt(64,IEEE)[5]
+typedef rti1401_program_nova_ArrayDT0_8 flt(64,IEEE)[8]
+typedef rti1401_program_nova_ArrayDT3_1_7_Col col uint(8)[1][7]
+typedef rti1401_program_nova_ArrayDT0_6_4_Col col flt(64,IEEE)[6][4]
+typedef rti1401_program_nova_ArrayDT10_2 int(32)[2]
+
+

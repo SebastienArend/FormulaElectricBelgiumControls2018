@@ -1,0 +1,65 @@
+-c -KE
+-nKu
+-nKv
+-nKia
+-p603E
+-o
+rti_assert.m03
+-nQi
+-QmsC0001
+-Qms0111
+-QmsC0177
+-QmsC0186
+-QmsC0188
+-QmsC0191
+-QmsC0193
+-QmeC0223
+-QmeC0233
+-QmsC0236
+-QmsC0237
+-QmwC0260
+-QmsC0340
+-QmsC0381
+-QmsC0514
+-Qms0550
+-QmsC0826
+-Wa,-QmsA0736
+-Qms1430
+-Qms1457
+-Ot
+-Oi
+-Or
+-Ox
+-D_INLINE
+-DSSTATE=RUN
+-DSMODE=RTSIM
+-DUSE_RTMODEL
+-DMODEL=rti1401_program_nova
+-DMT=1
+-DRT
+-DNUMST=3
+-DNCSTATES=0
+-DTID01EQ=0
+-DNO_PRINTF
+-D_DS1401
+-DRTI_BUILD
+-DRTI_ASSERTION_MODE=RTI_ASSERTION_MODE_OFF
+-DRTT_ENABLE
+-J.
+-J..
+"-JE:\Programs\dSpace RCP HIL\DS1401\RTPython"
+"-JE:\Programs\dSpace RCP HIL\Compiler\PPCTools\INC"
+"-JE:\Programs\dSpace RCP HIL\DS1401\RTKernel"
+"-JE:\Programs\dSpace RCP HIL\DS1401\RTLib"
+"-JE:\Programs\dSpace RCP HIL\MATLAB\RTI\RTI\C"
+"-JE:\Programs\dSpace RCP HIL\MATLAB\RTI\RTI\SFcn"
+"-JE:\Programs\dSpace RCP HIL\MATLAB\RTI\RTI1401\C"
+"-JE:\Programs\dSpace RCP HIL\MATLAB\RTI\RTI1401\SFcn"
+"-JE:\Programs\dSpace RCP HIL\matlab\rtican\c"
+-JC:\PROGRA~1\MATLAB\R2016a\simulink\include
+-JC:\PROGRA~1\MATLAB\R2016a\extern\include
+-JC:\PROGRA~1\MATLAB\R2016a\rtw\c\src
+-JC:\PROGRA~1\MATLAB\R2016a\rtw\c\src\ext_mode\common
+-JC:\PROGRA~1\MATLAB\R2016a\simulink\include\sf_runtime
+-JE:\Dropbox\Uni\FEBTV~1\Simulink\ECU_RE~1\rti1401_program_nova_rti1401
+-JE:\Dropbox\Uni\FEBTV~1\Simulink\ECU_RE~1 

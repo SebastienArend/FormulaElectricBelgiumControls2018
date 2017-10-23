@@ -1,0 +1,2544 @@
+-- ******** Tunable Parameters ************************************************
+
+group "Tunable Parameters"
+
+	p_1_rti1401_program_nova_struct_AvVMk63fJe4OGQBCiX9pXB_0[0]
+	{
+	 type:    struct rti1401_program_nova_struct_AvVMk63fJe4OGQBCiX9pXB*
+	 alias:   "car"
+	 value:   {9.81,1.225,80000.0,0.0,70.0,215.22,285.22,0.25342,1.188,1.54,0.66162,0.87838,48.82984982,15.12,-2.0,1.0,1.0,{{21.0,21.0,21.0,21.0},0.000274,{20000.0,20000.0,20000.0,20000.0}},70000.0,1.0,0.2467,8.71,0.26504917595000005,0.005,1000.0,0.001,0.0,0.0,0.0,{1.3888888888888888,40.0,10.0,0.0,0.0,0.0,1.0,15.0,0.05,800.0,{0.0,10.0,20.0,30.0},0.0,{-0.2,-0.1,0.0,0.05},400.0,0.0,0.0},350.0,{0.1,-0.1,10.0},1.0,{1000.0,0.1,0.0,0.9,0.6},16.0,230.0,0.179256,0.0508,75.0,11.0,{0.0},1.2,1.525,0.0,0.4,0.5,0.26162790697674421,0.9702609185162514,0.90410350054062538,0.005,8000.0,3.84,1.44,0.15,50000.0,120.0,120.0,-0.02,2200.0,1600.0,0.02,1600.0,500.0,0.084,0.0525,0.08,{{0.75,0.75,1.1,1.1},{1.1,1.1,0.7,0.7},100.0,4.0,20.0,1.4},250.0,0.001,0.1,{0.3,1.0,1.4,1.0},{0.1,5.0,50.0,60.0},{3.0,30.0,3.0,0.05},100.0,40.0,0.0,70.0,140.0,100.0,{20.0,40.0},{1.0,800.0},{1.0,800.0},{{0.0,10.0,20.0,30.0},{150.0,130.0,100.0,90.0},{0.0,0.0,0.0,0.0},{0.0,0.0,0.0,0.0},{300.0,200.0,100.0,0.0},{300.0,200.0,100.0,0.0},1.0,800.0},{1.0,800.0,15.0,0.05},60.0,{0.1,0.08,0.0,0.9,0.6,0.0,20.0,100.0,79000.0,3.5,3.3,4.1,100000.0,300000.0,150000.0,0.2,595.0,595.0,2000.0,1000.0},{0.3,0.05,0.95,40.0,-5.2383,3.6948,-0.6161,2.0},{0.85,140.0,20.0,3.0,20.0,10.0},4.166666666666667,{0.004,1.0,{0.5,0.0,0.0,5.0},99.0,0.4},{{28.0,28.0,28.0,28.0},{30000.0,30000.0,30000.0,30000.0},{20000.0,20000.0,20000.0,20000.0},{2094.3951023931954,2094.3951023931954,2094.3951023931954,2094.3951023931954},30.0,0.0,0.0,5.0,10.0,{51.0,51.0,51.0,51.0},30.0,{0.0,2.88,5.77,8.65,14.42,17.31,20.19,23.08,25.96,28.85,31.73,34.62,37.5,40.38,43.27,46.15,49.04,51.92,54.81,57.69,60.58,63.46,66.35,69.23,72.12,75.0,77.88,80.77,83.65,86.54,89.42,92.31,95.19,98.08,100.96,103.85,106.73,109.62,112.5,115.38,118.27,121.15,124.04,126.92,129.81,132.69,135.58,138.46,141.35,144.23,147.12,150.0},{0.0,1.21,2.43,3.64,6.07,7.28,8.49,9.7,10.91,12.1,13.25,14.4,15.54,16.69,17.76,18.67,19.58,20.49,21.4,22.18,22.79,23.4,24.0,24.61,25.14,25.6,26.07,26.53,26.99,27.43,27.86,28.29,28.72,29.15,29.49,29.82,30.14,30.47,30.79,31.04,31.28,31.52,31.76,32.01,32.25,32.49,32.73,32.97,33.21,33.45,33.69,33.93},{5.0,10.0,20.0,30.0,30.5529389764864,40.0,50.0,60.0,70.0,80.0,90.0,100.0},{1.66645657605584,3.33291315211167,6.65565286088099,9.94158452195466,10.1157497198416,13.0913931860799,15.739253455712,17.9403970598358,19.6100098036494,20.9013003249712,22.1208435303064,23.2591790119337},{0.0,10.0,20.0,30.0,40.0,50.0,60.0,70.0,80.0,90.0,100.0},{0.0,3.183098861837907,6.366197723675814,9.5492965855137211,12.732395447351628,15.915494309189533,19.098593171027442,22.281692032865347,25.464790894703256,28.647889756541161,31.830988618379067}},{0.765,-0.765,-0.63,1.0},{11.111111111111111,10.0,0.2},{12000.0,20.0,50.0},{30.0},{4.0}}
+	 flags:   PARAM
+	}
+	p_1_rti1401_program_nova_real_T_1[0]
+	{
+	 type:    rti1401_program_nova_sensorBus_wheelspeed_4*
+	 alias:   "Throttle_limits"
+	 value:   [0.15, 0.9, 0.16, 0.92]
+	 flags:   PARAM
+	}
+
+endgroup
+
+-- ******** State Machine Data ************************************************
+
+group "State Machine Data"
+
+
+endgroup
+
+
+-- ******** Labels ************************************************************
+
+group "Labels"
+
+	p_0_rti1401_program_nova_int16_T_7[0]
+	{
+	 type:    int(16)*
+	 alias:   "AMK_ActualVelocity{Occurence1}"
+	 origin:  "rti1401_program_nova/Inputs/Drives/DMC1 Actual Values 1/AMK_ActualVelocity"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_int16_T_7[3]
+	{
+	 type:    int(16)*
+	 alias:   "AMK_ActualVelocity{Occurence2}"
+	 origin:  "rti1401_program_nova/Inputs/Drives/DMC2 Actual Values 1/AMK_ActualVelocity"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_int16_T_7[6]
+	{
+	 type:    int(16)*
+	 alias:   "AMK_ActualVelocity{Occurence3}"
+	 origin:  "rti1401_program_nova/Inputs/Drives/DMC3 Actual Values 1/AMK_ActualVelocity"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_int16_T_7[9]
+	{
+	 type:    int(16)*
+	 alias:   "AMK_ActualVelocity{Occurence4}"
+	 origin:  "rti1401_program_nova/Inputs/Drives/DMC4 Actual Values 3/AMK_ActualVelocity"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint16_T_8[21]
+	{
+	 type:    uint(16)*
+	 alias:   "AMK_ErrorInfo{Occurence1}"
+	 origin:  "rti1401_program_nova/Inputs/Drives/DMC1 Actual Values 2/AMK_ErrorInfo"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint16_T_8[22]
+	{
+	 type:    uint(16)*
+	 alias:   "AMK_ErrorInfo{Occurence2}"
+	 origin:  "rti1401_program_nova/Inputs/Drives/DMC2 Actual Values 2/AMK_ErrorInfo"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint16_T_8[23]
+	{
+	 type:    uint(16)*
+	 alias:   "AMK_ErrorInfo{Occurence3}"
+	 origin:  "rti1401_program_nova/Inputs/Drives/DMC3 Actual Values 4/AMK_ErrorInfo"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint16_T_8[24]
+	{
+	 type:    uint(16)*
+	 alias:   "AMK_ErrorInfo{Occurence4}"
+	 origin:  "rti1401_program_nova/Inputs/Drives/DMC4 Actual Values 4/AMK_ErrorInfo"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_int16_T_7[2]
+	{
+	 type:    int(16)*
+	 alias:   "AMK_MagnetizingCurrent{Occurence1}"
+	 origin:  "rti1401_program_nova/Inputs/Drives/DMC1 Actual Values 1/AMK_MagnetizingCurrent"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_int16_T_7[5]
+	{
+	 type:    int(16)*
+	 alias:   "AMK_MagnetizingCurrent{Occurence2}"
+	 origin:  "rti1401_program_nova/Inputs/Drives/DMC2 Actual Values 1/AMK_MagnetizingCurrent"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_int16_T_7[8]
+	{
+	 type:    int(16)*
+	 alias:   "AMK_MagnetizingCurrent{Occurence3}"
+	 origin:  "rti1401_program_nova/Inputs/Drives/DMC3 Actual Values 1/AMK_MagnetizingCurrent"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_int16_T_7[11]
+	{
+	 type:    int(16)*
+	 alias:   "AMK_MagnetizingCurrent{Occurence4}"
+	 origin:  "rti1401_program_nova/Inputs/Drives/DMC4 Actual Values 3/AMK_MagnetizingCurrent"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint16_T_8[0]
+	{
+	 type:    uint(16)*
+	 alias:   "AMK_Status{Occurence1}"
+	 origin:  "rti1401_program_nova/Inputs/Drives/DMC1 Actual Values 1/AMK_Status"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint16_T_8[1]
+	{
+	 type:    uint(16)*
+	 alias:   "AMK_Status{Occurence2}"
+	 origin:  "rti1401_program_nova/Inputs/Drives/DMC2 Actual Values 1/AMK_Status"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint16_T_8[15]
+	{
+	 type:    uint(16)*
+	 alias:   "AMK_Status{Occurence3}"
+	 origin:  "rti1401_program_nova/Inputs/Drives/DMC3 Actual Values 1/AMK_Status"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint16_T_8[16]
+	{
+	 type:    uint(16)*
+	 alias:   "AMK_Status{Occurence4}"
+	 origin:  "rti1401_program_nova/Inputs/Drives/DMC4 Actual Values 3/AMK_Status"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_int16_T_7[14]
+	{
+	 type:    int(16)*
+	 alias:   "AMK_TempIGBT{Occurence1}"
+	 origin:  "rti1401_program_nova/Inputs/Drives/DMC1 Actual Values 2/AMK_TempIGBT"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_int16_T_7[17]
+	{
+	 type:    int(16)*
+	 alias:   "AMK_TempIGBT{Occurence2}"
+	 origin:  "rti1401_program_nova/Inputs/Drives/DMC2 Actual Values 2/AMK_TempIGBT"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_int16_T_7[20]
+	{
+	 type:    int(16)*
+	 alias:   "AMK_TempIGBT{Occurence3}"
+	 origin:  "rti1401_program_nova/Inputs/Drives/DMC3 Actual Values 4/AMK_TempIGBT"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_int16_T_7[23]
+	{
+	 type:    int(16)*
+	 alias:   "AMK_TempIGBT{Occurence4}"
+	 origin:  "rti1401_program_nova/Inputs/Drives/DMC4 Actual Values 4/AMK_TempIGBT"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_int16_T_7[13]
+	{
+	 type:    int(16)*
+	 alias:   "AMK_TempInverter{Occurence1}"
+	 origin:  "rti1401_program_nova/Inputs/Drives/DMC1 Actual Values 2/AMK_TempInverter"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_int16_T_7[16]
+	{
+	 type:    int(16)*
+	 alias:   "AMK_TempInverter{Occurence2}"
+	 origin:  "rti1401_program_nova/Inputs/Drives/DMC2 Actual Values 2/AMK_TempInverter"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_int16_T_7[19]
+	{
+	 type:    int(16)*
+	 alias:   "AMK_TempInverter{Occurence3}"
+	 origin:  "rti1401_program_nova/Inputs/Drives/DMC3 Actual Values 4/AMK_TempInverter"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_int16_T_7[22]
+	{
+	 type:    int(16)*
+	 alias:   "AMK_TempInverter{Occurence4}"
+	 origin:  "rti1401_program_nova/Inputs/Drives/DMC4 Actual Values 4/AMK_TempInverter"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_int16_T_7[12]
+	{
+	 type:    int(16)*
+	 alias:   "AMK_TempMotor{Occurence1}"
+	 origin:  "rti1401_program_nova/Inputs/Drives/DMC1 Actual Values 2/AMK_TempMotor"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_int16_T_7[15]
+	{
+	 type:    int(16)*
+	 alias:   "AMK_TempMotor{Occurence2}"
+	 origin:  "rti1401_program_nova/Inputs/Drives/DMC2 Actual Values 2/AMK_TempMotor"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_int16_T_7[18]
+	{
+	 type:    int(16)*
+	 alias:   "AMK_TempMotor{Occurence3}"
+	 origin:  "rti1401_program_nova/Inputs/Drives/DMC3 Actual Values 4/AMK_TempMotor"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_int16_T_7[21]
+	{
+	 type:    int(16)*
+	 alias:   "AMK_TempMotor{Occurence4}"
+	 origin:  "rti1401_program_nova/Inputs/Drives/DMC4 Actual Values 4/AMK_TempMotor"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_int16_T_7[1]
+	{
+	 type:    int(16)*
+	 alias:   "AMK_TorqueCurrent{Occurence1}"
+	 origin:  "rti1401_program_nova/Inputs/Drives/DMC1 Actual Values 1/AMK_TorqueCurrent"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_int16_T_7[4]
+	{
+	 type:    int(16)*
+	 alias:   "AMK_TorqueCurrent{Occurence2}"
+	 origin:  "rti1401_program_nova/Inputs/Drives/DMC2 Actual Values 1/AMK_TorqueCurrent"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_int16_T_7[7]
+	{
+	 type:    int(16)*
+	 alias:   "AMK_TorqueCurrent{Occurence3}"
+	 origin:  "rti1401_program_nova/Inputs/Drives/DMC3 Actual Values 1/AMK_TorqueCurrent"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_int16_T_7[10]
+	{
+	 type:    int(16)*
+	 alias:   "AMK_TorqueCurrent{Occurence4}"
+	 origin:  "rti1401_program_nova/Inputs/Drives/DMC4 Actual Values 3/AMK_TorqueCurrent"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint32_T_6[0]
+	{
+	 type:    uint(32)*
+	 alias:   "Acc X-axis"
+	 origin:  "rti1401_program_nova/Inputs/Sensors/CAN_YRS2/Acc X-axis"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint16_T_8[6]
+	{
+	 type:    uint(16)*
+	 alias:   "Acc Y-axis"
+	 origin:  "rti1401_program_nova/Inputs/Sensors/CAN_YRS1/Acc Y-axis"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint16_T_8[7]
+	{
+	 type:    uint(16)*
+	 alias:   "Acc Z-axis"
+	 origin:  "rti1401_program_nova/Inputs/Sensors/CAN_YRS3/Acc Z-axis"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_aeroBus_4[0]
+	{
+	 type:    struct rti1401_program_nova_aeroBus*
+	 alias:   "Aero"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Aerodynamic forces/aero"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[39]
+	{
+	 type:    uint(8)*
+	 alias:   "As_Value_highest"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_result_AS/As_Value_highest"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_boolean_T_10[11]
+	{
+	 type:    uint(8)*
+	 alias:   "BMS_BOTS"
+	 bitmask: 0x01
+	 range:   < 0 ; 1 >
+	 origin:  "rti1401_program_nova/Inputs/Batpack/CAN_BMS_Values/BMS_BOTS"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_boolean_T_10[14]
+	{
+	 type:    uint(8)*
+	 alias:   "BMS_BSPD"
+	 bitmask: 0x01
+	 range:   < 0 ; 1 >
+	 origin:  "rti1401_program_nova/Inputs/Batpack/CAN_BMS_Values/BMS_BSPD"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_5[20336]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "BMS_Endurance"
+	 origin:  "rti1401_program_nova/Startup algorithm/Endurance/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_boolean_T_10[23]
+	{
+	 type:    uint(8)*
+	 alias:   "BMS_HV"
+	 bitmask: 0x01
+	 range:   < 0 ; 1 >
+	 origin:  "rti1401_program_nova/Inputs/Batpack/CAN_BMS_Values/BMS_HV"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_boolean_T_10[20]
+	{
+	 type:    uint(8)*
+	 alias:   "BMS_HVD"
+	 bitmask: 0x01
+	 range:   < 0 ; 1 >
+	 origin:  "rti1401_program_nova/Inputs/Batpack/CAN_BMS_Values/BMS_HVD"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_boolean_T_10[16]
+	{
+	 type:    uint(8)*
+	 alias:   "BMS_IMD"
+	 bitmask: 0x01
+	 range:   < 0 ; 1 >
+	 origin:  "rti1401_program_nova/Inputs/Batpack/CAN_BMS_Values/BMS_IMD"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_boolean_T_10[12]
+	{
+	 type:    uint(8)*
+	 alias:   "BMS_Inertia"
+	 bitmask: 0x01
+	 range:   < 0 ; 1 >
+	 origin:  "rti1401_program_nova/Inputs/Batpack/CAN_BMS_Values/BMS_Inertia"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_boolean_T_10[13]
+	{
+	 type:    uint(8)*
+	 alias:   "BMS_Interlock"
+	 bitmask: 0x01
+	 range:   < 0 ; 1 >
+	 origin:  "rti1401_program_nova/Inputs/Batpack/CAN_BMS_Values/BMS_Interlock"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_boolean_T_10[7]
+	{
+	 type:    uint(8)*
+	 alias:   "BMS_M1"
+	 bitmask: 0x01
+	 range:   < 0 ; 1 >
+	 origin:  "rti1401_program_nova/Inputs/Batpack/CAN_BMS_Values/BMS_M1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_boolean_T_10[8]
+	{
+	 type:    uint(8)*
+	 alias:   "BMS_M2"
+	 bitmask: 0x01
+	 range:   < 0 ; 1 >
+	 origin:  "rti1401_program_nova/Inputs/Batpack/CAN_BMS_Values/BMS_M2"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_boolean_T_10[9]
+	{
+	 type:    uint(8)*
+	 alias:   "BMS_M3"
+	 bitmask: 0x01
+	 range:   < 0 ; 1 >
+	 origin:  "rti1401_program_nova/Inputs/Batpack/CAN_BMS_Values/BMS_M3"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_boolean_T_10[10]
+	{
+	 type:    uint(8)*
+	 alias:   "BMS_M4"
+	 bitmask: 0x01
+	 range:   < 0 ; 1 >
+	 origin:  "rti1401_program_nova/Inputs/Batpack/CAN_BMS_Values/BMS_M4"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint16_T_8[3]
+	{
+	 type:    uint(16)*
+	 alias:   "BMS_SoC"
+	 origin:  "rti1401_program_nova/Inputs/Batpack/CAN_BMS_Values/BMS_SoC"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_boolean_T_10[17]
+	{
+	 type:    uint(8)*
+	 alias:   "BMS_Status"
+	 bitmask: 0x01
+	 range:   < 0 ; 1 >
+	 origin:  "rti1401_program_nova/Inputs/Batpack/CAN_BMS_Values/BMS_Status"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_boolean_T_10[15]
+	{
+	 type:    uint(8)*
+	 alias:   "BMS_TSMS"
+	 bitmask: 0x01
+	 range:   < 0 ; 1 >
+	 origin:  "rti1401_program_nova/Inputs/Batpack/CAN_BMS_Values/BMS_TSMS"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_boolean_T_10[19]
+	{
+	 type:    uint(8)*
+	 alias:   "BMS_Temp_Err"
+	 bitmask: 0x01
+	 range:   < 0 ; 1 >
+	 origin:  "rti1401_program_nova/Inputs/Batpack/CAN_BMS_Values/BMS_Temp_Err"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_boolean_T_10[21]
+	{
+	 type:    uint(8)*
+	 alias:   "BMS_Temp_Warn"
+	 bitmask: 0x01
+	 range:   < 0 ; 1 >
+	 origin:  "rti1401_program_nova/Inputs/Batpack/CAN_BMS_Values/BMS_Temp_Warn"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint16_T_8[2]
+	{
+	 type:    uint(16)*
+	 alias:   "BMS_Total_Voltage"
+	 origin:  "rti1401_program_nova/Inputs/Batpack/CAN_BMS_Values/BMS_Total_Voltage"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_boolean_T_10[18]
+	{
+	 type:    uint(8)*
+	 alias:   "BMS_Voltage_Err"
+	 bitmask: 0x01
+	 range:   < 0 ; 1 >
+	 origin:  "rti1401_program_nova/Inputs/Batpack/CAN_BMS_Values/BMS_Voltage_Err"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_boolean_T_10[22]
+	{
+	 type:    uint(8)*
+	 alias:   "BMS_Voltage_Warn"
+	 bitmask: 0x01
+	 range:   < 0 ; 1 >
+	 origin:  "rti1401_program_nova/Inputs/Batpack/CAN_BMS_Values/BMS_Voltage_Warn"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint16_T_92[0]
+	{
+	 type:    uint(16)*
+	 alias:   "Brake1%"
+	 origin:  "rti1401_program_nova/Inputs/Preprocessor/Brake 1 perc /y"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint16_T_91[0]
+	{
+	 type:    uint(16)*
+	 alias:   "Brake2%"
+	 origin:  "rti1401_program_nova/Inputs/Preprocessor/Brake 2 perc /y"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint16_T_8[13]
+	{
+	 type:    uint(16)*
+	 alias:   "Brake 1"
+	 origin:  "rti1401_program_nova/Inputs/Sensors/DB_Sensors2/Brake 1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint16_T_8[14]
+	{
+	 type:    uint(16)*
+	 alias:   "Brake 2"
+	 origin:  "rti1401_program_nova/Inputs/Sensors/DB_Sensors2/Brake 2"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_16[0]
+	{
+	 type:    uint(8)*
+	 alias:   "DMC1_DcOn"
+	 scale:   [2^0, 0.0]
+	 bitmask: 0:0
+	 desc:    "Uniform Fixed-Point"
+	 origin:  "rti1401_program_nova/Startup algorithm/DMC bit extraction/Bit Slice4/y"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_13[0]
+	{
+	 type:    uint(8)*
+	 alias:   "DMC1_Derating"
+	 scale:   [2^0, 0.0]
+	 bitmask: 0:0
+	 desc:    "Uniform Fixed-Point"
+	 origin:  "rti1401_program_nova/Startup algorithm/DMC bit extraction/Bit Slice7/y"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_41[0]
+	{
+	 type:    uint(8)*
+	 alias:   "DMC1_Error"
+	 scale:   [2^0, 0.0]
+	 bitmask: 0:0
+	 desc:    "Uniform Fixed-Point"
+	 origin:  "rti1401_program_nova/Startup algorithm/DMC bit extraction/Bit Slice1/y"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_14[0]
+	{
+	 type:    uint(8)*
+	 alias:   "DMC1_InverterOn"
+	 scale:   [2^0, 0.0]
+	 bitmask: 0:0
+	 desc:    "Uniform Fixed-Point"
+	 origin:  "rti1401_program_nova/Startup algorithm/DMC bit extraction/Bit Slice6/y"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_19[0]
+	{
+	 type:    uint(8)*
+	 alias:   "DMC1_QuitDcOn"
+	 scale:   [2^0, 0.0]
+	 bitmask: 0:0
+	 desc:    "Uniform Fixed-Point"
+	 origin:  "rti1401_program_nova/Startup algorithm/DMC bit extraction/Bit Slice3/y"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_15[0]
+	{
+	 type:    uint(8)*
+	 alias:   "DMC1_QuitInverterOn"
+	 scale:   [2^0, 0.0]
+	 bitmask: 0:0
+	 desc:    "Uniform Fixed-Point"
+	 origin:  "rti1401_program_nova/Startup algorithm/DMC bit extraction/Bit Slice5/y"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_42[0]
+	{
+	 type:    uint(8)*
+	 alias:   "DMC1_Ready"
+	 scale:   [2^0, 0.0]
+	 bitmask: 0:0
+	 desc:    "Uniform Fixed-Point"
+	 origin:  "rti1401_program_nova/Startup algorithm/DMC bit extraction/Bit Slice/y"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_30[0]
+	{
+	 type:    uint(8)*
+	 alias:   "DMC1_Warning"
+	 scale:   [2^0, 0.0]
+	 bitmask: 0:0
+	 desc:    "Uniform Fixed-Point"
+	 origin:  "rti1401_program_nova/Startup algorithm/DMC bit extraction/Bit Slice2/y"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_38[0]
+	{
+	 type:    uint(8)*
+	 alias:   "DMC2_DcOn"
+	 scale:   [2^0, 0.0]
+	 bitmask: 0:0
+	 desc:    "Uniform Fixed-Point"
+	 origin:  "rti1401_program_nova/Startup algorithm/DMC bit extraction/Bit Slice12/y"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_35[0]
+	{
+	 type:    uint(8)*
+	 alias:   "DMC2_Derating"
+	 scale:   [2^0, 0.0]
+	 bitmask: 0:0
+	 desc:    "Uniform Fixed-Point"
+	 origin:  "rti1401_program_nova/Startup algorithm/DMC bit extraction/Bit Slice15/y"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_11[0]
+	{
+	 type:    uint(8)*
+	 alias:   "DMC2_Error"
+	 scale:   [2^0, 0.0]
+	 bitmask: 0:0
+	 desc:    "Uniform Fixed-Point"
+	 origin:  "rti1401_program_nova/Startup algorithm/DMC bit extraction/Bit Slice9/y"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_36[0]
+	{
+	 type:    uint(8)*
+	 alias:   "DMC2_InverterOn"
+	 scale:   [2^0, 0.0]
+	 bitmask: 0:0
+	 desc:    "Uniform Fixed-Point"
+	 origin:  "rti1401_program_nova/Startup algorithm/DMC bit extraction/Bit Slice14/y"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_39[0]
+	{
+	 type:    uint(8)*
+	 alias:   "DMC2_QuitDcOn"
+	 scale:   [2^0, 0.0]
+	 bitmask: 0:0
+	 desc:    "Uniform Fixed-Point"
+	 origin:  "rti1401_program_nova/Startup algorithm/DMC bit extraction/Bit Slice11/y"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_37[0]
+	{
+	 type:    uint(8)*
+	 alias:   "DMC2_QuitInverterOn"
+	 scale:   [2^0, 0.0]
+	 bitmask: 0:0
+	 desc:    "Uniform Fixed-Point"
+	 origin:  "rti1401_program_nova/Startup algorithm/DMC bit extraction/Bit Slice13/y"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_12[0]
+	{
+	 type:    uint(8)*
+	 alias:   "DMC2_Ready"
+	 scale:   [2^0, 0.0]
+	 bitmask: 0:0
+	 desc:    "Uniform Fixed-Point"
+	 origin:  "rti1401_program_nova/Startup algorithm/DMC bit extraction/Bit Slice8/y"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_40[0]
+	{
+	 type:    uint(8)*
+	 alias:   "DMC2_Warning"
+	 scale:   [2^0, 0.0]
+	 bitmask: 0:0
+	 desc:    "Uniform Fixed-Point"
+	 origin:  "rti1401_program_nova/Startup algorithm/DMC bit extraction/Bit Slice10/y"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_29[0]
+	{
+	 type:    uint(8)*
+	 alias:   "DMC3_DcOn"
+	 scale:   [2^0, 0.0]
+	 bitmask: 0:0
+	 desc:    "Uniform Fixed-Point"
+	 origin:  "rti1401_program_nova/Startup algorithm/DMC bit extraction/Bit Slice20/y"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_26[0]
+	{
+	 type:    uint(8)*
+	 alias:   "DMC3_Derating"
+	 scale:   [2^0, 0.0]
+	 bitmask: 0:0
+	 desc:    "Uniform Fixed-Point"
+	 origin:  "rti1401_program_nova/Startup algorithm/DMC bit extraction/Bit Slice23/y"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_33[0]
+	{
+	 type:    uint(8)*
+	 alias:   "DMC3_Error"
+	 scale:   [2^0, 0.0]
+	 bitmask: 0:0
+	 desc:    "Uniform Fixed-Point"
+	 origin:  "rti1401_program_nova/Startup algorithm/DMC bit extraction/Bit Slice17/y"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_27[0]
+	{
+	 type:    uint(8)*
+	 alias:   "DMC3_InverterOn"
+	 scale:   [2^0, 0.0]
+	 bitmask: 0:0
+	 desc:    "Uniform Fixed-Point"
+	 origin:  "rti1401_program_nova/Startup algorithm/DMC bit extraction/Bit Slice22/y"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_31[0]
+	{
+	 type:    uint(8)*
+	 alias:   "DMC3_QuitDcOn"
+	 scale:   [2^0, 0.0]
+	 bitmask: 0:0
+	 desc:    "Uniform Fixed-Point"
+	 origin:  "rti1401_program_nova/Startup algorithm/DMC bit extraction/Bit Slice19/y"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_28[0]
+	{
+	 type:    uint(8)*
+	 alias:   "DMC3_QuitInverterOn"
+	 scale:   [2^0, 0.0]
+	 bitmask: 0:0
+	 desc:    "Uniform Fixed-Point"
+	 origin:  "rti1401_program_nova/Startup algorithm/DMC bit extraction/Bit Slice21/y"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_34[0]
+	{
+	 type:    uint(8)*
+	 alias:   "DMC3_Ready"
+	 scale:   [2^0, 0.0]
+	 bitmask: 0:0
+	 desc:    "Uniform Fixed-Point"
+	 origin:  "rti1401_program_nova/Startup algorithm/DMC bit extraction/Bit Slice16/y"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_32[0]
+	{
+	 type:    uint(8)*
+	 alias:   "DMC3_Warning"
+	 scale:   [2^0, 0.0]
+	 bitmask: 0:0
+	 desc:    "Uniform Fixed-Point"
+	 origin:  "rti1401_program_nova/Startup algorithm/DMC bit extraction/Bit Slice18/y"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_21[0]
+	{
+	 type:    uint(8)*
+	 alias:   "DMC4_DcOn"
+	 scale:   [2^0, 0.0]
+	 bitmask: 0:0
+	 desc:    "Uniform Fixed-Point"
+	 origin:  "rti1401_program_nova/Startup algorithm/DMC bit extraction/Bit Slice28/y"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_17[0]
+	{
+	 type:    uint(8)*
+	 alias:   "DMC4_Derating"
+	 scale:   [2^0, 0.0]
+	 bitmask: 0:0
+	 desc:    "Uniform Fixed-Point"
+	 origin:  "rti1401_program_nova/Startup algorithm/DMC bit extraction/Bit Slice31/y"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_24[0]
+	{
+	 type:    uint(8)*
+	 alias:   "DMC4_Error"
+	 scale:   [2^0, 0.0]
+	 bitmask: 0:0
+	 desc:    "Uniform Fixed-Point"
+	 origin:  "rti1401_program_nova/Startup algorithm/DMC bit extraction/Bit Slice25/y"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_18[0]
+	{
+	 type:    uint(8)*
+	 alias:   "DMC4_InverterOn"
+	 scale:   [2^0, 0.0]
+	 bitmask: 0:0
+	 desc:    "Uniform Fixed-Point"
+	 origin:  "rti1401_program_nova/Startup algorithm/DMC bit extraction/Bit Slice30/y"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_22[0]
+	{
+	 type:    uint(8)*
+	 alias:   "DMC4_QuitDcOn"
+	 scale:   [2^0, 0.0]
+	 bitmask: 0:0
+	 desc:    "Uniform Fixed-Point"
+	 origin:  "rti1401_program_nova/Startup algorithm/DMC bit extraction/Bit Slice27/y"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_20[0]
+	{
+	 type:    uint(8)*
+	 alias:   "DMC4_QuitInverterOn"
+	 scale:   [2^0, 0.0]
+	 bitmask: 0:0
+	 desc:    "Uniform Fixed-Point"
+	 origin:  "rti1401_program_nova/Startup algorithm/DMC bit extraction/Bit Slice29/y"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_25[0]
+	{
+	 type:    uint(8)*
+	 alias:   "DMC4_Ready"
+	 scale:   [2^0, 0.0]
+	 bitmask: 0:0
+	 desc:    "Uniform Fixed-Point"
+	 origin:  "rti1401_program_nova/Startup algorithm/DMC bit extraction/Bit Slice24/y"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_23[0]
+	{
+	 type:    uint(8)*
+	 alias:   "DMC4_Warning"
+	 scale:   [2^0, 0.0]
+	 bitmask: 0:0
+	 desc:    "Uniform Fixed-Point"
+	 origin:  "rti1401_program_nova/Startup algorithm/DMC bit extraction/Bit Slice26/y"
+	 flags:   READONLY
+	}
+	-- Skipping label "ErrorReset"
+
+	p_0_rti1401_program_nova_uint8_T_9[26]
+	{
+	 type:    uint(8)*
+	 alias:   "Flow1"
+	 origin:  "rti1401_program_nova/Inputs/Sensors/RN_Sensors2/Flow1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[27]
+	{
+	 type:    uint(8)*
+	 alias:   "Flow 2"
+	 origin:  "rti1401_program_nova/Inputs/Sensors/RN_Sensors2/Flow 2"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_boolean_T_10[29]
+	{
+	 type:    uint(8)*
+	 alias:   "FxInf"
+	 bitmask: 0x01
+	 range:   < 0 ; 1 >
+	 origin:  "rti1401_program_nova/Inputs/Commands/CAN_TYPE1_RX_M1_C1/FxInf"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_5[20883]
+	{
+	 type:    rti1401_program_nova_sensorBus_wheelspeed_4*
+	 alias:   "Fxi"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Fx Estimator /Fxi"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_5[20879]
+	{
+	 type:    rti1401_program_nova_sensorBus_wheelspeed_4*
+	 alias:   "Fyi"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Fy Estimator /Fyi"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_5[20875]
+	{
+	 type:    rti1401_program_nova_sensorBus_wheelspeed_4*
+	 alias:   "Fzi"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Fz Estimator /Fzi"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[46]
+	{
+	 type:    uint(8)*
+	 alias:   "Highest"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_result_I/Highest"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[49]
+	{
+	 type:    uint(8)*
+	 alias:   "Low"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_result_I/Low"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[42]
+	{
+	 type:    uint(8)*
+	 alias:   "Lowest{Occurence1}"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_result_AS/Lowest"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[12]
+	{
+	 type:    uint(8)*
+	 alias:   "Lowest{Occurence2}"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_result_W/Lowest"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[56]
+	{
+	 type:    uint(8)*
+	 alias:   "Lowest{Occurence3}"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_result_Wh/Lowest"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[63]
+	{
+	 type:    uint(8)*
+	 alias:   "Lowest{Occurence4}"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_result_t1/Lowest"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[70]
+	{
+	 type:    uint(8)*
+	 alias:   "Lowest{Occurence5}"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_result_u1/Lowest"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[77]
+	{
+	 type:    uint(8)*
+	 alias:   "Lowest{Occurence6}"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_result_u2/Lowest"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[84]
+	{
+	 type:    uint(8)*
+	 alias:   "Lowest{Occurence7}"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_result_u3/Lowest"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[38]
+	{
+	 type:    uint(8)*
+	 alias:   "Message_nr{Occurence1}"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_result_AS/Message_nr"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[45]
+	{
+	 type:    uint(8)*
+	 alias:   "Message_nr{Occurence2}"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_result_I/Message_nr"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[8]
+	{
+	 type:    uint(8)*
+	 alias:   "Message_nr{Occurence3}"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_result_W/Message_nr"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[52]
+	{
+	 type:    uint(8)*
+	 alias:   "Message_nr{Occurence4}"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_result_Wh/Message_nr"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[59]
+	{
+	 type:    uint(8)*
+	 alias:   "Message_nr{Occurence5}"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_result_t1/Message_nr"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[66]
+	{
+	 type:    uint(8)*
+	 alias:   "Message_nr{Occurence6}"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_result_u1/Message_nr"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[73]
+	{
+	 type:    uint(8)*
+	 alias:   "Message_nr{Occurence7}"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_result_u2/Message_nr"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[80]
+	{
+	 type:    uint(8)*
+	 alias:   "Message_nr{Occurence8}"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_result_u3/Message_nr"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[40]
+	{
+	 type:    uint(8)*
+	 alias:   "MidHigh{Occurence1}"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_result_AS/MidHigh"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[47]
+	{
+	 type:    uint(8)*
+	 alias:   "MidHigh{Occurence2}"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_result_I/MidHigh"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[10]
+	{
+	 type:    uint(8)*
+	 alias:   "MidHigh{Occurence3}"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_result_W/MidHigh"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[54]
+	{
+	 type:    uint(8)*
+	 alias:   "MidHigh{Occurence4}"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_result_Wh/MidHigh"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[61]
+	{
+	 type:    uint(8)*
+	 alias:   "MidHigh{Occurence5}"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_result_t1/MidHigh"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[68]
+	{
+	 type:    uint(8)*
+	 alias:   "MidHigh{Occurence6}"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_result_u1/MidHigh"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[75]
+	{
+	 type:    uint(8)*
+	 alias:   "MidHigh{Occurence7}"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_result_u2/MidHigh"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[82]
+	{
+	 type:    uint(8)*
+	 alias:   "MidHigh{Occurence8}"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_result_u3/MidHigh"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[41]
+	{
+	 type:    uint(8)*
+	 alias:   "MidLow{Occurence1}"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_result_AS/MidLow"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[48]
+	{
+	 type:    uint(8)*
+	 alias:   "MidLow{Occurence2}"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_result_I/MidLow"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[11]
+	{
+	 type:    uint(8)*
+	 alias:   "MidLow{Occurence3}"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_result_W/MidLow"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[55]
+	{
+	 type:    uint(8)*
+	 alias:   "MidLow{Occurence4}"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_result_Wh/MidLow"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[62]
+	{
+	 type:    uint(8)*
+	 alias:   "MidLow{Occurence5}"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_result_t1/MidLow"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[69]
+	{
+	 type:    uint(8)*
+	 alias:   "MidLow{Occurence6}"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_result_u1/MidLow"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[76]
+	{
+	 type:    uint(8)*
+	 alias:   "MidLow{Occurence7}"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_result_u2/MidLow"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[83]
+	{
+	 type:    uint(8)*
+	 alias:   "MidLow{Occurence8}"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_result_u3/MidLow"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[36]
+	{
+	 type:    uint(8)*
+	 alias:   "Mux{Occurence1}"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_result_AS/Mux"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[43]
+	{
+	 type:    uint(8)*
+	 alias:   "Mux{Occurence2}"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_result_I/Mux"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[6]
+	{
+	 type:    uint(8)*
+	 alias:   "Mux{Occurence3}"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_result_W/Mux"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[50]
+	{
+	 type:    uint(8)*
+	 alias:   "Mux{Occurence4}"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_result_Wh/Mux"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[57]
+	{
+	 type:    uint(8)*
+	 alias:   "Mux{Occurence5}"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_result_t1/Mux"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[64]
+	{
+	 type:    uint(8)*
+	 alias:   "Mux{Occurence6}"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_result_u1/Mux"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[71]
+	{
+	 type:    uint(8)*
+	 alias:   "Mux{Occurence7}"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_result_u2/Mux"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[78]
+	{
+	 type:    uint(8)*
+	 alias:   "Mux{Occurence8}"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_result_u3/Mux"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[4]
+	{
+	 type:    uint(8)*
+	 alias:   "MxFz"
+	 origin:  "rti1401_program_nova/Inputs/Commands/CAN_TYPE1_RX_M1_C1/MxFz"
+	 flags:   READONLY
+	}
+	-- Skipping label "Power{Occurence1}"
+
+	p_0_rti1401_program_nova_uint8_T_9[3]
+	{
+	 type:    uint(8)*
+	 alias:   "Power{Occurence2}"
+	 origin:  "rti1401_program_nova/Inputs/Commands/CAN_TYPE1_RX_M1_C1/Power"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[5]
+	{
+	 type:    uint(8)*
+	 alias:   "Regen"
+	 origin:  "rti1401_program_nova/Inputs/Commands/CAN_TYPE1_RX_M1_C1/Regen"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint16_T_8[4]
+	{
+	 type:    uint(16)*
+	 alias:   "Roll rate"
+	 origin:  "rti1401_program_nova/Inputs/Sensors/CAN_YRS2/Roll rate"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_sensorBus_1[5]
+	{
+	 type:    struct rti1401_program_nova_sensorBus*
+	 alias:   "Sensor Bus"
+	 origin:  "rti1401_program_nova/Processor/Sensors/sensors"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_boolean_T_10[26]
+	{
+	 type:    uint(8)*
+	 alias:   "Start"
+	 bitmask: 0x01
+	 range:   < 0 ; 1 >
+	 origin:  "rti1401_program_nova/Inputs/Commands/CAN_TYPE1_RX_M1_C1/Start"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint16_T_8[10]
+	{
+	 type:    uint(16)*
+	 alias:   "Steer"
+	 origin:  "rti1401_program_nova/Inputs/Sensors/DB_Sensors1/Steer"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_boolean_T_10[27]
+	{
+	 type:    uint(8)*
+	 alias:   "Stop"
+	 bitmask: 0x01
+	 range:   < 0 ; 1 >
+	 origin:  "rti1401_program_nova/Inputs/Commands/CAN_TYPE1_RX_M1_C1/Stop"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint16_T_8[8]
+	{
+	 type:    uint(16)*
+	 alias:   "Susp_L{Occurence1}"
+	 origin:  "rti1401_program_nova/Inputs/Sensors/DB_Sensors1/Susp_L"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint16_T_8[17]
+	{
+	 type:    uint(16)*
+	 alias:   "Susp_L{Occurence2}"
+	 origin:  "rti1401_program_nova/Inputs/Sensors/RN_Sensors1/Susp_L"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint16_T_8[9]
+	{
+	 type:    uint(16)*
+	 alias:   "Susp_R{Occurence1}"
+	 origin:  "rti1401_program_nova/Inputs/Sensors/DB_Sensors1/Susp_R"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint16_T_8[18]
+	{
+	 type:    uint(16)*
+	 alias:   "Susp_R{Occurence2}"
+	 origin:  "rti1401_program_nova/Inputs/Sensors/RN_Sensors1/Susp_R"
+	 flags:   READONLY
+	}
+	-- Skipping label "TC"
+
+	-- Skipping label "TV{Occurence1}"
+
+	p_0_rti1401_program_nova_uint8_T_9[2]
+	{
+	 type:    uint(8)*
+	 alias:   "TV{Occurence2}"
+	 origin:  "rti1401_program_nova/Inputs/Commands/CAN_TYPE1_RX_M1_C1/TV"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[19]
+	{
+	 type:    uint(8)*
+	 alias:   "Temp1"
+	 origin:  "rti1401_program_nova/Inputs/Sensors/DB_Sensors3/Temp1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[20]
+	{
+	 type:    uint(8)*
+	 alias:   "Temp2"
+	 origin:  "rti1401_program_nova/Inputs/Sensors/DB_Sensors3/Temp2"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint16_T_8[20]
+	{
+	 type:    uint(16)*
+	 alias:   "Throttle 1{Occurence1}"
+	 origin:  "rti1401_program_nova/Inputs/Sensors/Throttle1/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint16_T_8[11]
+	{
+	 type:    uint(16)*
+	 alias:   "Throttle 1{Occurence2}"
+	 origin:  "rti1401_program_nova/Inputs/Sensors/DB_Sensors1/Throttle 1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint16_T_8[19]
+	{
+	 type:    uint(16)*
+	 alias:   "Throttle 2{Occurence1}"
+	 origin:  "rti1401_program_nova/Inputs/Sensors/Throttle2/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint16_T_8[12]
+	{
+	 type:    uint(16)*
+	 alias:   "Throttle 2{Occurence2}"
+	 origin:  "rti1401_program_nova/Inputs/Sensors/DB_Sensors2/Throttle 2"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_boolean_T_10[28]
+	{
+	 type:    uint(8)*
+	 alias:   "Traction"
+	 bitmask: 0x01
+	 range:   < 0 ; 1 >
+	 origin:  "rti1401_program_nova/Inputs/Commands/CAN_TYPE1_RX_M1_C1/Traction"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[67]
+	{
+	 type:    uint(8)*
+	 alias:   "V1_Value_highest"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_result_u1/V1_Value_highest"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[74]
+	{
+	 type:    uint(8)*
+	 alias:   "V2_Value_highest"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_result_u2/V2_Value_highest"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[81]
+	{
+	 type:    uint(8)*
+	 alias:   "V3_Value_high"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_result_u3/V3_Value_high"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[9]
+	{
+	 type:    uint(8)*
+	 alias:   "W_Value_highest"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_result_W/W_Value_highest"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[53]
+	{
+	 type:    uint(8)*
+	 alias:   "Wh_Value_highest"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_result_Wh/Wh_Value_highest"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_5[20333]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "Xaxis"
+	 desc:    "No data (unused channel) "
+	 origin:  "rti1401_program_nova/Inputs/Sensors/DS1401_ACCEL_READ_BL1/X"
+	 flags:   READONLY
+	}
+	-- Skipping label "YRC{Occurence1}"
+
+	p_0_rti1401_program_nova_boolean_T_10[30]
+	{
+	 type:    uint(8)*
+	 alias:   "YRC{Occurence2}"
+	 bitmask: 0x01
+	 range:   < 0 ; 1 >
+	 origin:  "rti1401_program_nova/Inputs/Commands/CAN_TYPE1_RX_M1_C1/YRC"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint16_T_8[5]
+	{
+	 type:    uint(16)*
+	 alias:   "Yaw Rate"
+	 origin:  "rti1401_program_nova/Inputs/Sensors/CAN_YRS1/Yaw Rate"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_5[20334]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "Yaxis"
+	 desc:    "No data (unused channel) "
+	 origin:  "rti1401_program_nova/Inputs/Sensors/DS1401_ACCEL_READ_BL1/Y"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_5[20335]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "Zaxis"
+	 desc:    "No data (unused channel) "
+	 origin:  "rti1401_program_nova/Inputs/Sensors/DS1401_ACCEL_READ_BL1/Z"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_5[20902]
+	{
+	 type:    rti1401_program_nova_ArrayDT0_5*
+	 alias:   "actions"
+	 origin:  "rti1401_program_nova/Processor/Control Systems/Yaw Rate Control/actions"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_5[1024]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "(d-x)/(d-c){Occurence1}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFL/in1mf1/If Action\nSubsystem3/Product cd\n(trimf)/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_5[513]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "(d-x)/(d-c){Occurence2}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFL/in1mf2/If Action\nSubsystem3/Product cd\n(trimf)/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_5[4]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "(d-x)/(d-c){Occurence3}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFL/in1mf3/If Action\nSubsystem3/Product cd\n(trimf)/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_5[1532]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "(d-x)/(d-c){Occurence4}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFL/in1mf4/If Action\nSubsystem3/Product cd\n(trimf)/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_5[516]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "(d-x)/(d-c){Occurence5}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFL/in1mf5/If Action\nSubsystem3/Product cd\n(trimf)/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_5[6101]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "(d-x)/(d-c){Occurence6}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFR/in2mf1/If Action\nSubsystem3/Product cd\n(trimf)/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_5[5593]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "(d-x)/(d-c){Occurence7}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFR/in2mf2/If Action\nSubsystem3/Product cd\n(trimf)/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_5[4577]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "(d-x)/(d-c){Occurence8}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFR/in2mf3/If Action\nSubsystem3/Product cd\n(trimf)/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_5[5085]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "(d-x)/(d-c){Occurence9}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFR/in2mf4/If Action\nSubsystem3/Product cd\n(trimf)/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_5[6609]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "(d-x)/(d-c){Occurence10}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFR/in2mf5/If Action\nSubsystem3/Product cd\n(trimf)/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_5[11177]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "(d-x)/(d-c){Occurence11}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRL/in3mf1/If Action\nSubsystem3/Product cd\n(trimf)/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_5[10161]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "(d-x)/(d-c){Occurence12}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRL/in3mf2/If Action\nSubsystem3/Product cd\n(trimf)/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_5[9653]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "(d-x)/(d-c){Occurence13}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRL/in3mf3/If Action\nSubsystem3/Product cd\n(trimf)/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_5[10669]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "(d-x)/(d-c){Occurence14}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRL/in3mf4/If Action\nSubsystem3/Product cd\n(trimf)/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_5[11685]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "(d-x)/(d-c){Occurence15}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRL/in3mf5/If Action\nSubsystem3/Product cd\n(trimf)/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_5[16253]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "(d-x)/(d-c){Occurence16}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRR/in4mf1/If Action\nSubsystem3/Product cd\n(trimf)/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_5[15237]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "(d-x)/(d-c){Occurence17}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRR/in4mf2/If Action\nSubsystem3/Product cd\n(trimf)/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_5[14729]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "(d-x)/(d-c){Occurence18}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRR/in4mf3/If Action\nSubsystem3/Product cd\n(trimf)/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_5[15745]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "(d-x)/(d-c){Occurence19}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRR/in4mf4/If Action\nSubsystem3/Product cd\n(trimf)/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_5[16761]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "(d-x)/(d-c){Occurence20}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRR/in4mf5/If Action\nSubsystem3/Product cd\n(trimf)/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_5[2040]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "(d-x)/(d-c){Occurence21}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/maxDeltaV/big/If Action\nSubsystem3/Product cd\n(trimf)/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_5[5]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "(d-x)/(d-c){Occurence22}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/maxDeltaV/small/If Action\nSubsystem3/Product cd\n(trimf)/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_5[1024]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "(x-a)/(b-a){Occurence1}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFL/in1mf1/If Action\nSubsystem1/Product ab\n(trimf)/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_5[513]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "(x-a)/(b-a){Occurence2}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFL/in1mf2/If Action\nSubsystem1/Product ab\n(trimf)/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_5[4]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "(x-a)/(b-a){Occurence3}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFL/in1mf3/If Action\nSubsystem1/Product ab\n(trimf)/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_5[1532]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "(x-a)/(b-a){Occurence4}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFL/in1mf4/If Action\nSubsystem1/Product ab\n(trimf)/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_5[516]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "(x-a)/(b-a){Occurence5}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFL/in1mf5/If Action\nSubsystem1/Product ab\n(trimf)/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_5[6101]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "(x-a)/(b-a){Occurence6}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFR/in2mf1/If Action\nSubsystem1/Product ab\n(trimf)/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_5[5593]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "(x-a)/(b-a){Occurence7}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFR/in2mf2/If Action\nSubsystem1/Product ab\n(trimf)/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_5[4577]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "(x-a)/(b-a){Occurence8}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFR/in2mf3/If Action\nSubsystem1/Product ab\n(trimf)/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_5[5085]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "(x-a)/(b-a){Occurence9}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFR/in2mf4/If Action\nSubsystem1/Product ab\n(trimf)/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_5[6609]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "(x-a)/(b-a){Occurence10}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFR/in2mf5/If Action\nSubsystem1/Product ab\n(trimf)/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_5[11177]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "(x-a)/(b-a){Occurence11}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRL/in3mf1/If Action\nSubsystem1/Product ab\n(trimf)/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_5[10161]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "(x-a)/(b-a){Occurence12}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRL/in3mf2/If Action\nSubsystem1/Product ab\n(trimf)/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_5[9653]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "(x-a)/(b-a){Occurence13}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRL/in3mf3/If Action\nSubsystem1/Product ab\n(trimf)/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_5[10669]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "(x-a)/(b-a){Occurence14}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRL/in3mf4/If Action\nSubsystem1/Product ab\n(trimf)/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_5[11685]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "(x-a)/(b-a){Occurence15}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRL/in3mf5/If Action\nSubsystem1/Product ab\n(trimf)/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_5[16253]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "(x-a)/(b-a){Occurence16}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRR/in4mf1/If Action\nSubsystem1/Product ab\n(trimf)/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_5[15237]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "(x-a)/(b-a){Occurence17}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRR/in4mf2/If Action\nSubsystem1/Product ab\n(trimf)/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_5[14729]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "(x-a)/(b-a){Occurence18}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRR/in4mf3/If Action\nSubsystem1/Product ab\n(trimf)/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_5[15745]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "(x-a)/(b-a){Occurence19}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRR/in4mf4/If Action\nSubsystem1/Product ab\n(trimf)/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_5[16761]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "(x-a)/(b-a){Occurence20}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRR/in4mf5/If Action\nSubsystem1/Product ab\n(trimf)/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_5[2040]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "(x-a)/(b-a){Occurence21}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/maxDeltaV/big/If Action\nSubsystem1/Product ab\n(trimf)/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_5[5]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "(x-a)/(b-a){Occurence22}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/maxDeltaV/small/If Action\nSubsystem1/Product ab\n(trimf)/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_86[1]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "b-a{Occurence1}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFL/in1mf1/If Action\nSubsystem1/Sum1/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_84[1]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "b-a{Occurence2}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFL/in1mf2/If Action\nSubsystem1/Sum1/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_82[1]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "b-a{Occurence3}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFL/in1mf3/If Action\nSubsystem1/Sum1/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_80[1]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "b-a{Occurence4}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFL/in1mf4/If Action\nSubsystem1/Sum1/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_78[1]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "b-a{Occurence5}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFL/in1mf5/If Action\nSubsystem1/Sum1/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_76[1]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "b-a{Occurence6}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFR/in2mf1/If Action\nSubsystem1/Sum1/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_74[1]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "b-a{Occurence7}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFR/in2mf2/If Action\nSubsystem1/Sum1/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_72[1]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "b-a{Occurence8}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFR/in2mf3/If Action\nSubsystem1/Sum1/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_70[1]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "b-a{Occurence9}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFR/in2mf4/If Action\nSubsystem1/Sum1/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_68[1]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "b-a{Occurence10}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFR/in2mf5/If Action\nSubsystem1/Sum1/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_66[1]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "b-a{Occurence11}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRL/in3mf1/If Action\nSubsystem1/Sum1/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_64[1]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "b-a{Occurence12}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRL/in3mf2/If Action\nSubsystem1/Sum1/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_62[1]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "b-a{Occurence13}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRL/in3mf3/If Action\nSubsystem1/Sum1/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_60[1]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "b-a{Occurence14}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRL/in3mf4/If Action\nSubsystem1/Sum1/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_58[1]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "b-a{Occurence15}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRL/in3mf5/If Action\nSubsystem1/Sum1/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_56[1]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "b-a{Occurence16}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRR/in4mf1/If Action\nSubsystem1/Sum1/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_54[1]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "b-a{Occurence17}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRR/in4mf2/If Action\nSubsystem1/Sum1/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_52[1]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "b-a{Occurence18}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRR/in4mf3/If Action\nSubsystem1/Sum1/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_50[1]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "b-a{Occurence19}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRR/in4mf4/If Action\nSubsystem1/Sum1/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_48[1]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "b-a{Occurence20}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRR/in4mf5/If Action\nSubsystem1/Sum1/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_46[1]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "b-a{Occurence21}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/maxDeltaV/big/If Action\nSubsystem1/Sum1/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_44[1]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "b-a{Occurence22}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/maxDeltaV/small/If Action\nSubsystem1/Sum1/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_85[0]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "d-c{Occurence1}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFL/in1mf1/If Action\nSubsystem3/Sum2/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_83[0]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "d-c{Occurence2}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFL/in1mf2/If Action\nSubsystem3/Sum2/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_81[0]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "d-c{Occurence3}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFL/in1mf3/If Action\nSubsystem3/Sum2/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_79[0]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "d-c{Occurence4}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFL/in1mf4/If Action\nSubsystem3/Sum2/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_77[0]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "d-c{Occurence5}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFL/in1mf5/If Action\nSubsystem3/Sum2/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_75[0]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "d-c{Occurence6}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFR/in2mf1/If Action\nSubsystem3/Sum2/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_73[0]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "d-c{Occurence7}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFR/in2mf2/If Action\nSubsystem3/Sum2/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_71[0]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "d-c{Occurence8}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFR/in2mf3/If Action\nSubsystem3/Sum2/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_69[0]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "d-c{Occurence9}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFR/in2mf4/If Action\nSubsystem3/Sum2/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_67[0]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "d-c{Occurence10}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFR/in2mf5/If Action\nSubsystem3/Sum2/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_65[0]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "d-c{Occurence11}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRL/in3mf1/If Action\nSubsystem3/Sum2/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_63[0]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "d-c{Occurence12}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRL/in3mf2/If Action\nSubsystem3/Sum2/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_61[0]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "d-c{Occurence13}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRL/in3mf3/If Action\nSubsystem3/Sum2/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_59[0]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "d-c{Occurence14}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRL/in3mf4/If Action\nSubsystem3/Sum2/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_57[0]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "d-c{Occurence15}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRL/in3mf5/If Action\nSubsystem3/Sum2/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_55[0]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "d-c{Occurence16}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRR/in4mf1/If Action\nSubsystem3/Sum2/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_53[0]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "d-c{Occurence17}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRR/in4mf2/If Action\nSubsystem3/Sum2/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_51[0]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "d-c{Occurence18}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRR/in4mf3/If Action\nSubsystem3/Sum2/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_49[0]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "d-c{Occurence19}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRR/in4mf4/If Action\nSubsystem3/Sum2/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_47[0]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "d-c{Occurence20}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRR/in4mf5/If Action\nSubsystem3/Sum2/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_45[0]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "d-c{Occurence21}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/maxDeltaV/big/If Action\nSubsystem3/Sum2/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_43[0]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "d-c{Occurence22}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/maxDeltaV/small/If Action\nSubsystem3/Sum2/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_85[1]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "d-x{Occurence1}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFL/in1mf1/If Action\nSubsystem3/Sum3/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_83[1]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "d-x{Occurence2}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFL/in1mf2/If Action\nSubsystem3/Sum3/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_81[1]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "d-x{Occurence3}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFL/in1mf3/If Action\nSubsystem3/Sum3/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_79[1]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "d-x{Occurence4}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFL/in1mf4/If Action\nSubsystem3/Sum3/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_77[1]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "d-x{Occurence5}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFL/in1mf5/If Action\nSubsystem3/Sum3/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_75[1]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "d-x{Occurence6}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFR/in2mf1/If Action\nSubsystem3/Sum3/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_73[1]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "d-x{Occurence7}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFR/in2mf2/If Action\nSubsystem3/Sum3/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_71[1]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "d-x{Occurence8}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFR/in2mf3/If Action\nSubsystem3/Sum3/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_69[1]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "d-x{Occurence9}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFR/in2mf4/If Action\nSubsystem3/Sum3/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_67[1]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "d-x{Occurence10}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFR/in2mf5/If Action\nSubsystem3/Sum3/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_65[1]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "d-x{Occurence11}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRL/in3mf1/If Action\nSubsystem3/Sum3/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_63[1]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "d-x{Occurence12}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRL/in3mf2/If Action\nSubsystem3/Sum3/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_61[1]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "d-x{Occurence13}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRL/in3mf3/If Action\nSubsystem3/Sum3/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_59[1]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "d-x{Occurence14}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRL/in3mf4/If Action\nSubsystem3/Sum3/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_57[1]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "d-x{Occurence15}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRL/in3mf5/If Action\nSubsystem3/Sum3/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_55[1]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "d-x{Occurence16}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRR/in4mf1/If Action\nSubsystem3/Sum3/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_53[1]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "d-x{Occurence17}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRR/in4mf2/If Action\nSubsystem3/Sum3/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_51[1]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "d-x{Occurence18}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRR/in4mf3/If Action\nSubsystem3/Sum3/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_49[1]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "d-x{Occurence19}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRR/in4mf4/If Action\nSubsystem3/Sum3/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_47[1]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "d-x{Occurence20}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRR/in4mf5/If Action\nSubsystem3/Sum3/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_45[1]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "d-x{Occurence21}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/maxDeltaV/big/If Action\nSubsystem3/Sum3/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_43[1]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "d-x{Occurence22}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/maxDeltaV/small/If Action\nSubsystem3/Sum3/Out1"
+	 flags:   READONLY
+	}
+	-- Skipping label "effEstimation"
+
+	p_0_rti1401_program_nova_real_T_5[20901]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "error"
+	 origin:  "rti1401_program_nova/Processor/Control Systems/Yaw Rate Control/error"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_estimParBus_2[5]
+	{
+	 type:    struct rti1401_program_nova_estimParBus*
+	 alias:   "estimParBus"
+	 origin:  "rti1401_program_nova/Processor/Control Systems/estimParBus/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[29]
+	{
+	 type:    uint(8)*
+	 alias:   "msg_response_data_0"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_response/msg_response_data_0"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[30]
+	{
+	 type:    uint(8)*
+	 alias:   "msg_response_data_1"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_response/msg_response_data_1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[31]
+	{
+	 type:    uint(8)*
+	 alias:   "msg_response_data_2"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_response/msg_response_data_2"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[32]
+	{
+	 type:    uint(8)*
+	 alias:   "msg_response_data_3"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_response/msg_response_data_3"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[33]
+	{
+	 type:    uint(8)*
+	 alias:   "msg_response_data_4"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_response/msg_response_data_4"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[34]
+	{
+	 type:    uint(8)*
+	 alias:   "msg_response_data_5"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_response/msg_response_data_5"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[35]
+	{
+	 type:    uint(8)*
+	 alias:   "msg_response_data_6"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_response/msg_response_data_6"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[28]
+	{
+	 type:    uint(8)*
+	 alias:   "msg_response_type"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_response/msg_response_type"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_5[20867]
+	{
+	 type:    rti1401_program_nova_sensorBus_wheelspeed_4*
+	 alias:   "mu"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Mu&Slip Estimator/mu"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_5[20345]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "rref"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Yaw Rate Reference/rref"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_sensorBus_1[5]
+	{
+	 type:    struct rti1401_program_nova_sensorBus*
+	 alias:   "sensorBus"
+	 origin:  "rti1401_program_nova/Processor/Control Systems/Sensor Bus/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_sensorBus_1[5]
+	{
+	 type:    struct rti1401_program_nova_sensorBus*
+	 alias:   "sensors"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Sensors/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_settingBus_3[5]
+	{
+	 type:    struct rti1401_program_nova_settingBus*
+	 alias:   "settingBus"
+	 origin:  "rti1401_program_nova/Processor/Control Systems/Settings/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_settingBus_3[5]
+	{
+	 type:    struct rti1401_program_nova_settingBus*
+	 alias:   "settings"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Settings/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_5[20871]
+	{
+	 type:    rti1401_program_nova_sensorBus_wheelspeed_4*
+	 alias:   "slip"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Mu&Slip Estimator/slip"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[37]
+	{
+	 type:    uint(8)*
+	 alias:   "state_bits{Occurence1}"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_result_AS/state_bits"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[44]
+	{
+	 type:    uint(8)*
+	 alias:   "state_bits{Occurence2}"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_result_I/state_bits"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[7]
+	{
+	 type:    uint(8)*
+	 alias:   "state_bits{Occurence3}"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_result_W/state_bits"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[51]
+	{
+	 type:    uint(8)*
+	 alias:   "state_bits{Occurence4}"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_result_Wh/state_bits"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[58]
+	{
+	 type:    uint(8)*
+	 alias:   "state_bits{Occurence5}"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_result_t1/state_bits"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[65]
+	{
+	 type:    uint(8)*
+	 alias:   "state_bits{Occurence6}"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_result_u1/state_bits"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[72]
+	{
+	 type:    uint(8)*
+	 alias:   "state_bits{Occurence7}"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_result_u2/state_bits"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[79]
+	{
+	 type:    uint(8)*
+	 alias:   "state_bits{Occurence8}"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_result_u3/state_bits"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[60]
+	{
+	 type:    uint(8)*
+	 alias:   "t_Value_highest"
+	 origin:  "rti1401_program_nova/Inputs/EnergyMeter/IVt_msg_result_t1/t_Value_highest"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[21]
+	{
+	 type:    uint(8)*
+	 alias:   "temp1"
+	 origin:  "rti1401_program_nova/Inputs/Sensors/RN_Sensors2/temp1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[22]
+	{
+	 type:    uint(8)*
+	 alias:   "temp2"
+	 origin:  "rti1401_program_nova/Inputs/Sensors/RN_Sensors2/temp2"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[23]
+	{
+	 type:    uint(8)*
+	 alias:   "temp3"
+	 origin:  "rti1401_program_nova/Inputs/Sensors/RN_Sensors2/temp3"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[24]
+	{
+	 type:    uint(8)*
+	 alias:   "temp4"
+	 origin:  "rti1401_program_nova/Inputs/Sensors/RN_Sensors2/temp4"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_uint8_T_9[25]
+	{
+	 type:    uint(8)*
+	 alias:   "temp5"
+	 origin:  "rti1401_program_nova/Inputs/Sensors/RN_Sensors2/temp5"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_5[0]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "throttle"
+	 origin:  "rti1401_program_nova/Inputs/Preprocessor/Product/Out1"
+	 flags:   READONLY
+	}
+	-- Skipping label "unlimitedFx"
+
+	p_0_rti1401_program_nova_real_T_86[0]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "x-a{Occurence1}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFL/in1mf1/If Action\nSubsystem1/Sum/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_84[0]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "x-a{Occurence2}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFL/in1mf2/If Action\nSubsystem1/Sum/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_82[0]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "x-a{Occurence3}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFL/in1mf3/If Action\nSubsystem1/Sum/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_80[0]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "x-a{Occurence4}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFL/in1mf4/If Action\nSubsystem1/Sum/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_78[0]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "x-a{Occurence5}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFL/in1mf5/If Action\nSubsystem1/Sum/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_76[0]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "x-a{Occurence6}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFR/in2mf1/If Action\nSubsystem1/Sum/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_74[0]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "x-a{Occurence7}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFR/in2mf2/If Action\nSubsystem1/Sum/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_72[0]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "x-a{Occurence8}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFR/in2mf3/If Action\nSubsystem1/Sum/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_70[0]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "x-a{Occurence9}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFR/in2mf4/If Action\nSubsystem1/Sum/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_68[0]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "x-a{Occurence10}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVFR/in2mf5/If Action\nSubsystem1/Sum/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_66[0]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "x-a{Occurence11}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRL/in3mf1/If Action\nSubsystem1/Sum/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_64[0]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "x-a{Occurence12}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRL/in3mf2/If Action\nSubsystem1/Sum/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_62[0]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "x-a{Occurence13}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRL/in3mf3/If Action\nSubsystem1/Sum/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_60[0]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "x-a{Occurence14}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRL/in3mf4/If Action\nSubsystem1/Sum/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_58[0]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "x-a{Occurence15}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRL/in3mf5/If Action\nSubsystem1/Sum/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_56[0]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "x-a{Occurence16}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRR/in4mf1/If Action\nSubsystem1/Sum/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_54[0]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "x-a{Occurence17}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRR/in4mf2/If Action\nSubsystem1/Sum/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_52[0]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "x-a{Occurence18}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRR/in4mf3/If Action\nSubsystem1/Sum/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_50[0]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "x-a{Occurence19}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRR/in4mf4/If Action\nSubsystem1/Sum/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_48[0]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "x-a{Occurence20}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/deltaVRR/in4mf5/If Action\nSubsystem1/Sum/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_46[0]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "x-a{Occurence21}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/maxDeltaV/big/If Action\nSubsystem1/Sum/Out1"
+	 flags:   READONLY
+	}
+	p_0_rti1401_program_nova_real_T_44[0]
+	{
+	 type:    flt(64,IEEE)*
+	 alias:   "x-a{Occurence22}"
+	 origin:  "rti1401_program_nova/Processor/Vehicle Estimated Parameters/Velocity Estimator/Fuzzy Velocity/FuzzyVelocityEstimatorConstant/FIS Wizard/maxDeltaV/small/If Action\nSubsystem1/Sum/Out1"
+	 flags:   READONLY
+	}
+
+endgroup
+
+-- ******** RTT Dynamic Variables *********************************************
+
+group "RTT Dynamic Variables"
+
+endgroup
+
