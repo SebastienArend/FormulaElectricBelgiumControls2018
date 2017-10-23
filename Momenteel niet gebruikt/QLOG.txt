@@ -1,0 +1,3 @@
+ma nov 21 15:36:32 (INFO ): [-] --- application start ---
+ma nov 21 15:36:32 (INFO ): [-] QLog file is: C:\FS_Generic_2017\src_cm4sl\QLOG.txt
+ma nov 21 15:36:32 (INFO ): [-] Throttler is enabled [throttler.cpp:136 / aInit]

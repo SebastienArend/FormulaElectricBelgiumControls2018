@@ -1,0 +1,567 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>Distributor</title><meta name="generator" content="MATLAB 9.0"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2016-12-27"><meta name="DC.source" content="Distributor.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><pre class="codeinput"><span class="keyword">function</span> [ Fx ] = Distributor(settings, estimPar, car, variables, Mz, Fdes, Fxmax, Fxmin)
+<span class="comment">%DISTRIBUTOR Solves the KKT conditions</span>
+<span class="comment">%   Based on sensitivity paramterers, KKT conditions</span>
+<span class="comment">%   are worked out to find an optimal balance between</span>
+<span class="comment">%   the desired Fx and the desired Mz</span>
+<span class="comment">%   Mz = desired yaw moment [1x1]</span>
+<span class="comment">%   Fdes = desired traction force [1x1]</span>
+<span class="comment">%   Fxmax = available grip per wheel [4x1]</span>
+<span class="comment">%   Fxmin = available neg grip per wheel [4x1]</span>
+
+<span class="comment">%   TODO: variables or settings?</span>
+<span class="comment">%TO DO</span>
+<span class="comment">%Rekening houden met situaties waarbij 3 waarden de maxima overstijgen</span>
+<span class="comment">%dit gebeurt enkel indien 3 van de maxima extreem laag zijn.</span>
+
+<span class="comment">%Ervoor zorgen dat indien op het einde van de berekeningen het moment</span>
+<span class="comment">%groter is dan het gewenste moment dat er een veiligheid in werking treed</span>
+<span class="comment">%om dit tegen te gaan.</span>
+
+
+Mdes = Mz;
+FsensMax=100;
+MsensMax = 100;
+FxsensMax = 1;
+
+Fsens = settings.Fsens; <span class="comment">%value between 0 and 100</span>
+<span class="comment">% 100 --&gt; Fdes is really important</span>
+<span class="comment">% 0 --&gt; Mdes is really important</span>
+
+Fxsens = settings.Fxsens; <span class="comment">%value between 0 and 100</span>
+
+<span class="comment">%Avoid dividing by 0</span>
+<span class="keyword">for</span> i = 1:4
+    <span class="keyword">if</span> Fxmax(i) == 0
+        Fxmax(i)=1;
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+<span class="keyword">for</span> i = 1:4
+    <span class="keyword">if</span> Fxmin(i) == 0
+        Fxmin(i)=-1;
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+
+<span class="keyword">if</span> Fdes &gt; sum(Fxmax)
+    Fdes = sum(Fxmax);
+<span class="keyword">elseif</span> Fdes&lt;sum(Fxmin)
+    Fdes = sum(Fxmin);
+<span class="keyword">end</span>
+
+
+
+A1 = [1 1 1 1];
+A2 = [-car.lf car.lf -car.lr car.lr];
+A3 = [1/Fxmax(1) 0 0 0;
+    0 1/Fxmax(2) 0 0;
+    0 0 1/Fxmax(3) 0;
+    0 0 0 1/Fxmax(4)];
+Fx = inv(A1'*A1+A2'*A2+A3*(Fxsens/FxsensMax))*(A1'*Fdes+A2'*Mdes);
+
+
+Fxcheckmax1 = 0;
+Fxcheckmin1 = 0;
+diffValue1 = 0;
+diffValue2 = 0;
+pos1 = 0;
+pos2 = 0;
+
+<span class="keyword">for</span> i = 1:4
+    <span class="keyword">if</span> Fx(i)&gt;Fxmax(i)
+        Fxcheckmax1 =1;
+    <span class="keyword">elseif</span> Fx(i)&lt;Fxmin(i)
+        Fxcheckmin1 = 1;
+    <span class="keyword">end</span>
+<span class="keyword">end</span>
+
+<span class="keyword">if</span> Fxcheckmax1 == 1 <span class="comment">%Check if there is too much traction</span>
+    diffAray = (Fx - Fxmax); <span class="comment">%positive value if Fx &gt; Fxmax</span>
+    diffAray = diffAray.*(diffAray &gt; 0); <span class="comment">%Filter values bigger than Fxmax</span>
+    [diffValue1,pos1]=max(diffAray);
+    [diffValue2,pos2]= max(diffAray.*(diffAray&lt;max(diffAray)));
+    nonZero=length(find(diffAray));
+    Fx = Fx - max(diffAray)*[1;1;1;1];
+    diffFxFxmax = Fxmax-Fx
+
+<span class="comment">%     moment = sum([-car.lf ;car.lf ;-car.lr ;car.lr].*Fx);</span>
+<span class="comment">%</span>
+<span class="comment">%     FxTotal = sum(Fx);</span>
+<span class="comment">%</span>
+<span class="comment">%     diffFx = Fdes - FxTotal;</span>
+<span class="comment">%</span>
+<span class="comment">%     diffMz = Mdes - moment;</span>
+
+
+    <span class="keyword">if</span> pos1 == 3 | pos1 == 4
+        [minDiffFxFxmax,posMinDiff] = min(diffFxFxmax(1:2));
+        Fx(1:2) = Fx(1:2) + minDiffFxFxmax;
+    <span class="keyword">else</span>
+        [minDiffFxFxmax,posMinDiff] = min(diffFxFxmax(3:4));
+        posMinDiff= posMinDiff+2;
+        Fx(3:4) = Fx(3:4) + minDiffFxFxmax;
+    <span class="keyword">end</span>
+
+    diffFxFxmax = Fxmax - Fx;
+
+    moment = sum([-car.lf ;car.lf ;-car.lr ;car.lr].*Fx);
+<span class="comment">%     fprintf('moment  after correction is %f.\n',moment)</span>
+<span class="comment">%     FxTotal = sum(Fx);</span>
+<span class="comment">%     fprintf('FxTotal after correction is %f.\n',FxTotal)</span>
+<span class="comment">%     diffFx = Fdes - FxTotal;</span>
+<span class="comment">%     fprintf('diffFx  after correction is %f.\n',diffFx)</span>
+<span class="comment">%     diffMz = Mdes - moment;</span>
+<span class="comment">%     fprintf('diffMz  after correction is %f.\n',diffMz)</span>
+<span class="comment">%     Fx</span>
+
+    MzCorr = moment;
+
+    <span class="keyword">if</span> pos1 &gt;2
+
+        <span class="keyword">if</span> diffFxFxmax(7-pos1) == 0
+            diffFxFxmax(7-pos1) = 0.1
+        <span class="keyword">end</span>
+
+        fracDiff=(diffFxFxmax(3-posMinDiff)/diffFxFxmax(7-pos1));
+        distrRLRR = -MzCorr/(fracDiff*A2(3-posMinDiff)+A2(7-pos1));
+        distrFLFR = (-MzCorr - distrRLRR*A2(7-pos1))/A2(3-posMinDiff);
+
+        <span class="keyword">if</span> (distrRLRR + distrFLFR) &gt; 0
+
+            Fx(3-posMinDiff)=Fx(3-posMinDiff)+distrFLFR*(Fsens/FsensMax);
+            Fx(7-pos1)=Fx(7-pos1)+distrRLRR*(Fsens/FsensMax);
+        <span class="keyword">end</span>
+
+
+    <span class="keyword">else</span>
+
+
+        <span class="keyword">if</span> diffFxFxmax(7-posMinDiff) == 0
+            diffFxFxmax(7-posMinDiff) = 0.1;
+        <span class="keyword">end</span>
+        fracDiff=(diffFxFxmax(3-pos1)/diffFxFxmax(7-posMinDiff));
+        distrRLRR = -MzCorr/(fracDiff*A2(3-pos1)+A2(7-posMinDiff));
+        distrFLFR = (-MzCorr - distrRLRR*A2(7-posMinDiff))/A2(3-pos1);
+
+        <span class="keyword">if</span> (distrRLRR + distrFLFR) &gt; 0
+            Fx(7-posMinDiff)=Fx(7-posMinDiff)+distrFLFR*(Fsens/FsensMax);
+            Fx(3-pos1)=Fx(3-pos1)+distrRLRR*(Fsens/FsensMax);
+        <span class="keyword">end</span>
+    <span class="keyword">end</span>
+
+
+
+
+    <span class="comment">%-------------------------------------------------------------------------</span>
+<span class="keyword">elseif</span> Fxcheckmin1==1
+    diffAray = Fx - Fxmin; <span class="comment">%negative value if Fx &lt; Fxmin</span>
+    diffAray = diffAray.*(diffAray &lt; 0); <span class="comment">%Filter values smaller than Fxmin</span>
+    [diffValue1,pos1]=min(diffAray);
+    <span class="comment">%[diffValue2,pos2]= max(diffAray.*(diffAray&lt;max(diffAray)));</span>
+    nonZero=length(find(diffAray));
+    Fx = Fx - min(diffAray)*[1;1;1;1];
+    diffFxFxmin = Fxmin-Fx;
+
+
+<span class="comment">%     moment = sum([-car.lf ;car.lf ;-car.lr ;car.lr].*Fx);</span>
+<span class="comment">%     fprintf('moment  before correction is %f.\n',moment)</span>
+<span class="comment">%     FxTotal = sum(Fx);</span>
+<span class="comment">%     fprintf('FxTotal before correction is %f.\n',FxTotal)</span>
+<span class="comment">%     diffFx = Fdes - FxTotal;</span>
+<span class="comment">%     fprintf('diffFx  before correction is %f.\n',diffFx)</span>
+<span class="comment">%     diffMz = Mdes - moment;</span>
+<span class="comment">%     fprintf('diffMz  before correction is %f.\n',diffMz)</span>
+
+    <span class="keyword">if</span> pos1 == 3 | pos1 == 4
+        [minDiffFxFxmin,posMinDiff] = max(diffFxFxmin(1:2));
+        Fx(1:2) = Fx(1:2) + minDiffFxFxmin;
+    <span class="keyword">else</span>
+        [minDiffFxFxmin,posMinDiff] = max(diffFxFxmin(3:4));
+        posMinDiff= posMinDiff+2;;
+        Fx(3:4) = Fx(3:4) + minDiffFxFxmin;
+    <span class="keyword">end</span>
+
+    diffFxFxmin = Fxmin-Fx;
+
+    moment = sum([-car.lf ;car.lf ;-car.lr ;car.lr].*Fx);
+<span class="comment">%     fprintf('moment  after correction is %f.\n',moment)</span>
+<span class="comment">%     FxTotal = sum(Fx);</span>
+<span class="comment">%     fprintf('FxTotal after correction is %f.\n',FxTotal)</span>
+<span class="comment">%     diffFx = Fdes - FxTotal;</span>
+<span class="comment">%     fprintf('diffFx  after correction is %f.\n',diffFx)</span>
+<span class="comment">%     diffMz = Mdes - moment;</span>
+<span class="comment">%     fprintf('diffMz  after correction is %f.\n',diffMz)</span>
+<span class="comment">%     Fx</span>
+
+    MzCorr = moment;
+
+    <span class="keyword">if</span> pos1 &gt;2
+        <span class="comment">%         diffFLFR = Fx(posMinDiff)-Fx(3-posMinDiff)</span>
+        <span class="comment">%         diffRLRR = Fx(pos1)-Fx(7-pos1)</span>
+        <span class="comment">%         Fx(3-posMinDiff)=Fx(3-posMinDiff)+diffFLFR*(Fsens/FsensMax);</span>
+        <span class="comment">%         Fx(7-pos1)=Fx(7-pos1)+diffRLRR*(Fsens/FsensMax);</span>
+
+        <span class="keyword">if</span> diffFxFxmin(7-pos1) == 0
+            diffFxFxmin(7-pos1) = -0.1;
+        <span class="keyword">end</span>
+        fracDiff=(diffFxFxmin(3-posMinDiff)/diffFxFxmin(7-pos1));
+        distrRLRR = -MzCorr/(fracDiff*A2(3-posMinDiff)+A2(7-pos1));
+        distrFLFR = (-MzCorr - distrRLRR*A2(7-pos1))/A2(3-posMinDiff);
+
+        <span class="keyword">if</span> (distrRLRR + distrFLFR) &lt; 0
+
+            Fx(3-posMinDiff)=Fx(3-posMinDiff)+distrFLFR*(Fsens/FsensMax);
+            Fx(7-pos1)=Fx(7-pos1)+distrRLRR*(Fsens/FsensMax);
+        <span class="keyword">end</span>
+
+
+    <span class="keyword">else</span>
+        <span class="comment">%         diffFLFR = Fx(pos1)-Fx(3-pos1)</span>
+        <span class="comment">%         diffRLRR =  Fx(posMinDiff)-Fx(7-posMinDiff)</span>
+        <span class="comment">%         Fx(7-posMinDiff)=Fx(7-posMinDiff)+diffFLFR*(Fsens/FsensMax);</span>
+        <span class="comment">%         Fx(3-pos1)=Fx(3-pos1)+diffRLRR*(Fsens/FsensMax);</span>
+
+        <span class="keyword">if</span> diffFxFxmin(7-posMinDiff) == 0
+            diffFxFxmin(7-posMinDiff) = -0.1;
+        <span class="keyword">end</span>
+        fracDiff=(diffFxFxmin(3-pos1)/diffFxFxmin(7-posMinDiff));
+        distrRLRR = -MzCorr/(fracDiff*A2(3-pos1)+A2(7-posMinDiff));
+        distrFLFR = (-MzCorr - distrRLRR*A2(7-posMinDiff))/A2(3-pos1);
+
+        <span class="keyword">if</span> (distrRLRR + distrFLFR) &lt; 0
+            Fx(7-posMinDiff)=Fx(7-posMinDiff)+distrFLFR*(Fsens/FsensMax);
+            Fx(3-pos1)=Fx(3-pos1)+distrRLRR*(Fsens/FsensMax);
+        <span class="keyword">end</span>
+    <span class="keyword">end</span>
+
+
+
+<span class="keyword">end</span>
+
+
+
+
+
+<span class="keyword">end</span>
+</pre><pre class="codeoutput error">Not enough input arguments.
+
+Error in Distributor (line 21)
+Mdes = Mz;
+</pre><p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2016a</a><br></p></div><!--
+##### SOURCE BEGIN #####
+function [ Fx ] = Distributor(settings, estimPar, car, variables, Mz, Fdes, Fxmax, Fxmin)
+%DISTRIBUTOR Solves the KKT conditions
+%   Based on sensitivity paramterers, KKT conditions
+%   are worked out to find an optimal balance between
+%   the desired Fx and the desired Mz
+%   Mz = desired yaw moment [1x1]
+%   Fdes = desired traction force [1x1]
+%   Fxmax = available grip per wheel [4x1]
+%   Fxmin = available neg grip per wheel [4x1]
+
+%   TODO: variables or settings?
+%TO DO
+%Rekening houden met situaties waarbij 3 waarden de maxima overstijgen
+%dit gebeurt enkel indien 3 van de maxima extreem laag zijn.
+
+%Ervoor zorgen dat indien op het einde van de berekeningen het moment
+%groter is dan het gewenste moment dat er een veiligheid in werking treed
+%om dit tegen te gaan.
+
+
+Mdes = Mz;
+FsensMax=100;
+MsensMax = 100;
+FxsensMax = 1;
+
+Fsens = settings.Fsens; %value between 0 and 100
+% 100 REPLACE_WITH_DASH_DASH> Fdes is really important
+% 0 REPLACE_WITH_DASH_DASH> Mdes is really important
+
+Fxsens = settings.Fxsens; %value between 0 and 100
+
+%Avoid dividing by 0
+for i = 1:4
+    if Fxmax(i) == 0
+        Fxmax(i)=1;
+    end
+end
+for i = 1:4
+    if Fxmin(i) == 0
+        Fxmin(i)=-1;
+    end
+end
+
+if Fdes > sum(Fxmax)
+    Fdes = sum(Fxmax);
+elseif Fdes<sum(Fxmin)
+    Fdes = sum(Fxmin);
+end
+
+
+
+A1 = [1 1 1 1];
+A2 = [-car.lf car.lf -car.lr car.lr];
+A3 = [1/Fxmax(1) 0 0 0;
+    0 1/Fxmax(2) 0 0;
+    0 0 1/Fxmax(3) 0;
+    0 0 0 1/Fxmax(4)];
+Fx = inv(A1'*A1+A2'*A2+A3*(Fxsens/FxsensMax))*(A1'*Fdes+A2'*Mdes);
+
+
+Fxcheckmax1 = 0;
+Fxcheckmin1 = 0;
+diffValue1 = 0;
+diffValue2 = 0;
+pos1 = 0;
+pos2 = 0;
+
+for i = 1:4
+    if Fx(i)>Fxmax(i)
+        Fxcheckmax1 =1;
+    elseif Fx(i)<Fxmin(i)
+        Fxcheckmin1 = 1;
+    end
+end
+
+if Fxcheckmax1 == 1 %Check if there is too much traction
+    diffAray = (Fx - Fxmax); %positive value if Fx > Fxmax
+    diffAray = diffAray.*(diffAray > 0); %Filter values bigger than Fxmax
+    [diffValue1,pos1]=max(diffAray);
+    [diffValue2,pos2]= max(diffAray.*(diffAray<max(diffAray)));
+    nonZero=length(find(diffAray));
+    Fx = Fx - max(diffAray)*[1;1;1;1];
+    diffFxFxmax = Fxmax-Fx
+    
+%     moment = sum([-car.lf ;car.lf ;-car.lr ;car.lr].*Fx);
+% 
+%     FxTotal = sum(Fx);
+% 
+%     diffFx = Fdes - FxTotal;
+% 
+%     diffMz = Mdes - moment;
+
+    
+    if pos1 == 3 | pos1 == 4
+        [minDiffFxFxmax,posMinDiff] = min(diffFxFxmax(1:2));
+        Fx(1:2) = Fx(1:2) + minDiffFxFxmax;
+    else
+        [minDiffFxFxmax,posMinDiff] = min(diffFxFxmax(3:4));
+        posMinDiff= posMinDiff+2;
+        Fx(3:4) = Fx(3:4) + minDiffFxFxmax;
+    end
+    
+    diffFxFxmax = Fxmax - Fx;
+    
+    moment = sum([-car.lf ;car.lf ;-car.lr ;car.lr].*Fx);
+%     fprintf('moment  after correction is %f.\n',moment)
+%     FxTotal = sum(Fx);
+%     fprintf('FxTotal after correction is %f.\n',FxTotal)
+%     diffFx = Fdes - FxTotal;
+%     fprintf('diffFx  after correction is %f.\n',diffFx)
+%     diffMz = Mdes - moment;
+%     fprintf('diffMz  after correction is %f.\n',diffMz)
+%     Fx
+    
+    MzCorr = moment;
+    
+    if pos1 >2
+
+        if diffFxFxmax(7-pos1) == 0
+            diffFxFxmax(7-pos1) = 0.1
+        end
+        
+        fracDiff=(diffFxFxmax(3-posMinDiff)/diffFxFxmax(7-pos1));
+        distrRLRR = -MzCorr/(fracDiff*A2(3-posMinDiff)+A2(7-pos1));
+        distrFLFR = (-MzCorr - distrRLRR*A2(7-pos1))/A2(3-posMinDiff);
+        
+        if (distrRLRR + distrFLFR) > 0
+            
+            Fx(3-posMinDiff)=Fx(3-posMinDiff)+distrFLFR*(Fsens/FsensMax);
+            Fx(7-pos1)=Fx(7-pos1)+distrRLRR*(Fsens/FsensMax);
+        end
+        
+        
+    else
+
+        
+        if diffFxFxmax(7-posMinDiff) == 0
+            diffFxFxmax(7-posMinDiff) = 0.1;
+        end
+        fracDiff=(diffFxFxmax(3-pos1)/diffFxFxmax(7-posMinDiff));
+        distrRLRR = -MzCorr/(fracDiff*A2(3-pos1)+A2(7-posMinDiff));
+        distrFLFR = (-MzCorr - distrRLRR*A2(7-posMinDiff))/A2(3-pos1);
+        
+        if (distrRLRR + distrFLFR) > 0
+            Fx(7-posMinDiff)=Fx(7-posMinDiff)+distrFLFR*(Fsens/FsensMax);
+            Fx(3-pos1)=Fx(3-pos1)+distrRLRR*(Fsens/FsensMax);
+        end
+    end
+    
+
+    
+    
+    %REPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASHREPLACE_WITH_DASH_DASH-
+elseif Fxcheckmin1==1
+    diffAray = Fx - Fxmin; %negative value if Fx < Fxmin
+    diffAray = diffAray.*(diffAray < 0); %Filter values smaller than Fxmin
+    [diffValue1,pos1]=min(diffAray);
+    %[diffValue2,pos2]= max(diffAray.*(diffAray<max(diffAray)));
+    nonZero=length(find(diffAray));
+    Fx = Fx - min(diffAray)*[1;1;1;1];
+    diffFxFxmin = Fxmin-Fx;
+    
+    
+%     moment = sum([-car.lf ;car.lf ;-car.lr ;car.lr].*Fx);
+%     fprintf('moment  before correction is %f.\n',moment)
+%     FxTotal = sum(Fx);
+%     fprintf('FxTotal before correction is %f.\n',FxTotal)
+%     diffFx = Fdes - FxTotal;
+%     fprintf('diffFx  before correction is %f.\n',diffFx)
+%     diffMz = Mdes - moment;
+%     fprintf('diffMz  before correction is %f.\n',diffMz)
+    
+    if pos1 == 3 | pos1 == 4
+        [minDiffFxFxmin,posMinDiff] = max(diffFxFxmin(1:2));
+        Fx(1:2) = Fx(1:2) + minDiffFxFxmin;
+    else
+        [minDiffFxFxmin,posMinDiff] = max(diffFxFxmin(3:4));
+        posMinDiff= posMinDiff+2;;
+        Fx(3:4) = Fx(3:4) + minDiffFxFxmin;
+    end
+    
+    diffFxFxmin = Fxmin-Fx;
+    
+    moment = sum([-car.lf ;car.lf ;-car.lr ;car.lr].*Fx);
+%     fprintf('moment  after correction is %f.\n',moment)
+%     FxTotal = sum(Fx);
+%     fprintf('FxTotal after correction is %f.\n',FxTotal)
+%     diffFx = Fdes - FxTotal;
+%     fprintf('diffFx  after correction is %f.\n',diffFx)
+%     diffMz = Mdes - moment;
+%     fprintf('diffMz  after correction is %f.\n',diffMz)
+%     Fx
+    
+    MzCorr = moment;
+    
+    if pos1 >2
+        %         diffFLFR = Fx(posMinDiff)-Fx(3-posMinDiff)
+        %         diffRLRR = Fx(pos1)-Fx(7-pos1)
+        %         Fx(3-posMinDiff)=Fx(3-posMinDiff)+diffFLFR*(Fsens/FsensMax);
+        %         Fx(7-pos1)=Fx(7-pos1)+diffRLRR*(Fsens/FsensMax);
+        
+        if diffFxFxmin(7-pos1) == 0
+            diffFxFxmin(7-pos1) = -0.1;
+        end
+        fracDiff=(diffFxFxmin(3-posMinDiff)/diffFxFxmin(7-pos1));
+        distrRLRR = -MzCorr/(fracDiff*A2(3-posMinDiff)+A2(7-pos1));
+        distrFLFR = (-MzCorr - distrRLRR*A2(7-pos1))/A2(3-posMinDiff);
+        
+        if (distrRLRR + distrFLFR) < 0
+            
+            Fx(3-posMinDiff)=Fx(3-posMinDiff)+distrFLFR*(Fsens/FsensMax);
+            Fx(7-pos1)=Fx(7-pos1)+distrRLRR*(Fsens/FsensMax);
+        end
+        
+        
+    else
+        %         diffFLFR = Fx(pos1)-Fx(3-pos1)
+        %         diffRLRR =  Fx(posMinDiff)-Fx(7-posMinDiff)
+        %         Fx(7-posMinDiff)=Fx(7-posMinDiff)+diffFLFR*(Fsens/FsensMax);
+        %         Fx(3-pos1)=Fx(3-pos1)+diffRLRR*(Fsens/FsensMax);
+        
+        if diffFxFxmin(7-posMinDiff) == 0
+            diffFxFxmin(7-posMinDiff) = -0.1;
+        end
+        fracDiff=(diffFxFxmin(3-pos1)/diffFxFxmin(7-posMinDiff));
+        distrRLRR = -MzCorr/(fracDiff*A2(3-pos1)+A2(7-posMinDiff));
+        distrFLFR = (-MzCorr - distrRLRR*A2(7-posMinDiff))/A2(3-pos1);
+        
+        if (distrRLRR + distrFLFR) < 0
+            Fx(7-posMinDiff)=Fx(7-posMinDiff)+distrFLFR*(Fsens/FsensMax);
+            Fx(3-pos1)=Fx(3-pos1)+distrRLRR*(Fsens/FsensMax);
+        end
+    end
+    
+
+    
+end
+
+
+
+
+
+end
+
+
+
+
+
+##### SOURCE END #####
+--></body></html>

@@ -1,0 +1,213 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>plotResultsSkidpad</title><meta name="generator" content="MATLAB 9.0"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2016-11-28"><meta name="DC.source" content="plotResultsSkidpad.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h2>Contents</h2><div><ul><li><a href="#2">Fx plot</a></li><li><a href="#3">Fy plot</a></li><li><a href="#4">Fz plot</a></li><li><a href="#5">Velocity plot</a></li><li><a href="#6">Longitudinal Slip plot</a></li><li><a href="#7">Yaw Rate</a></li></ul></div><pre class="codeoutput">
+SkidPad =
+
+     []
+
+</pre><h2>Fx plot<a name="2"></a></h2><pre class="codeoutput error">Struct contents reference from a non-struct array object.
+
+Error in plotResultsSkidpad (line 11)
+plot(estimParOut.Fxi.time,estimParOut.Fxi.data(:,1),SkidPad.Time.data, SkidPad.Car_FxFL.data)
+</pre><h2>Fy plot<a name="3"></a></h2><h2>Fz plot<a name="4"></a></h2><h2>Velocity plot<a name="5"></a></h2><h2>Longitudinal Slip plot<a name="6"></a></h2><h2>Yaw Rate<a name="7"></a></h2><p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2016a</a><br></p></div><!--
+##### SOURCE BEGIN #####
+close all
+clc
+SkidPad = cmread
+
+%NOTE: difference between car and vhcl ?
+
+
+%% Fx plot
+figure
+subplot(2,2,1)
+plot(estimParOut.Fxi.time,estimParOut.Fxi.data(:,1),SkidPad.Time.data, SkidPad.Car_FxFL.data)
+title('FxFL')
+ylabel('FxFL')
+xlabel('time')
+legend('estimated FxFL','FxFL')
+subplot(2,2,2)
+plot(estimParOut.Fxi.time,estimParOut.Fxi.data(:,2),SkidPad.Time.data, SkidPad.Car_FxFR.data)
+title('FxFR')
+ylabel('FxFR')
+xlabel('time')
+%legend('estimated FxFR','FxFR')
+subplot(2,2,3)
+plot(estimParOut.Fxi.time,estimParOut.Fxi.data(:,3),SkidPad.Time.data, SkidPad.Car_FxRL.data)
+title('FxRL')
+ylabel('FxRL')
+xlabel('time')
+%legend('estimated FxRL','FxRL')
+subplot(2,2,4)
+plot(estimParOut.Fxi.time,estimParOut.Fxi.data(:,4),SkidPad.Time.data, SkidPad.Car_FxRR.data)
+title('FxRR')
+ylabel('FxRR')
+xlabel('time')
+%legend('estimated FxRR','FxRR')
+
+%% Fy plot
+figure
+subplot(2,2,1)
+plot(estimParOut.Fyi.time,estimParOut.Fyi.data(:,1),SkidPad.Time.data, SkidPad.Car_FyFL.data)
+title('FyFL')
+ylabel('FyFL')
+xlabel('time')
+legend('estimated FyFL','FyFL')
+subplot(2,2,2)
+plot(estimParOut.Fyi.time,estimParOut.Fyi.data(:,2),SkidPad.Time.data, SkidPad.Car_FyFR.data)
+title('FyFR')
+ylabel('FyFR')
+xlabel('time')
+%legend('estimated FyFR','FyFR')
+subplot(2,2,3)
+plot(estimParOut.Fyi.time,estimParOut.Fyi.data(:,3),SkidPad.Time.data, SkidPad.Car_FyRL.data)
+title('FyRL')
+ylabel('FyRL')
+xlabel('time')
+%legend('estimated FyRL','FyRL')
+subplot(2,2,4)
+plot(estimParOut.Fyi.time,estimParOut.Fyi.data(:,4),SkidPad.Time.data, SkidPad.Car_FyRR.data)
+title('FyRR')
+ylabel('FyRR')
+xlabel('time')
+%legend('estimated FyRR','FyRR')
+
+%% Fz plot
+figure
+subplot(2,2,1)
+plot(estimParOut.Fzi.time,estimParOut.Fzi.data(:,1),SkidPad.Time.data, SkidPad.Car_FzFL.data)
+title('FzFL')
+ylabel('FzFL')
+xlabel('time')
+legend('estimated FzFL','FzFL')
+subplot(2,2,2)
+plot(estimParOut.Fzi.time,estimParOut.Fzi.data(:,2),SkidPad.Time.data, SkidPad.Car_FzFR.data)
+title('FzFR')
+ylabel('FzFR')
+xlabel('time')
+%legend('estimated FzFR','FzFR')
+subplot(2,2,3)
+plot(estimParOut.Fzi.time,estimParOut.Fzi.data(:,3),SkidPad.Time.data, SkidPad.Car_FzRL.data)
+title('FzRL')
+ylabel('FzRL')
+xlabel('time')
+%legend('estimated FzRL','FzRL')
+subplot(2,2,4)
+plot(estimParOut.Fzi.time,estimParOut.Fzi.data(:,4),SkidPad.Time.data, SkidPad.Car_FzRR.data)
+title('FzRR')
+ylabel('FzRR')
+xlabel('time')
+%legend('estimated FzRR','FzRR')
+
+%% Velocity plot
+figure
+plot(estimParOut.v.time,estimParOut.v.data,SkidPad.Time.data, SkidPad.Car_v.data)
+title('Car Velocity')
+ylabel('Car v')
+xlabel('time')
+legend('estimated velocity','velocity')
+
+%% Longitudinal Slip plot
+figure
+subplot(2,2,1)
+plot(estimParOut.slip.time,estimParOut.slip.data(:,1),SkidPad.Time.data, SkidPad.Car_LongSlipFL.data)
+title('Longitudinal SlipFL')
+ylabel('SlipFL')
+xlabel('time')
+legend('estimated Slip','Slip')
+subplot(2,2,2)
+plot(estimParOut.slip.time,estimParOut.slip.data(:,2),SkidPad.Time.data, SkidPad.Car_LongSlipFR.data)
+title('Longitudinal SlipFR')
+ylabel('SlipFR')
+xlabel('time')
+%legend('estimated Slip','Slip')
+subplot(2,2,3)
+plot(estimParOut.slip.time,estimParOut.slip.data(:,3),SkidPad.Time.data, SkidPad.Car_LongSlipRL.data)
+title('Longitudinal SlipRL')
+ylabel('SlipRL')
+xlabel('time')
+%legend('estimated Slip','Slip')
+subplot(2,2,4)
+plot(estimParOut.slip.time,estimParOut.slip.data(:,4),SkidPad.Time.data, SkidPad.Car_LongSlipRR.data)
+title('Longitudinal SlipRR')
+ylabel('SlipRR')
+xlabel('time')
+%legend('estimated Slip','Slip')
+
+%% Yaw Rate
+figure
+plot(estimParOut.rref.time,estimParOut.rref.data,SkidPad.Time.data, SkidPad.Car_YawRate.data)
+title('Yaw Rate')
+ylabel('Yaw Rate')
+xlabel('time')
+legend('Yaw Rate Reference','Yaw Rate')
+
+
+##### SOURCE END #####
+--></body></html>
