@@ -30,7 +30,7 @@ car.tireInertia = 0.5*car.tireMass*car.tireRadius^2;      %[kg*m^2]
 car.tireResist = 0.005;      %[-]      roll resistance
 car.Cyf = 31512;             %[N/rad]  Cornering stiffness front wheel
 car.Cyr = 31512;             %[N/rad]  Cornering stiffness rear wheel
-car.Cx = 31512;             %[N/rad]  Longitudinal stiffness rear wheel
+car.Cx = 85000;             %[N/unit slip]  Longitudinal stiffness wheels
 
 %% Aerodynamics
 %To edit when known values
