@@ -28,8 +28,9 @@ car.tireMass = 8.71;         %[kg] CONTINENTAL FS 205 510 R13 80kPa
 car.tireInertia = 0.5*car.tireMass*car.tireRadius^2;      %[kg*m^2]
 %car.inertia.Kp = 1.5*10^-7; %[-]
 car.tireResist = 0.005;      %[-]      roll resistance
-car.Cyf = 16160;             %[N/rad]  Cornering stiffness front wheel
-car.Cyr = 16160;             %[N/rad]  Cornering stiffness rear wheel
+car.Cyf = 31512;             %[N/rad]  Cornering stiffness front wheel
+car.Cyr = 31512;             %[N/rad]  Cornering stiffness rear wheel
+car.Cx = 31512;             %[N/rad]  Longitudinal stiffness rear wheel
 
 %% Aerodynamics
 %To edit when known values
@@ -85,7 +86,7 @@ car.TC_mu = car.mu;           %[-] %Edit when finetuning TC
 %% Kalman Velocity Estimation
 %car.kalmanVelocity.R = diag([1, 10]); % Measurement covariance R (v2 , v4)
 %car.kalmanVelocity.Q = .1; % Process noice covariance Q (accelerometer)
-%car.kalmanVelocity.accTreshold = 99;% [m/s²] Acceleration at which the kalman does not update with the wheels
+%car.kalmanVelocity.accTreshold = 99;% [m/sÂ²] Acceleration at which the kalman does not update with the wheels
 %car.kalmanVelocity.velTreshold = 0.4;% [m/s] Speed at which kalman will use measurements
 
 %% Bypass
