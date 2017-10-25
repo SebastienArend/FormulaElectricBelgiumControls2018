@@ -1,4 +1,4 @@
-function [p0] = tire_est(States_matrix_front,States_matrix_rear)
+function [p0] = tire_model_est(States_matrix_front,States_matrix_rear)
 %Estimation of tire-force model for use in individual tire force
 %calculations
 %States_matrix = [alpha,F_normal,F_lateral]
